@@ -576,16 +576,6 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
-  .hover\:scale-101 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 101%;
-        --tw-scale-y: 101%;
-        --tw-scale-z: 101%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
   .hover\:border-amber-600 {
     &:hover {
       @media (hover: hover) {
@@ -848,21 +838,6 @@ input[type="checkbox"]:focus {
   syntax: "*";
   inherits: false;
 }
-@property --tw-scale-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -893,9 +868,6 @@ input[type="checkbox"]:focus {
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
       --tw-duration: initial;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-scale-z: 1;
     }
   }
 }
