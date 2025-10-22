@@ -1,3 +1,4 @@
+// ANIMATION
 // Intersection Observer for fade-in animations
 const observerOptions = {
     threshold: 0.1,
@@ -30,6 +31,8 @@ window.addEventListener('load', () => {
     }
 });
 
+
+// FORM
 // Contact Form Validation
 const contactForm = document.getElementById('contactForm');
 const submitButton = document.getElementById('submitButton');
