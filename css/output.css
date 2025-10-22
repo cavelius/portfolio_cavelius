@@ -431,9 +431,6 @@
   .bg-\[url\(\'\/images\/fernsehturm\.jpg\'\)\] {
     background-image: url('/images/fernsehturm.jpg');
   }
-  .bg-\[url\(\'images\/fernsehturm\.jpg\'\)\] {
-    background-image: url('images/fernsehturm.jpg');
-  }
   .from-amber-50 {
     --tw-gradient-from: var(--color-amber-50);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -605,38 +602,10 @@
       }
     }
   }
-  .hover\:border-amber-700 {
-    &:hover {
-      @media (hover: hover) {
-        border-color: var(--color-amber-700);
-      }
-    }
-  }
-  .hover\:border-neutral-300 {
-    &:hover {
-      @media (hover: hover) {
-        border-color: var(--color-neutral-300);
-      }
-    }
-  }
   .hover\:bg-amber-700 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-amber-700);
-      }
-    }
-  }
-  .hover\:bg-neutral-100 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-neutral-100);
-      }
-    }
-  }
-  .hover\:bg-neutral-300 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-neutral-300);
       }
     }
   }
