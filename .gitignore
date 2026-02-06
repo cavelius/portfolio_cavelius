@@ -6,10 +6,14 @@ Thumbs.db
 
 # Node / Package managers
 node_modules/
+.agents/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.yarn/
+.yarnrc.yml
+.pnp.*
 
 # Build / cache outputs
 dist/
