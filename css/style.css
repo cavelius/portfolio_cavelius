@@ -33,6 +33,11 @@ body {
     font-style: normal;
 }
 
+/* Hero headline: scales more aggressively so nowrap text always fits */
+.headline-hero {
+    font-size: clamp(20px, 4vw, 60px);
+    line-height: 1.1;
+}
 .heading-serif {
     font-family: ivypresto-display, serif;
     font-weight: 300;

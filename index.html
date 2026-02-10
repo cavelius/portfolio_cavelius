@@ -15,24 +15,23 @@
 <body class="antialiased">
 
     <!-- Header -->
-    <header class="mx-auto flex max-w-[104.5rem] items-center justify-between px-4 pb-6 pt-10 sm:px-16 md:px-9">
+    <header class="mx-auto flex max-w-[104.5rem] items-center justify-between px-[16px] pb-6 pt-10 sm:px-16 md:px-9">
         <a href="#top" class="text-[0.9375rem] text-[var(--color-dark)]">Sofia Cavelius</a>
         <span class="text-[0.9375rem] text-[var(--color-gray-01)]">Portfolio</span>
     </header>
 
     <!-- Hero -->
-    <section id="top" class="fade-in-section mx-auto max-w-[104.5rem] px-4 pb-6 pt-16 sm:px-16 md:px-9 lg:pb-10">
-        <div class="grid gap-6 lg:grid-cols-3 lg:gap-x-1.5 lg:items-center">
-            <div class="text-[1.0625rem] leading-relaxed text-[var(--color-gray-01)] lg:pb-2">
-                <p>Mit über fünf Jahren Design-Erfahrung,<br><span class="text-[var(--color-dark)]">helfe ich dir bei Print Design,</span><br>Digitalem Design, Illustration, Animation,<br>Bildbearbeitung &amp; Konzeption.</p>
+    <section id="top" class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] pb-6 pt-16 sm:px-16 md:px-9 lg:pb-10">
+        <div class="grid gap-6 min-[426px]:grid-cols-3 min-[426px]:gap-x-8 min-[426px]:items-center">
+            <div class="order-2 text-[1.0625rem] leading-relaxed text-[var(--color-gray-01)] min-[426px]:order-1 min-[426px]:pb-2">
+                <p><span class="text-[#212121]">Mit über fünf Jahren Design-Erfahrung,</span><br class="hidden lg:block"> <span class="text-[#757575]">helfe ich dir bei Print Design, Digitalem Design, Illustration, Animation, Bildbearbeitung &amp; Konzeption.</span></p>
             </div>
-            <div class="relative lg:col-span-2">
-                <img src="images/decor/emoji-wave.png" alt="" class="absolute -top-4 left-[6rem] hidden h-[4.375rem] w-[4.375rem] lg:block" aria-hidden="true">
-                <img src="images/decor/emoji-eyes.png" alt="" class="absolute right-4 top-0 hidden h-[4.375rem] w-[4.375rem] lg:block" aria-hidden="true">
-                <h1 class="heading-display text-[3.75rem] leading-[1.2]">
-                    Hey, <span class="heading-serif">ich bin Sofia,</span><br>
-                    Senior Kommunikations&shy;designerin
-                    mit einer <span class="heading-serif">Leidenschaft</span> für Illustration &amp;&nbsp;Typografie.
+            <div class="relative order-1 min-[426px]:order-2 min-[426px]:col-span-2">
+                <h1 class="heading-display headline-hero whitespace-nowrap">
+                    Hey, <img src="images/decor/smiley.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true"> <span class="heading-serif">ich bin Sofia,</span> <img src="images/decor/profilbild-01.png" alt="" class="inline-block relative top-[0.297em] -z-10 ml-[-0.71em] h-[2.97em] w-auto rounded-[3px] align-baseline" aria-hidden="true"><br>
+                    Senior Kommunikationsdesignerin<br>
+                    mit einer <span class="heading-serif">Leidenschaft</span>&hairsp;&hairsp;&hairsp; für Illustration &amp;<br>
+                    Typografie. <img src="images/decor/blume.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true">
                 </h1>
             </div>
         </div>
@@ -56,9 +55,9 @@
 
     <main>
         <!-- Projekte -->
-        <section id="projekte" class="fade-in-section mx-auto max-w-[104.5rem] px-4 py-10 sm:px-16 md:px-9 lg:py-14">
+        <section id="projekte" class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] py-10 sm:px-16 md:px-9 lg:py-14">
             <p class="label-section mb-2 text-[var(--color-dark)]">Projekte</p>
-            <p class="mb-8 max-w-lg text-[1.0625rem] text-[var(--color-gray-01)]">Eine Auswahl meiner Arbeiten aus den Bereichen Editorial, Branding und Illustration.</p>
+            <p class="mb-8 text-[1.0625rem] text-[var(--color-gray-01)]">Eine Auswahl meiner Arbeiten aus den Bereichen Editorial, Branding und Illustration.</p>
 
             <div class="mt-14 space-y-10 gap-x-1.5 gap-y-10 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3 lg:gap-y-16">
                 <!-- Row 1: 8 + 4 -->
@@ -132,7 +131,7 @@
         </section>
 
         <!-- Über mich (Dark Section) -->
-        <section id="ueber-mich" class="fade-in-section bg-black px-4 py-14 text-white sm:px-16 md:px-9 lg:py-20">
+        <section id="ueber-mich" class="fade-in-section bg-black px-[16px] py-14 text-white sm:px-16 md:px-9 lg:py-20">
             <div class="mx-auto max-w-[104.5rem]">
                 <p class="label-section mb-6 text-neutral-400">Über mich</p>
                 <div class="grid gap-10 lg:grid-cols-[1fr_2fr] lg:items-start">
@@ -162,7 +161,7 @@
         </section>
 
         <!-- Werdegang (Career Accordion) -->
-        <section class="mx-auto max-w-[104.5rem] px-4 py-12 sm:px-16 md:px-9 lg:py-16">
+        <section class="mx-auto max-w-[104.5rem] px-[16px] py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section grid gap-8 lg:grid-cols-[200px_1fr]">
                 <p class="text-[1.0625rem] text-[var(--color-dark)]">Werdegang</p>
                 <div class="divide-y divide-[var(--color-gray-border)]">
@@ -242,7 +241,7 @@
         </section>
 
         <!-- Kompetenzen & Werkzeuge -->
-        <section class="mx-auto max-w-[104.5rem] px-4 py-12 sm:px-16 md:px-9 lg:py-16">
+        <section class="mx-auto max-w-[104.5rem] px-[16px] py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section grid gap-8 lg:grid-cols-[200px_1fr]">
                 <p class="text-[1.0625rem] text-[var(--color-dark)]">Kompetenzen &amp; Werkzeuge</p>
                 <div class="space-y-5">
@@ -282,7 +281,7 @@
         </section>
 
         <!-- Kundenbewertungen -->
-        <section class="mx-auto max-w-[104.5rem] px-4 py-12 sm:px-16 md:px-9 lg:py-16">
+        <section class="mx-auto max-w-[104.5rem] px-[16px] py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section">
                 <p class="mb-8 text-[1.0625rem] text-[var(--color-dark)]">Das sagen Kunden</p>
                 <div class="scrollbar-hide flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
@@ -331,7 +330,7 @@
         </section>
 
         <!-- CTA -->
-        <section class="fade-in-section mx-auto max-w-[104.5rem] px-4 py-14 sm:px-16 md:px-9 lg:py-20">
+        <section class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] py-14 sm:px-16 md:px-9 lg:py-20">
             <h2 class="heading-display text-[3.75rem] leading-[1.2]">
                 Lass uns <span class="heading-serif">zusammen</span> arbeiten
             </h2>
@@ -341,7 +340,7 @@
 
     <!-- Footer -->
     <footer id="kontakt" class="bg-black text-white">
-        <div class="mx-auto max-w-[104.5rem] px-4 py-12 sm:px-16 md:px-9 lg:py-16">
+        <div class="mx-auto max-w-[104.5rem] px-[16px] py-12 sm:px-16 md:px-9 lg:py-16">
             <p class="label-section mb-6 text-white">Kontakt</p>
             <div class="grid gap-10 lg:grid-cols-2">
                 <div>
