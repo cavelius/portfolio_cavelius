@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sofia Cavelius Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/nby4ljg.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
     <script src="js/main.js" defer></script>
+    <script>
+        document.fonts.ready.then(() => {
+            document.body.classList.remove('fonts-loading');
+        });
+    </script>
 </head>
-<body class="antialiased">
+<body class="antialiased fonts-loading">
 
     <!-- Header -->
     <header class="mx-auto flex max-w-[104.5rem] items-center justify-between px-[16px] pb-6 pt-10 sm:px-16 md:px-9">
@@ -21,14 +27,21 @@
     </header>
 
     <!-- Hero -->
-    <section id="top" class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] pb-6 pt-16 sm:px-16 md:px-9 lg:pb-10">
+    <section id="top" class="mx-auto max-w-[104.5rem] px-[16px] pb-6 pt-[10rem] sm:px-16 md:px-9 lg:pb-10">
         <div class="grid gap-6 min-[426px]:grid-cols-3 min-[426px]:gap-x-8 min-[426px]:items-center">
-            <div class="order-2 text-[1.0625rem] leading-relaxed text-[var(--color-gray-01)] min-[426px]:order-1 min-[426px]:pb-2">
+            <div class="order-2 text-[1.0625rem] leading-relaxed text-[var(--color-gray-01)] min-[426px]:order-1 min-[426px]:pr-[clamp(0.25rem,6vw-0.5rem,5rem)]">
                 <p><span class="text-[#212121]">Mit über fünf Jahren Design-Erfahrung,</span><br class="hidden lg:block"> <span class="text-[#757575]">helfe ich dir bei Print Design, Digitalem Design, Illustration, Animation, Bildbearbeitung &amp; Konzeption.</span></p>
             </div>
             <div class="relative order-1 min-[426px]:order-2 min-[426px]:col-span-2">
-                <h1 class="heading-display headline-hero whitespace-nowrap">
-                    Hey, <img src="images/decor/smiley.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true"> <span class="heading-serif">ich bin Sofia,</span> <img src="images/decor/profilbild-01.png" alt="" class="inline-block relative top-[0.297em] -z-10 ml-[-0.71em] h-[2.97em] w-auto rounded-[3px] align-baseline" aria-hidden="true"><br>
+                <!-- Mobile headline (≤425px) -->
+                <h1 class="heading-display headline-hero whitespace-nowrap min-[426px]:hidden">
+                    Hey, <img src="images/decor/smiley.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true"> ich bin Sofia <img src="images/decor/profilbild-01.png" alt="" class="inline-block relative top-[0.297em] -z-10 ml-[-0.71em] h-[2.97em] w-auto rounded-[3px] align-baseline" aria-hidden="true"><br>
+                    Senior Kommunikations-<br>
+                    designerin <img src="images/decor/blume.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true">
+                </h1>
+                <!-- Desktop headline (≥426px) -->
+                <h1 class="heading-display headline-hero whitespace-nowrap hidden min-[426px]:block">
+                    Hey, <img src="images/decor/smiley.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true"> <span class="heading-serif">ich bin Sofia,</span> <img src="images/decor/profilbild-01.png" alt="" class="inline-block relative top-[-0.64em] -z-10 ml-[-0.71em] mt-[-0.94em] mb-[-0.94em] h-[2.97em] w-auto rounded-[3px] align-baseline" aria-hidden="true"><br>
                     Senior Kommunikationsdesignerin<br>
                     mit einer <span class="heading-serif">Leidenschaft</span>&hairsp;&hairsp;&hairsp; für Illustration &amp;<br>
                     Typografie. <img src="images/decor/blume.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true">

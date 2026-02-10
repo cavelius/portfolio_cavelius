@@ -19,7 +19,7 @@ document.querySelectorAll(".fade-in-section, .fade-in-stagger").forEach((element
 
 window.addEventListener("load", () => {
     document.querySelectorAll(".fade-in-section, .fade-in-stagger").forEach((el) => {
-        if (el.getBoundingClientRect().top < window.innerHeight) {
+        if (el.getBoundingClientRect().top < window.innerHeight * 1.5) {
             el.classList.add("is-visible");
         }
     });

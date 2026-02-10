@@ -18,6 +18,11 @@ html {
     font-size: clamp(10px, 8.3px + 0.46vw, 16px);
 }
 
+/* Prevent font swap layout shift */
+.fonts-loading {
+    visibility: hidden;
+}
+
 /* Typography */
 body {
     font-family: 'DM Sans', sans-serif;
@@ -37,6 +42,13 @@ body {
 .headline-hero {
     font-size: clamp(20px, 4vw, 60px);
     line-height: 1.1;
+}
+
+/* Mobile: headline fills full width */
+@media (max-width: 425px) {
+    .headline-hero {
+        font-size: calc((100vw - 32px) / 9.85);
+    }
 }
 .heading-serif {
     font-family: ivypresto-display, serif;
