@@ -4,6 +4,10 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Local agent/tool config
+.mcp.json
+opencode.json
+
 # Node / Package managers
 node_modules/
 .agents/
