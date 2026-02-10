@@ -3,288 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbeiter der Liebe</title>
+    <title>Sofia Cavelius Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="https://use.typekit.net/nby4ljg.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Poppins:wght@300;400;500&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
     <script src="js/main.js" defer></script>
 </head>
-<body class="min-h-screen bg-neutral-50">
+<body class="antialiased">
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden fade-in-section">
-        <div class="absolute inset-0 bg-gradient-to-b from-neutral-100 via-neutral-50 to-white"></div>
-        <div class="absolute inset-0 opacity-10" style="background-image: url('images/fernsehturm.jpg'); background-size: cover; background-position: right;"></div>
+    <!-- Header -->
+    <header class="mx-auto flex max-w-[104.5rem] items-center justify-between px-4 pb-6 pt-10 sm:px-16 md:px-9">
+        <a href="#top" class="text-[0.9375rem] text-[var(--color-dark)]">Sofia Cavelius</a>
+        <span class="text-[0.9375rem] text-[var(--color-gray-01)]">Portfolio</span>
+    </header>
 
-        <div class="container relative z-10 px-6 py-20 max-w-5xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-semibold mb-6">
-                Authentische Anziehung beginnt mit innerer Klarheit.
-            </h1>
-            <p class="text-xl md:text-2xl text-neutral-600 mb-4 max-w-3xl mx-auto">
-                Exklusives Coaching für Männer, die im Leben vieles erreicht haben –
-                und nun bereit sind, echte emotionale Erfüllung zu finden.
-            </p>
-            <p class="text-lg text-neutral-500 mb-12 max-w-2xl mx-auto">
-                Ich begleite erfolgreiche Männer dabei, ihr Dating-Leben mit derselben Klarheit,
-                Präsenz und Eleganz zu gestalten, die sie im Business auszeichnet.
-            </p>
-            <a href="#contact" class="inline-block px-10 py-4 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors duration-300">
-                Diskrete Erstanfrage stellen →
-            </a>
+    <!-- Hero -->
+    <section id="top" class="fade-in-section mx-auto max-w-[104.5rem] px-4 pb-6 pt-16 sm:px-16 md:px-9 lg:pb-10">
+        <div class="grid gap-6 lg:grid-cols-3 lg:gap-x-1.5 lg:items-center">
+            <div class="text-[1.0625rem] leading-relaxed text-[var(--color-gray-01)] lg:pb-2">
+                <p>Mit über fünf Jahren Design-Erfahrung,<br><span class="text-[var(--color-dark)]">helfe ich dir bei Print Design,</span><br>Digitalem Design, Illustration, Animation,<br>Bildbearbeitung &amp; Konzeption.</p>
+            </div>
+            <div class="relative lg:col-span-2">
+                <img src="images/decor/emoji-wave.png" alt="" class="absolute -top-4 left-[6rem] hidden h-[4.375rem] w-[4.375rem] lg:block" aria-hidden="true">
+                <img src="images/decor/emoji-eyes.png" alt="" class="absolute right-4 top-0 hidden h-[4.375rem] w-[4.375rem] lg:block" aria-hidden="true">
+                <h1 class="heading-display text-[3.75rem] leading-[1.2]">
+                    Hey, <span class="heading-serif">ich bin Sofia,</span><br>
+                    Senior Kommunikations&shy;designerin
+                    mit einer <span class="heading-serif">Leidenschaft</span> für Illustration &amp;&nbsp;Typografie.
+                </h1>
+            </div>
         </div>
     </section>
 
-    <!-- Philosophy Section -->
-    <section class="py-24 px-6 fade-in-section">
-        <div class="container max-w-4xl mx-auto">
-            <h2 class="text-4xl md:text-5xl text-center mb-8">
-                Kein Training. Keine Tricks. Eine ehrliche Transformation.
+    <!-- Floating Navigation -->
+    <nav class="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 flex w-[calc(100%-2rem)] justify-center items-center gap-6 rounded-full border border-white/20 bg-[rgba(232,230,230,0.5)] px-6 py-2.5 text-[0.9375rem] shadow-sm backdrop-blur-sm sm:w-fit sm:gap-8 sm:px-8" id="floating-nav">
+        <a href="#projekte" class="flex items-center gap-2 text-[var(--color-dark)] transition-opacity hover:opacity-60">
+            <span class="nav-dot h-2 w-2 rounded-full bg-[#212121] opacity-0 transition-opacity"></span>
+            Projekte
+        </a>
+        <a href="#ueber-mich" class="flex items-center gap-2 text-[var(--color-dark)] transition-opacity hover:opacity-60">
+            <span class="nav-dot h-2 w-2 rounded-full bg-[#212121] opacity-0 transition-opacity"></span>
+            Über mich
+        </a>
+        <a href="#kontakt" class="flex items-center gap-2 text-[var(--color-dark)] transition-opacity hover:opacity-60">
+            <span class="nav-dot h-2 w-2 rounded-full bg-[#212121] opacity-0 transition-opacity"></span>
+            Kontakt
+        </a>
+    </nav>
+
+    <main>
+        <!-- Projekte -->
+        <section id="projekte" class="fade-in-section mx-auto max-w-[104.5rem] px-4 py-10 sm:px-16 md:px-9 lg:py-14">
+            <p class="label-section mb-2 text-[var(--color-dark)]">Projekte</p>
+            <p class="mb-8 max-w-lg text-[1.0625rem] text-[var(--color-gray-01)]">Eine Auswahl meiner Arbeiten aus den Bereichen Editorial, Branding und Illustration.</p>
+
+            <div class="mt-14 space-y-10 gap-x-1.5 gap-y-10 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3 lg:gap-y-16">
+                <!-- Row 1: 8 + 4 -->
+                <article class="fade-in-stagger relative overflow-hidden rounded-[3px] lg:col-span-2">
+                    <img src="images/projects/magazin-things-we-write.jpg" alt="Magazin THINGS WE WRITE" class="aspect-[10/13] lg:aspect-[20/13] w-full rounded-[3px] object-cover">
+                    <div class="mt-2">
+                        <h3 class="text-[1.0625rem] font-normal text-[var(--color-dark)]">Magazin „THINGS WE WRITE"</h3>
+                        <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Konzeption und Gestaltung eines Lifestyle-Magazins.</p>
+                    </div>
+                </article>
+
+                <article class="fade-in-stagger relative overflow-hidden rounded-[3px]">
+                    <img src="images/projects/tshirt-print.jpg" alt="T-Shirt Print" class="aspect-[10/13] w-full rounded-[3px] object-cover">
+                    <div class="mt-2">
+                        <h3 class="text-[1.0625rem] font-normal text-[var(--color-dark)]">T-Shirt Print</h3>
+                        <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Entwicklung eines markengerechten Illustrationsstils.</p>
+                    </div>
+                </article>
+
+                <!-- Row 2: 4 + 8 -->
+                <article class="fade-in-stagger relative overflow-hidden rounded-[3px]">
+                    <img src="images/projects/buch-erstes-lebensjahr.jpg" alt="Buch Dein erstes Lebensjahr" class="aspect-[10/13] w-full rounded-[3px] object-cover">
+                    <div class="mt-2">
+                        <h3 class="text-[1.0625rem] font-normal text-[var(--color-dark)]">Buch „Dein erstes Lebensjahr"</h3>
+                        <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Gestaltung und Illustration eines Ausfüllbuchs.</p>
+                    </div>
+                </article>
+
+                <article class="fade-in-stagger relative overflow-hidden rounded-[3px] lg:col-span-2">
+                    <img src="images/projects/adventskalender-carmushka.jpg" alt="Adventskalender für Creatorin Carmushka" class="aspect-[10/13] lg:aspect-[20/13] w-full rounded-[3px] object-cover">
+                    <div class="mt-2">
+                        <h3 class="text-[1.0625rem] font-normal text-[var(--color-dark)]">Adventskalender für Creatorin Carmushka</h3>
+                        <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Entwicklung eines Packaging Designs, sowie Gestaltung ausgewählter Produktinhalte.</p>
+                    </div>
+                </article>
+
+                <!-- Row 3: 8 + 4 -->
+                <article class="fade-in-stagger relative overflow-hidden rounded-[3px] lg:col-span-2">
+                    <img src="images/projects/jahreskalender-carmushka.jpg" alt="Jahreskalender für Creatorin Carmushka" class="aspect-[10/13] lg:aspect-[20/13] w-full rounded-[3px] object-cover">
+                    <div class="mt-2">
+                        <h3 class="text-[1.0625rem] font-normal text-[var(--color-dark)]">Jahreskalender für Creatorin Carmushka</h3>
+                        <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Gestaltung eines Kalenders mit Künstlerkooperation.</p>
+                    </div>
+                </article>
+
+                <article class="fade-in-stagger relative overflow-hidden rounded-[3px]">
+                    <img src="images/projects/schlafentzug-ausstellung.jpg" alt="Ausstellungsobjekt zum Thema Schlafentzug" class="aspect-[10/13] w-full rounded-[3px] object-cover">
+                    <div class="mt-2">
+                        <h3 class="text-[1.0625rem] font-normal text-[var(--color-dark)]">Ausstellungsobjekt zum Thema Schlafentzug</h3>
+                        <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Konzeption und Gestaltung von Animationen und dazugehöriger Wandgestaltung.</p>
+                    </div>
+                </article>
+
+                <!-- Row 4: 4 + 8 -->
+                <article class="fade-in-stagger relative overflow-hidden rounded-[3px]">
+                    <img src="images/projects/tischkalender-kollektion.jpg" alt="Tischkalender Kollektion" class="aspect-[10/13] w-full rounded-[3px] object-cover">
+                    <div class="mt-2">
+                        <h3 class="text-[1.0625rem] font-normal text-[var(--color-dark)]">Tischkalender Kollektion</h3>
+                        <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Entwicklung einer markengerechten Papeterie Kollektion.</p>
+                    </div>
+                </article>
+
+                <article class="fade-in-stagger relative overflow-hidden rounded-[3px] lg:col-span-2">
+                    <img src="images/projects/kaffee-packaging.jpg" alt="Kaffee-Packaging" class="aspect-[10/13] lg:aspect-[20/13] w-full rounded-[3px] object-cover">
+                    <div class="mt-2">
+                        <h3 class="text-[1.0625rem] font-normal text-[var(--color-dark)]">Kaffee-Packaging</h3>
+                        <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Entwicklung eigenständiger Designlösungen für eine Kaffee-Produktlinie.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Über mich (Dark Section) -->
+        <section id="ueber-mich" class="fade-in-section bg-black px-4 py-14 text-white sm:px-16 md:px-9 lg:py-20">
+            <div class="mx-auto max-w-[104.5rem]">
+                <p class="label-section mb-6 text-neutral-400">Über mich</p>
+                <div class="grid gap-10 lg:grid-cols-[1fr_2fr] lg:items-start">
+                    <div class="relative space-y-6">
+                        <img src="images/decor/hand-drawn-star-02.png" alt="" class="h-[5.25rem] w-[5.3125rem]" aria-hidden="true">
+                        <img src="images/portrait-sofia.jpg" alt="Sofia Cavelius" class="h-[17.0625rem] w-[13.625rem] rounded-[3px] object-cover">
+                        <img src="images/decor/hand-drawn-star-01.png" alt="" class="h-[5.25rem] w-[5.3125rem]" aria-hidden="true">
+                    </div>
+                    <div>
+                        <h2 class="heading-display max-w-4xl text-[3.75rem] leading-[1.2]">
+                            Ich liebe die Herausforderung, Informationen <span class="heading-serif">in eine klare visuelle Sprache zu bringen.</span>
+                        </h2>
+                        <img src="images/decor/hand-drawn-flower.png" alt="" class="my-6 h-[5.25rem] w-[5.3125rem]" aria-hidden="true">
+                        <div class="space-y-4 text-[1.0625rem] leading-relaxed text-neutral-300">
+                            <p>Das Erschaffen visueller Welten, in denen die Elemente wie Zahnräder ineinandergreifen, sich gegenseitig stützen und langfristig funktionieren. Wenn ein Design nicht nur schön ist, sondern trägt, skaliert und Orientierung gibt.</p>
+                            <p>Mein Herz schlägt besonders für Typografie. Schriften haben für mich Persönlichkeit – sie können leise oder laut, verspielt oder präzise, zurückhaltend oder selbstbewusst sein. Ich experimentiere gern mit Kombinationen und finde Freude daran, für jedes Projekt die passende Stimme zu finden.</p>
+                            <p>Illustration ist ebenfalls ein wichtiger Teil meiner Arbeit. Ich probiere unterschiedliche Stile aus, um Projekten eine eigene Handschrift zu verleihen – auch in meiner Freizeit.</p>
+                            <p>Ich mag den Raum zwischen den Dingen. Mein Stil ist minimalistisch, klar und bewusst gesetzt, mit Luft zum Atmen. Mit Struktur und feinen Details entstehen Designs, die ruhig wirken und dennoch Spannung erzeugen.</p>
+                            <p>An meiner Arbeit ist es mir wichtig, nicht nur zu gestalten, sondern auch zu begleiten: Marken zu stärken, Entscheidungen zu erleichtern und Prozesse verständlich zu machen.</p>
+                        </div>
+                        <a href="#" class="mt-8 inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-[0.9375rem] text-white transition-colors hover:bg-white/10">
+                            meine Illustrationen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Werdegang (Career Accordion) -->
+        <section class="mx-auto max-w-[104.5rem] px-4 py-12 sm:px-16 md:px-9 lg:py-16">
+            <div class="fade-in-section grid gap-8 lg:grid-cols-[200px_1fr]">
+                <p class="text-[1.0625rem] text-[var(--color-dark)]">Werdegang</p>
+                <div class="divide-y divide-[var(--color-gray-border)]">
+                    <div class="accordion-item" data-open="false">
+                        <button class="flex w-full items-center justify-between py-4 text-left" aria-expanded="false">
+                            <p class="text-[1.0625rem] text-[var(--color-dark)]">Selbständige Senior Kommunikationsdesignerin</p>
+                            <div class="flex shrink-0 items-center gap-4">
+                                <span class="text-[1.0625rem] text-[var(--color-dark)]">2023</span>
+                                <svg class="accordion-arrow h-6 w-6 text-[var(--color-dark)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="pb-4 text-[1.0625rem] text-[var(--color-gray-01)]">Eigenständige Betreuung von Markenprojekten, Art Direction und Gestaltung für verschiedene Kunden.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-open="false">
+                        <button class="flex w-full items-center justify-between py-4 text-left" aria-expanded="false">
+                            <p class="text-[1.0625rem] text-[var(--color-dark)]">Senior Kommunikations- und Kollektionsdesignerin</p>
+                            <div class="flex shrink-0 items-center gap-4">
+                                <span class="text-[1.0625rem] text-[var(--color-dark)]">2021–2023</span>
+                                <svg class="accordion-arrow h-6 w-6 text-[var(--color-dark)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="pb-4 text-[1.0625rem] text-[var(--color-gray-01)]">Verantwortung für Marken- und Kollektionsdesign, inklusive Art Direction und Teamkoordination.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-open="false">
+                        <button class="flex w-full items-center justify-between py-4 text-left" aria-expanded="false">
+                            <p class="text-[1.0625rem] text-[var(--color-dark)]">Kommunikations- und Kollektionsdesignerin</p>
+                            <div class="flex shrink-0 items-center gap-4">
+                                <span class="text-[1.0625rem] text-[var(--color-dark)]">2019–2020</span>
+                                <svg class="accordion-arrow h-6 w-6 text-[var(--color-dark)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="pb-4 text-[1.0625rem] text-[var(--color-gray-01)]">Design von Print- und Digitalprodukten im Bereich Kommunikation und Kollektion.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-open="false">
+                        <button class="flex w-full items-center justify-between py-4 text-left" aria-expanded="false">
+                            <p class="text-[1.0625rem] text-[var(--color-dark)]">Bachelor Kommunikations- und Mediendesign</p>
+                            <div class="flex shrink-0 items-center gap-4">
+                                <span class="text-[1.0625rem] text-[var(--color-dark)]">2015–2019</span>
+                                <svg class="accordion-arrow h-6 w-6 text-[var(--color-dark)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="pb-4 text-[1.0625rem] text-[var(--color-gray-01)]">Studium mit Schwerpunkt auf visueller Kommunikation, Typografie und Illustration.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-open="false">
+                        <button class="flex w-full items-center justify-between py-4 text-left" aria-expanded="false">
+                            <p class="text-[1.0625rem] text-[var(--color-dark)]">Mediengestalterin Digital und Print</p>
+                            <div class="flex shrink-0 items-center gap-4">
+                                <span class="text-[1.0625rem] text-[var(--color-dark)]">2011–2014</span>
+                                <svg class="accordion-arrow h-6 w-6 text-[var(--color-dark)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="pb-4 text-[1.0625rem] text-[var(--color-gray-01)]">Ausbildung zur Mediengestalterin mit Fokus auf digitale und gedruckte Medien.</p>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kompetenzen & Werkzeuge -->
+        <section class="mx-auto max-w-[104.5rem] px-4 py-12 sm:px-16 md:px-9 lg:py-16">
+            <div class="fade-in-section grid gap-8 lg:grid-cols-[200px_1fr]">
+                <p class="text-[1.0625rem] text-[var(--color-dark)]">Kompetenzen &amp; Werkzeuge</p>
+                <div class="space-y-5">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <p class="mr-4 w-full text-[1.0625rem] text-[var(--color-dark)] sm:w-auto">Digital Design</p>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-4 py-2 text-[0.9375rem]">Figma</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-4 py-2 text-[0.9375rem]">Adobe XD</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-4 py-2 text-[0.9375rem]">Prototyping</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-4 py-2 text-[0.9375rem]">UX/UI</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-4 py-2 text-[0.9375rem]">HTML, CSS, JavaScript</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-4 py-2 text-[0.9375rem]">Layout &amp; Interface Design</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-4 py-2 text-[0.9375rem]">Wordpress mit Elementor</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <p class="mr-4 w-full text-[1.0625rem] text-[var(--color-dark)] sm:w-auto">Print Design</p>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-4 py-2 text-[0.9375rem]">Adobe InDesign</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-4 py-2 text-[0.9375rem]">Layout &amp; Editorial Design</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-4 py-2 text-[0.9375rem]">Packaging Design</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-4 py-2 text-[0.9375rem]">Reinzeichnung &amp; Druckvorstufe</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <p class="mr-4 w-full text-[1.0625rem] text-[var(--color-dark)] sm:w-auto">Illustration, Animation &amp; Bildbearbeitung</p>
+                        <span class="rounded-full bg-[var(--color-tag-gray)] px-4 py-2 text-[0.9375rem]">Adobe Illustrator</span>
+                        <span class="rounded-full bg-[var(--color-tag-gray)] px-4 py-2 text-[0.9375rem]">Adobe Photoshop</span>
+                        <span class="rounded-full bg-[var(--color-tag-gray)] px-4 py-2 text-[0.9375rem]">Adobe After Effects</span>
+                        <span class="rounded-full bg-[var(--color-tag-gray)] px-4 py-2 text-[0.9375rem]">Procreate</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <p class="mr-4 w-full text-[1.0625rem] text-[var(--color-dark)] sm:w-auto">Visuelle Systeme &amp; Konzeption</p>
+                        <span class="rounded-full bg-[var(--color-tag-gray)] px-4 py-2 text-[0.9375rem]">Designsysteme</span>
+                        <span class="rounded-full bg-[var(--color-tag-gray)] px-4 py-2 text-[0.9375rem]">Typografie</span>
+                        <span class="rounded-full bg-[var(--color-tag-gray)] px-4 py-2 text-[0.9375rem]">Moodboards</span>
+                        <span class="rounded-full bg-[var(--color-tag-gray)] px-4 py-2 text-[0.9375rem]">Markenentwicklung</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kundenbewertungen -->
+        <section class="mx-auto max-w-[104.5rem] px-4 py-12 sm:px-16 md:px-9 lg:py-16">
+            <div class="fade-in-section">
+                <p class="mb-8 text-[1.0625rem] text-[var(--color-dark)]">Das sagen Kunden</p>
+                <div class="scrollbar-hide flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
+                    <article class="min-w-[17.5rem] flex-shrink-0 snap-start rounded-[8px] bg-[var(--color-page-bg)] p-10 shadow-[0px_0px_9px_0px_rgba(0,0,0,0.11)] sm:min-w-[21.25rem]">
+                        <div class="mb-4 flex items-center gap-4">
+                            <img src="images/avatar-testimonial.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
+                            <div>
+                                <p class="text-[1.0625rem] text-[var(--color-dark)]">Philipp Riedel</p>
+                                <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Geschäftsführer Glazed</p>
+                            </div>
+                        </div>
+                        <p class="text-[1.0625rem] leading-relaxed text-[var(--color-dark)]">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit.</p>
+                    </article>
+                    <article class="min-w-[17.5rem] flex-shrink-0 snap-start rounded-[8px] bg-[var(--color-page-bg)] p-10 shadow-[0px_0px_9px_0px_rgba(0,0,0,0.11)] sm:min-w-[21.25rem]">
+                        <div class="mb-4 flex items-center gap-4">
+                            <img src="images/avatar-testimonial.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
+                            <div>
+                                <p class="text-[1.0625rem] text-[var(--color-dark)]">Philipp Riedel</p>
+                                <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Geschäftsführer Glazed</p>
+                            </div>
+                        </div>
+                        <p class="text-[1.0625rem] leading-relaxed text-[var(--color-dark)]">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit.</p>
+                    </article>
+                    <article class="min-w-[17.5rem] flex-shrink-0 snap-start rounded-[8px] bg-[var(--color-page-bg)] p-10 shadow-[0px_0px_9px_0px_rgba(0,0,0,0.11)] sm:min-w-[21.25rem]">
+                        <div class="mb-4 flex items-center gap-4">
+                            <img src="images/avatar-testimonial.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
+                            <div>
+                                <p class="text-[1.0625rem] text-[var(--color-dark)]">Philipp Riedel</p>
+                                <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Geschäftsführer Glazed</p>
+                            </div>
+                        </div>
+                        <p class="text-[1.0625rem] leading-relaxed text-[var(--color-dark)]">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit.</p>
+                    </article>
+                    <article class="min-w-[17.5rem] flex-shrink-0 snap-start rounded-[8px] bg-[var(--color-page-bg)] p-10 shadow-[0px_0px_9px_0px_rgba(0,0,0,0.11)] sm:min-w-[21.25rem]">
+                        <div class="mb-4 flex items-center gap-4">
+                            <img src="images/avatar-testimonial.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
+                            <div>
+                                <p class="text-[1.0625rem] text-[var(--color-dark)]">Philipp Riedel</p>
+                                <p class="text-[1.0625rem] text-[var(--color-gray-02)]">Geschäftsführer Glazed</p>
+                            </div>
+                        </div>
+                        <p class="text-[1.0625rem] leading-relaxed text-[var(--color-dark)]">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="fade-in-section mx-auto max-w-[104.5rem] px-4 py-14 sm:px-16 md:px-9 lg:py-20">
+            <h2 class="heading-display text-[3.75rem] leading-[1.2]">
+                Lass uns <span class="heading-serif">zusammen</span> arbeiten
             </h2>
-            <div class="space-y-6 text-lg text-neutral-600 mt-16">
-                <p>
-                    Ich arbeite mit Männern, die bereits wissen, dass Erfolg allein nicht erfüllt.
-                    Männer, die Wert auf Klasse, Haltung und Authentizität legen – auch in der Begegnung mit Frauen.
-                </p>
-                <p>
-                    In meinen Coachings geht es nicht um Strategien, sondern um <strong class="text-neutral-900">Präsenz</strong>,
-                    <strong class="text-neutral-900">emotionale Souveränität</strong> und <strong class="text-neutral-900">echte Verbindung</strong>.
-                </p>
-                <p class="text-xl font-medium text-neutral-900 pt-4">
-                    Das Ergebnis: Begegnungen auf Augenhöhe – mit Frauen, die wirklich zu Ihnen passen.
-                </p>
-            </div>
-            <div class="text-center mt-12">
-                <a href="#contact" class="inline-block px-8 py-3 border-2 border-neutral-900 rounded-lg hover:border-amber-600 hover:text-amber-600 transition duration-200">
-                    Erfahren Sie, wie mein Ansatz funktioniert
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="py-24 px-6 bg-neutral-100 fade-in-section">
-        <div class="absolute inset-0 opacity-10 z-[-999]" style="background-image: url('images/man.jpg'); background-size: cover; background-position: center;"></div>
-        <div class="container max-w-4xl mx-auto">
-            <h2 class="text-4xl md:text-5xl text-center mb-8">
-                Ich begleite Männer, die in ihrem Leben vieles erreicht haben –
-                aber in der Liebe mehr Tiefe suchen.
-            </h2>
-            <div class="space-y-6 text-lg text-neutral-600 mt-16">
-                <p>
-                    Nach über zehn Jahren in Führungspositionen und intensiver Arbeit mit Persönlichkeitsentwicklung
-                    habe ich mich darauf spezialisiert, Männer auf ihrem Weg zu emotionaler Reife und echter Anziehung zu begleiten.
-                </p>
-                <div class="grid md:grid-cols-3 gap-6 py-8" id="staggerContainer">
-                    <div class="text-center fade-in-stagger">
-                        <div class="text-amber-600 text-4xl mb-2">01</div>
-                        <div class="font-semibold text-neutral-900">Diskretion</div>
-                    </div>
-                    <div class="text-center fade-in-stagger">
-                        <div class="text-amber-600 text-4xl mb-2">02</div>
-                        <div class="font-semibold text-neutral-900">Stil</div>
-                    </div>
-                    <div class="text-center fade-in-stagger">
-                        <div class="text-amber-600 text-4xl mb-2">03</div>
-                        <div class="font-semibold text-neutral-900">Tiefgang</div>
-                    </div>
-                </div>
-                <p class="text-center text-xl font-light text-neutral-900 pt-4">
-                    Ich arbeite ausschließlich mit einer kleinen Zahl ausgewählter Klienten –
-                    Qualität steht über Quantität.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="py-24 px-6 fade-in-section">
-        <div class="container max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl text-center mb-8">
-                Ein klarer Prozess. Kein Druck. Echter Kontakt.
-            </h2>
-
-            <div class="grid md:grid-cols-3 gap-8 mt-20">
-                <div class="text-center space-y-4 fade-in-stagger">
-                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto border-2 border-amber-600">
-                        <span class="text-2xl font-semibold text-amber-600">1</span>
-                    </div>
-                    <h3 class="text-xl font-semibold">Diskrete Erstanfrage</h3>
-                    <p class="text-neutral-600">
-                        Sie schildern kurz Ihre Situation und Ihre Erwartungen.
-                    </p>
-                </div>
-
-                <div class="text-center space-y-4 fade-in-stagger">
-                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto border-2 border-amber-600">
-                        <span class="text-2xl font-semibold text-amber-600">2</span>
-                    </div>
-                    <h3 class="text-xl font-semibold">Persönliches Kennenlernen</h3>
-                    <p class="text-neutral-600">
-                        Wir prüfen gemeinsam in einem kostenlosen Gespräch, ob wir zueinander passen.
-                    </p>
-                </div>
-
-                <div class="text-center space-y-4 fade-in-stagger">
-                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto border-2 border-amber-600">
-                        <span class="text-2xl font-semibold text-amber-600">3</span>
-                    </div>
-                    <h3 class="text-xl font-semibold">Individuelles Programm</h3>
-                    <p class="text-neutral-600">
-                        Ein maßgeschneidertes Coaching – auf Ihre Lebenssituation und Ziele abgestimmt.
-                    </p>
-                </div>
-            </div>
-
-            <p class="text-center text-lg text-neutral-600 mt-16 max-w-3xl mx-auto">
-                Ich arbeite ausschließlich mit Männern, bei denen ein echtes Interesse an persönlicher
-                Entwicklung besteht. Wenn wir merken, dass die Chemie stimmt, entwickle ich ein
-                maßgeschneidertes Programm.
-            </p>
-
-            <div class="text-center mt-12">
-                <a href="#contact" class="inline-block px-10 py-4 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors duration-300">
-                    Jetzt diskrete Erstanfrage stellen
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section class="py-24 px-6 bg-neutral-100 fade-in-section">
-        <div class="absolute inset-0 opacity-10 z-[-999]" style="background-image: url('images/couple.jpg'); background-size: cover; background-position: center;"></div>
-        <div class="container max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl text-center mb-20">
-                Was meine Klienten erleben
-            </h2>
-
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <svg class="w-8 h-8 text-amber-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <p class="text-neutral-600">
-                        Ein Geschäftsführer, der nach Jahren im Erfolg wieder <strong class="text-neutral-900">Leichtigkeit im Dating</strong> findet.
-                    </p>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <svg class="w-8 h-8 text-amber-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <p class="text-neutral-600">
-                        Ein Unternehmer, der gelernt hat, <strong class="text-neutral-900">emotionale Tiefe zuzulassen</strong> –
-                        und eine Partnerin traf, die ihn wirklich versteht.
-                    </p>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <svg class="w-8 h-8 text-amber-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <p class="text-neutral-600">
-                        Ein Manager, der in meiner Begleitung den Mut fand,
-                        <strong class="text-neutral-900">endlich ehrlich zu sich selbst zu sein</strong>.
-                    </p>
-                </div>
-            </div>
-
-            <div class="max-w-3xl mx-auto bg-gradient-to-br from-amber-50 to-amber-100 p-10 rounded-lg border-l-4 border-amber-600">
-                <p class="text-xl italic text-neutral-900 mb-4">
-                    „Ich dachte, ich müsste nur die richtigen Worte finden.
-                    Stattdessen fand ich zu mir selbst."
-                </p>
-                <p class="text-neutral-600 font-medium">– M., 42, Unternehmer</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 px-6 fade-in-section">
-        <!-- <div class="absolute inset-0 opacity-10 z-[-999]" style="background-image: url('images/couple.jpg'); background-size: cover; background-position: center;"></div> -->
-        <div class="container max-w-4xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl mb-6">
-                    Ich arbeite nur mit einer kleinen Zahl von Klienten.
-                </h2>
-                <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
-                    Wenn Sie Interesse an einer Zusammenarbeit haben, senden Sie mir bitte eine diskrete Erstanfrage.
-                    Ich melde mich persönlich, um ein unverbindliches Kennenlernen zu vereinbaren.
-                </p>
-            </div>
-
-            <form id="contactForm" class="max-w-2xl mx-auto space-y-6">
-                <div>
-                    <label for="firstName" class="block text-sm font-medium mb-2">Vorname *</label>
-                    <input
-                        type="text"
-                        id="firstName"
-                        name="firstName"
-                        class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
-                        placeholder="Ihr Vorname">
-                    <p class="text-red-600 text-sm mt-1 hidden" id="firstNameError"></p>
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium mb-2">E-Mail *</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
-                        placeholder="ihre@email.de">
-                    <p class="text-red-600 text-sm mt-1 hidden" id="emailError"></p>
-                </div>
-                <div>
-                    <label for="message" class="block text-sm font-medium mb-2">Kurzbeschreibung (optional)</label>
-                    <textarea
-                        rows="4"
-                        id="message"
-                        name="message"
-                        class="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600"
-                        placeholder="Erzählen Sie kurz von Ihrer Situation..."></textarea>
-                    <p class="text-red-600 text-sm mt-1 hidden" id="messageError"></p>
-                </div>
-                <div class="flex items-center gap-3">
-                    <input
-                        type="checkbox"
-                        id="consent"
-                        name="consent">
-                    <label for="consent" class="text-sm cursor-pointer">
-                        Ich stimme zu, dass meine Anfrage vertraulich behandelt wird. *
-                    </label>
-                </div>
-                <p class="text-red-600 text-sm hidden" id="consentError"></p>
-
-                <!-- Success message -->
-                <div id="successMessage" class="hidden bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
-                    <p class="font-medium">Anfrage erhalten</p>
-                    <p class="text-sm">Ich melde mich in Kürze persönlich bei Ihnen.</p>
-                </div>
-
-                <div class="text-center">
-                    <button
-                        type="submit"
-                        id="submitButton"
-                        class="px-10 py-4 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                        Anfrage senden
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
+            <img src="images/decor/smiley-green.png" alt="" class="mt-4 inline h-16 w-16 sm:h-20 sm:w-20 lg:h-[5.375rem] lg:w-[5.375rem]" aria-hidden="true">
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="border-t border-neutral-200 py-12 px-6 bg-neutral-900">
-        <div class="container max-w-4xl mx-auto text-center">
-            <p class="text-neutral-200 text-2xl mb-6">
-                Mit Klasse. Mit Herz. Mit Klarheit.
-            </p>
-            <div class="space-y-2 text-sm text-neutral-600">
-                <p>Kontakt: <a href="mailto:kontakt@example.com" class="hover:text-amber-600 transition-colors">kontakt@example.com</a></p>
-                <div class="flex gap-6 justify-center mt-4">
-                    <a href="#datenschutz" class="hover:text-amber-600 transition-colors">Datenschutz</a>
-                    <a href="imprint.html" class="hover:text-amber-600 transition-colors">Impressum</a>
+    <footer id="kontakt" class="bg-black text-white">
+        <div class="mx-auto max-w-[104.5rem] px-4 py-12 sm:px-16 md:px-9 lg:py-16">
+            <p class="label-section mb-6 text-white">Kontakt</p>
+            <div class="grid gap-10 lg:grid-cols-2">
+                <div>
+                    <p class="text-[1.0625rem] leading-relaxed text-white">Ich freue mich auf deine Nachricht:</p>
+                    <a href="mailto:sofiacavelius@neuemailerstellen.de" class="mt-1 block text-[1.0625rem] text-white underline underline-offset-4 transition-opacity hover:opacity-70">sofiacavelius@neuemailerstellen.de</a>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <a href="#" class="rounded-full border border-white px-4 py-2 text-[0.9375rem] text-white transition-colors hover:bg-white/10">Instagram</a>
+                        <a href="#" class="rounded-full border border-white px-4 py-2 text-[0.9375rem] text-white transition-colors hover:bg-white/10">Linkedin</a>
+                        <a href="#" class="rounded-full border border-white px-4 py-2 text-[0.9375rem] text-white transition-colors hover:bg-white/10">Behance</a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-end gap-2 text-[0.9375rem] text-neutral-400 lg:items-end lg:text-right">
+                    <p>Design und Entwicklung: Sofia Cavelius &amp; Philipp Riedel</p>
+                    <p>&copy; 2025 all rights reserved</p>
+                    <a href="imprint.html" class="text-white transition-opacity hover:opacity-70">Impressum</a>
                 </div>
             </div>
         </div>
