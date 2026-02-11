@@ -49,6 +49,9 @@ body {
     .headline-hero {
         font-size: calc((100vw - 32px) / 9.85);
     }
+    .headline-about {
+        font-size: calc((100vw - 32px) / 11.5);
+    }
 }
 .heading-serif {
     font-family: ivypresto-display, serif;
@@ -58,9 +61,15 @@ body {
 
 .label-section {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 0.875rem;
+    font-size: 1.365rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+@media (min-width: 426px) {
+    .label-section {
+        font-size: 0.875rem;
+    }
 }
 
 /* Fade-in animations */
@@ -96,8 +105,16 @@ body {
 .fade-in-stagger:nth-child(8) { transition-delay: 1.15s; }
 
 /* Accordion */
+.accordion-item button {
+    cursor: pointer;
+}
+
 .accordion-arrow {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.accordion-item button:hover .accordion-arrow {
+    opacity: 0.6;
 }
 
 .accordion-item[data-open="true"] .accordion-arrow {
@@ -111,8 +128,9 @@ body {
 }
 
 .accordion-item[data-open="true"] .accordion-content {
-    max-height: 200px;
+    max-height: 600px;
 }
+
 
 /* Scrollbar hiding for horizontal scroll */
 .scrollbar-hide::-webkit-scrollbar {
@@ -122,6 +140,21 @@ body {
 .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+/* Testimonial marquee */
+@keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(var(--scroll-distance, -50%)); }
+}
+
+.marquee-track {
+    animation: marquee-scroll var(--marquee-duration, 40s) linear infinite;
+    will-change: transform;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
 }
 
 /* Floating nav active indicator */
