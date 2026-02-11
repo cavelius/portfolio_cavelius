@@ -75,6 +75,23 @@ function updateActiveNav() {
 window.addEventListener("scroll", updateActiveNav);
 window.addEventListener("load", updateActiveNav);
 
+// Infinite marquee for testimonials
+const marqueeTrack = document.querySelector(".marquee-track");
+if (marqueeTrack) {
+    const items = [...marqueeTrack.children];
+    items.forEach((item) => {
+        const clone = item.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        marqueeTrack.appendChild(clone);
+    });
+    requestAnimationFrame(() => {
+        const firstClone = marqueeTrack.children[items.length];
+        if (firstClone) {
+            marqueeTrack.style.setProperty("--scroll-distance", `-${firstClone.offsetLeft}px`);
+        }
+    });
+}
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (e) => {
