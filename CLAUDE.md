@@ -25,6 +25,11 @@ There is no test suite or linter configured.
 - **Fonts**: Cormorant Garamond (headings) and Work Sans (body) via Google Fonts
 - **Layout**: Mobile-first responsive design using Tailwind breakpoints (sm/md/lg/xl), max-width container of 1200px, CSS Grid for portfolio card layouts
 
+## Important Rules
+
+- **NEVER use static pixel values (px) for sizing** — always use dynamic `rem` values so everything scales proportionally with the fluid root font-size (`clamp(10px, 8.3px + 0.46vw, 16px)`). This applies to border-radius, padding, margins, font-sizes, widths, heights, etc.
+- **Always recompile CSS** after changing HTML classes: `npx @tailwindcss/cli -i ./css/style.css -o ./css/output.css`
+
 ## Figma Integration
 
 Figma MCP is configured for design-to-code workflows:
