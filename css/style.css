@@ -142,6 +142,13 @@ body {
     scrollbar-width: none;
 }
 
+/* Fallback for browsers without container query unit support */
+@supports not (width: 1cqi) {
+    .marquee-track article {
+        width: 30rem;
+    }
+}
+
 /* Testimonial marquee */
 @keyframes marquee-scroll {
     from { transform: translateX(0); }
