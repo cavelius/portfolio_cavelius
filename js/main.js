@@ -25,6 +25,26 @@ window.addEventListener("load", () => {
     });
 });
 
+// Über mich text expand/collapse (mobile only)
+const ueberMichBtn = document.getElementById("ueber-mich-expand");
+const ueberMichText = document.getElementById("ueber-mich-text");
+if (ueberMichBtn && ueberMichText) {
+    ueberMichBtn.addEventListener("click", () => {
+        const isExpanded = ueberMichText.classList.contains("is-expanded");
+        if (isExpanded) {
+            ueberMichText.classList.remove("is-expanded");
+            ueberMichBtn.querySelector("span").textContent = "Weiterlesen";
+            ueberMichBtn.querySelector("svg").style.transform = "";
+            ueberMichBtn.setAttribute("aria-expanded", "false");
+        } else {
+            ueberMichText.classList.add("is-expanded");
+            ueberMichBtn.querySelector("span").textContent = "Weniger anzeigen";
+            ueberMichBtn.querySelector("svg").style.transform = "rotate(180deg)";
+            ueberMichBtn.setAttribute("aria-expanded", "true");
+        }
+    });
+}
+
 // Accordion toggle for Werdegang section
 document.querySelectorAll(".accordion-item button").forEach((button) => {
     button.addEventListener("click", () => {

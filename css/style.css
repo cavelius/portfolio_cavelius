@@ -45,7 +45,7 @@ body {
 }
 
 /* Mobile: headline fills full width */
-@media (max-width: 425px) {
+@media (max-width: 479px) {
     .headline-hero {
         font-size: calc((100vw - 32px) / 9.4);
     }
@@ -66,7 +66,7 @@ body {
     letter-spacing: 0.05em;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 480px) {
     .label-section {
         font-size: 0.875rem;
     }
@@ -162,6 +162,33 @@ body {
 
 .marquee-track:hover {
     animation-play-state: paused;
+}
+
+/* Über mich text collapse (mobile only) */
+@media (max-width: 479px) {
+    .ueber-mich-text-collapse {
+        max-height: 22rem;
+        overflow: hidden;
+        position: relative;
+        transition: max-height 0.4s ease;
+    }
+    .ueber-mich-text-collapse::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 6rem;
+        background: linear-gradient(to bottom, transparent, black);
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+    .ueber-mich-text-collapse.is-expanded {
+        max-height: 200rem;
+    }
+    .ueber-mich-text-collapse.is-expanded::after {
+        opacity: 0;
+    }
 }
 
 /* Floating nav active indicator */
