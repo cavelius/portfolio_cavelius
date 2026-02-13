@@ -30,6 +30,7 @@ body {
     font-size: 0.9375rem;
     background-color: var(--color-page-bg);
     color: var(--color-dark);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .heading-display {
@@ -167,7 +168,7 @@ body {
 /* Über mich text collapse (mobile only) */
 @media (max-width: 479px) {
     .ueber-mich-text-collapse {
-        max-height: 22rem;
+        max-height: 224px; /* 8×28 */
         overflow: hidden;
         position: relative;
         transition: max-height 0.4s ease;
@@ -178,7 +179,7 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
-        height: 6rem;
+        height: 80px; /* 8×10 */
         background: linear-gradient(to bottom, transparent, black);
         pointer-events: none;
         transition: opacity 0.3s ease;

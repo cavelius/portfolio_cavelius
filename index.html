@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Sofia Cavelius Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://use.typekit.net" crossorigin>
@@ -21,14 +21,14 @@
 <body class="antialiased fonts-loading">
 
     <!-- Header -->
-    <header class="mx-auto flex max-w-[104.5rem] items-center justify-between px-[16px] pb-24 sm:pb-6 pt-10 sm:px-16 md:px-9">
+    <header class="mx-auto flex max-w-[104.5rem] items-center justify-between px-[16px] pb-[64px] sm:pb-6 pt-[24px] min-[480px]:pt-10 sm:px-16 md:px-9">
         <a href="#top" class="text-[1.46rem] min-[480px]:text-[0.9375rem] text-[var(--color-dark)]">Sofia Cavelius</a>
         <span class="text-[1.46rem] min-[480px]:text-[0.9375rem] text-[var(--color-gray-01)]">Portfolio</span>
     </header>
 
     <!-- Hero -->
-    <section id="top" class="mx-auto max-w-[104.5rem] px-[16px] pb-6 pt-[10rem] sm:px-16 md:px-9 lg:pb-10">
-        <div class="grid gap-6 min-[480px]:grid-cols-3 min-[480px]:gap-x-8 min-[480px]:items-center">
+    <section id="top" class="mx-auto max-w-[104.5rem] px-[16px] pb-[16px] min-[480px]:pb-6 pt-[104px] min-[480px]:pt-[10rem] sm:px-16 md:px-9 lg:pb-10">
+        <div class="grid gap-[16px] min-[480px]:gap-6 min-[480px]:grid-cols-3 min-[480px]:gap-x-8 min-[480px]:items-center">
             <div class="order-2 text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-[var(--color-gray-01)] min-[480px]:order-1 min-[480px]:pr-[clamp(0.25rem,6vw-0.5rem,5rem)]">
                 <p><span class="text-[#212121]">Mit über fünf Jahren Design-Erfahrung,</span><br class="hidden lg:block"> <span class="text-[#757575]">helfe ich dir bei Print Design, Digitalem Design, Illustration, Animation, Bildbearbeitung &amp; Konzeption.</span></p>
             </div>
@@ -51,7 +51,7 @@
     </section>
 
     <!-- Floating Navigation -->
-    <nav class="fixed bottom-14 left-1/2 z-50 -translate-x-1/2 flex h-[48px] min-[480px]:h-auto w-[calc(100%-32px)] justify-center items-center gap-6 rounded-full border border-white/20 bg-[rgba(232,230,230,0.5)] px-6 py-2.5 text-[1.46rem] min-[480px]:text-[0.9375rem] shadow-sm backdrop-blur-sm sm:w-fit sm:gap-8 sm:px-8" id="floating-nav">
+    <nav class="fixed bottom-[calc(32px+env(safe-area-inset-bottom))] min-[480px]:bottom-[calc(3.5rem+env(safe-area-inset-bottom))] left-1/2 z-50 -translate-x-1/2 flex h-[48px] min-[480px]:h-auto w-[calc(100%-32px)] justify-center items-center gap-[16px] min-[480px]:gap-6 rounded-full border border-white/20 bg-[rgba(232,230,230,0.5)] px-[16px] min-[480px]:px-6 py-[8px] min-[480px]:py-2.5 text-[1.46rem] min-[480px]:text-[0.9375rem] shadow-sm backdrop-blur-sm sm:w-fit sm:gap-8 sm:px-8" id="floating-nav">
         <a href="#projekte" class="flex items-center gap-2 text-[var(--color-dark)] transition-opacity hover:opacity-60">
             <span class="nav-dot h-2 w-2 rounded-full bg-[#212121] opacity-0 transition-opacity"></span>
             Projekte
@@ -68,13 +68,13 @@
 
     <main>
         <!-- Projekte -->
-        <section id="projekte" class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] py-12 sm:px-16 md:px-9 lg:py-16">
-            <p class="label-section mb-2 text-[var(--color-dark)]">Projekte</p>
-            <p class="mb-8 text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-01)]">Eine Auswahl meiner Arbeiten aus den Bereichen Editorial, Branding und Illustration.</p>
+        <section id="projekte" class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
+            <p class="label-section mb-[8px] min-[480px]:mb-2 text-[var(--color-dark)]">Projekte</p>
+            <p class="mb-[24px] min-[480px]:mb-8 text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-01)]">Eine Auswahl meiner Arbeiten aus den Bereichen Editorial, Branding und Illustration.</p>
 
-            <div class="mt-14 space-y-10 lg:space-y-16">
+            <div class="mt-[40px] min-[480px]:mt-14 space-y-[24px] min-[480px]:space-y-10 lg:space-y-16">
                 <!-- Row 1: wide + narrow -->
-                <div class="grid gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
+                <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid lg:col-span-2">
                         <img src="images/projects/magazin-things-we-write.jpg" alt="Magazin THINGS WE WRITE" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0">
                         <div class="mt-4 sm:mt-0">
@@ -92,7 +92,7 @@
                 </div>
 
                 <!-- Row 2: narrow + wide -->
-                <div class="grid gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
+                <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid">
                         <img src="images/projects/buch-erstes-lebensjahr.jpg" alt="Buch Dein erstes Lebensjahr" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover sm:h-full sm:min-h-0">
                         <div class="mt-4 sm:mt-0">
@@ -110,7 +110,7 @@
                 </div>
 
                 <!-- Row 3: wide + narrow -->
-                <div class="grid gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
+                <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid lg:col-span-2">
                         <img src="images/projects/jahreskalender-carmushka.jpg" alt="Jahreskalender für Creatorin Carmushka" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0">
                         <div class="mt-4 sm:mt-0">
@@ -128,7 +128,7 @@
                 </div>
 
                 <!-- Row 4: narrow + wide -->
-                <div class="grid gap-x-2 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
+                <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid">
                         <img src="images/projects/tischkalender-kollektion.jpg" alt="Tischkalender Kollektion" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover sm:h-full sm:min-h-0">
                         <div class="mt-4 sm:mt-0">
@@ -148,10 +148,10 @@
         </section>
 
         <!-- Über mich (Dark Section) -->
-        <section id="ueber-mich" class="fade-in-section relative overflow-hidden bg-black px-[16px] pt-[2.1875rem] pb-12 text-white sm:px-16 md:px-9 lg:pb-16">
+        <section id="ueber-mich" class="fade-in-section relative overflow-hidden bg-black px-[16px] pt-[24px] min-[480px]:pt-[2.1875rem] pb-[32px] min-[480px]:pb-12 text-white sm:px-16 md:px-9 lg:pb-16">
             <div class="mx-auto max-w-[104.5rem]">
-                <p class="label-section mb-[2rem] min-[480px]:mb-[1rem] text-neutral-400">Über mich</p>
-                <div class="flex flex-col gap-8 min-[480px]:grid min-[480px]:grid-cols-[1fr_2fr] min-[480px]:items-start min-[480px]:gap-x-10 min-[480px]:gap-y-[2rem]">
+                <p class="label-section mb-[24px] min-[480px]:mb-[1rem] text-neutral-400">Über mich</p>
+                <div class="flex flex-col gap-[24px] min-[480px]:gap-8 min-[480px]:grid min-[480px]:grid-cols-[1fr_2fr] min-[480px]:items-start min-[480px]:gap-x-10 min-[480px]:gap-y-[2rem]">
                     <!-- Headline: right column, row 1 -->
                     <div class="max-sm:relative max-sm:z-10 max-sm:order-1 min-[480px]:col-start-2">
                         <h2 class="heading-display headline-about whitespace-nowrap leading-[1.2] text-[3.375rem] min-[480px]:whitespace-normal min-[480px]:ml-[calc(-10.8%-1.62rem)]">
@@ -170,7 +170,7 @@
                     <div class="relative max-sm:order-3 min-[480px]:col-start-2 min-[480px]:row-start-2">
                         <img src="images/decor/blume.svg" alt="" class="absolute max-sm:hidden h-[5.25rem] w-[5.3125rem] right-0 top-[53%]" aria-hidden="true">
                         <div id="ueber-mich-text" class="ueber-mich-text-collapse">
-                            <div class="max-w-[41.5rem] space-y-4 text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-neutral-300">
+                            <div class="max-w-[41.5rem] space-y-[12px] min-[480px]:space-y-4 text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-neutral-300">
                                 <p>Das Erschaffen visueller Welten, in denen die Elemente wie Zahnräder ineinandergreifen, sich gegenseitig stützen und langfristig funktionieren. Wenn ein Design nicht nur schön ist, sondern trägt, skaliert und Orientierung gibt.</p>
                                 <p>Mein Herz schlägt besonders für Typografie. Schriften haben für mich Persönlichkeit – sie können leise oder laut, verspielt oder präzise, zurückhaltend oder selbstbewusst sein. Ich experimentiere gern mit Kombinationen und finde Freude daran, für jedes Projekt die passende Stimme zu finden.</p>
                                 <p>Illustration ist ebenfalls ein wichtiger Teil meiner Arbeit. Ich probiere unterschiedliche Stile aus, um Projekten eine eigene Handschrift zu verleihen – auch in meiner Freizeit.</p>
@@ -178,7 +178,7 @@
                             <a href="https://www.instagram.com/_sofiasart/" target="_blank" rel="noopener noreferrer" class="mt-4 mb-4 inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">
                                 meine Illustrationen
                             </a>
-                            <div class="max-w-[41.5rem] space-y-4 text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-neutral-300">
+                            <div class="max-w-[41.5rem] space-y-[12px] min-[480px]:space-y-4 text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-neutral-300">
                                 <p>Ich mag den Raum zwischen den Dingen. Mein Stil ist minimalistisch, klar und bewusst gesetzt, mit Luft zum Atmen. Mit Struktur und feinen Details entstehen Designs, die ruhig wirken und dennoch Spannung erzeugen.</p>
                                 <p>An meiner Arbeit ist es mir wichtig, nicht nur zu gestalten, sondern auch zu begleiten: Marken zu stärken, Entscheidungen zu erleichtern und Prozesse verständlich zu machen.</p>
                             </div>
@@ -196,7 +196,7 @@
         </section>
 
         <!-- Werdegang (Career Accordion) -->
-        <section class="mx-auto max-w-[104.5rem] px-[16px] py-12 sm:px-16 md:px-9 lg:py-16">
+        <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section grid gap-8 lg:grid-cols-[200px_1fr]">
                 <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)]">Werdegang</p>
                 <div class="divide-y divide-[var(--color-gray-border)]">
@@ -281,51 +281,51 @@
         </section>
 
         <!-- Kompetenzen & Werkzeuge -->
-        <section class="mx-auto max-w-[104.5rem] px-[16px] py-12 sm:px-16 md:px-9 lg:py-16">
+        <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section grid gap-8 xl:grid-cols-[200px_1fr] xl:items-start">
                 <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)]">Kompetenzen &amp; Werkzeuge</p>
-                <div class="space-y-5 xl:-mt-2">
+                <div class="space-y-[16px] min-[480px]:space-y-5 xl:-mt-2">
                     <div class="flex flex-wrap items-center gap-x-[8px] gap-y-[16px] min-[480px]:gap-2">
                         <p class="mr-4 w-full text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)] sm:w-auto">Digital Design</p>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Figma</span>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe XD</span>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Prototyping</span>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">UX/UI</span>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">HTML, CSS, JavaScript</span>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Layout &amp; Interface Design</span>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Wordpress mit Elementor</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Figma</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe XD</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Prototyping</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">UX/UI</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">HTML, CSS, JavaScript</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Layout &amp; Interface Design</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Wordpress mit Elementor</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-x-[8px] gap-y-[16px] min-[480px]:gap-2">
                         <p class="mr-4 w-full text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)] sm:w-auto">Print Design</p>
-                        <span class="rounded-full bg-[var(--color-tag-green)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe InDesign</span>
-                        <span class="rounded-full bg-[var(--color-tag-green)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Layout &amp; Editorial Design</span>
-                        <span class="rounded-full bg-[var(--color-tag-green)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Packaging Design</span>
-                        <span class="rounded-full bg-[var(--color-tag-green)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Reinzeichnung &amp; Druckvorstufe</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe InDesign</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Layout &amp; Editorial Design</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Packaging Design</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Reinzeichnung &amp; Druckvorstufe</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-x-[8px] gap-y-[16px] min-[480px]:gap-2">
                         <p class="mr-4 w-full text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)] sm:w-auto">Illustration, Animation &amp; Bildbearbeitung</p>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe Illustrator</span>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe Photoshop</span>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe After Effects</span>
-                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Procreate</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe Illustrator</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe Photoshop</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe After Effects</span>
+                        <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Procreate</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-x-[8px] gap-y-[16px] min-[480px]:gap-2">
                         <p class="mr-4 w-full text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)] sm:w-auto">Visuelle Systeme &amp; Konzeption</p>
-                        <span class="rounded-full bg-[var(--color-tag-green)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Designsysteme</span>
-                        <span class="rounded-full bg-[var(--color-tag-green)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Typografie</span>
-                        <span class="rounded-full bg-[var(--color-tag-green)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Moodboards</span>
-                        <span class="rounded-full bg-[var(--color-tag-green)] px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Markenentwicklung</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Designsysteme</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Typografie</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Moodboards</span>
+                        <span class="rounded-full bg-[var(--color-tag-green)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Markenentwicklung</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Kundenbewertungen -->
-        <section class="mx-auto max-w-[104.5rem] px-[16px] py-12 sm:px-16 md:px-9 lg:py-16">
+        <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section">
-                <p class="mb-8 text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)]">Das sagen Kunden</p>
+                <p class="mb-[24px] min-[480px]:mb-8 text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)]">Das sagen Kunden</p>
                 <div class="overflow-hidden pb-4" style="container-type: inline-size;">
-                  <div class="marquee-track flex gap-2">
+                  <div class="marquee-track flex gap-[8px] min-[480px]:gap-2">
                     <!-- Karte 1 -->
                     <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:min-w-[18rem] min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
@@ -398,7 +398,7 @@
         </section>
 
         <!-- CTA -->
-        <section class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] sm:px-16 md:px-9 pb-[3.4rem] lg:pb-[4.9rem]">
+        <section class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] sm:px-16 md:px-9 pb-[32px] min-[480px]:pb-[3.4rem] lg:pb-[4.9rem]">
             <h2 class="heading-display text-[4.875rem] leading-[1.2]">
                 Lass uns <span class="heading-serif">zusammen</span> arbeiten <img src="images/decor/smiley.svg" alt="" class="inline-block h-[0.935em] w-[0.935em] align-[-.15em]" aria-hidden="true">
             </h2>
@@ -406,17 +406,17 @@
     </main>
 
     <!-- Footer -->
-    <footer id="kontakt" class="bg-black text-white min-h-[24.64rem] lg:min-h-[29.92rem]">
-        <div class="mx-auto max-w-[104.5rem] px-[16px] pt-[2.1875rem] pb-[4.3875rem] sm:px-16 md:px-9 lg:pb-[5.85rem]">
-            <p class="label-section mb-[8.75rem] text-neutral-400">Kontakt</p>
-            <div class="grid gap-10 min-[480px]:grid-cols-2">
+    <footer id="kontakt" class="bg-black text-white min-h-[256px] min-[480px]:min-h-[24.64rem] lg:min-h-[29.92rem]">
+        <div class="mx-auto max-w-[104.5rem] px-[16px] pt-[24px] min-[480px]:pt-[2.1875rem] pb-[96px] min-[480px]:pb-[4.3875rem] sm:px-16 md:px-9 lg:pb-[5.85rem]">
+            <p class="label-section mb-[88px] min-[480px]:mb-[8.75rem] text-neutral-400">Kontakt</p>
+            <div class="grid gap-[24px] min-[480px]:gap-10 min-[480px]:grid-cols-2">
                 <div>
                     <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-white">Ich freue mich auf deine Nachricht:</p>
                     <a href="mailto:sofiacavelius@neuemailerstellen.de" class="mt-1 block text-[1.56rem] min-[480px]:text-[1rem] text-white underline underline-offset-4 transition-opacity hover:opacity-70">sofiacavelius@neuemailerstellen.de</a>
-                    <div class="mt-32 flex flex-wrap gap-3">
-                        <a href="#" class="rounded-full border border-white px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Instagram</a>
-                        <a href="#" class="rounded-full border border-white px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Linkedin</a>
-                        <a href="#" class="rounded-full border border-white px-[13px] min-[480px]:px-4 py-[1.05rem] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Behance</a>
+                    <div class="mt-[80px] min-[480px]:mt-32 flex flex-wrap gap-[8px] min-[480px]:gap-3">
+                        <a href="#" class="rounded-full border border-white px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Instagram</a>
+                        <a href="#" class="rounded-full border border-white px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Linkedin</a>
+                        <a href="#" class="rounded-full border border-white px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Behance</a>
                     </div>
                 </div>
                 <div class="flex flex-col justify-end gap-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-neutral-400 min-[480px]:items-end min-[480px]:text-right">
