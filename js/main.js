@@ -46,9 +46,11 @@ if (ueberMichBtn && ueberMichText) {
 }
 
 // Accordion toggle for Werdegang section
-document.querySelectorAll(".accordion-item button").forEach((button) => {
-    button.addEventListener("click", () => {
-        const item = button.closest(".accordion-item");
+document.querySelectorAll(".accordion-item").forEach((item) => {
+    const button = item.querySelector("button");
+    const content = item.querySelector(".accordion-content");
+
+    function toggle() {
         const isOpen = item.getAttribute("data-open") === "true";
 
         // Close all other accordion items
@@ -62,7 +64,13 @@ document.querySelectorAll(".accordion-item button").forEach((button) => {
             item.setAttribute("data-open", "true");
             button.setAttribute("aria-expanded", "true");
         }
-    });
+    }
+
+    button.addEventListener("click", toggle);
+    if (content) {
+        content.style.cursor = "pointer";
+        content.addEventListener("click", toggle);
+    }
 });
 
 // Floating nav: highlight active section
@@ -95,19 +103,26 @@ function updateActiveNav() {
 window.addEventListener("scroll", updateActiveNav);
 window.addEventListener("load", updateActiveNav);
 
-// Infinite marquee for testimonials
-const marqueeTrack = document.querySelector(".marquee-track");
-if (marqueeTrack) {
-    const items = [...marqueeTrack.children];
-    items.forEach((item) => {
+
+// Infinite loop scroll for testimonials
+const testimonialScroll = document.getElementById("testimonial-scroll");
+const testimonialTrack = document.getElementById("testimonial-track");
+if (testimonialScroll && testimonialTrack) {
+    const originals = [...testimonialTrack.children];
+    const count = originals.length;
+    // Clone all cards and append
+    originals.forEach((item) => {
         const clone = item.cloneNode(true);
         clone.setAttribute("aria-hidden", "true");
-        marqueeTrack.appendChild(clone);
+        testimonialTrack.appendChild(clone);
     });
-    requestAnimationFrame(() => {
-        const firstClone = marqueeTrack.children[items.length];
-        if (firstClone) {
-            marqueeTrack.style.setProperty("--scroll-distance", `-${firstClone.offsetLeft}px`);
+    // When scrolled past the original set, jump back seamlessly
+    testimonialScroll.addEventListener("scroll", () => {
+        const halfWidth = testimonialTrack.scrollWidth / 2;
+        if (testimonialScroll.scrollLeft >= halfWidth) {
+            testimonialScroll.scrollLeft -= halfWidth;
+        } else if (testimonialScroll.scrollLeft <= 0) {
+            testimonialScroll.scrollLeft += halfWidth;
         }
     });
 }

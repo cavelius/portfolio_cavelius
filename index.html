@@ -20,24 +20,28 @@
 </head>
 <body class="antialiased fonts-loading">
 
+    <div class="min-[480px]:min-h-dvh min-[480px]:flex min-[480px]:flex-col">
     <!-- Header -->
-    <header class="mx-auto flex max-w-[104.5rem] items-center justify-between px-[16px] pb-[64px] sm:pb-6 pt-[24px] min-[480px]:pt-10 sm:px-16 md:px-9">
-        <a href="#top" class="text-[1.46rem] min-[480px]:text-[0.9375rem] text-[var(--color-dark)]">Sofia Cavelius</a>
+    <header class="mx-auto flex max-w-[104.5rem] min-[480px]:w-full min-[480px]:shrink-0 items-center justify-between px-[16px] pb-[64px] sm:pb-6 pt-[24px] min-[480px]:pt-10 sm:px-16 md:px-9">
+        <a href="#top" class="text-[1.46rem] min-[480px]:text-[0.9375rem] text-[var(--color-gray-01)]">Sofia Cavelius</a>
         <span class="text-[1.46rem] min-[480px]:text-[0.9375rem] text-[var(--color-gray-01)]">Portfolio</span>
     </header>
 
     <!-- Hero -->
-    <section id="top" class="mx-auto max-w-[104.5rem] px-[16px] pb-[16px] min-[480px]:pb-6 pt-[104px] min-[480px]:pt-[10rem] sm:px-16 md:px-9 lg:pb-10">
-        <div class="grid gap-[16px] min-[480px]:gap-6 min-[480px]:grid-cols-3 min-[480px]:gap-x-8 min-[480px]:items-center">
+    <section id="top" class="mx-auto max-w-[104.5rem] px-[16px] pb-[16px] min-[480px]:pb-6 pt-[104px] min-[480px]:pt-0 min-[480px]:flex-1 min-[480px]:flex min-[480px]:items-center sm:px-16 md:px-9 lg:pb-10">
+        <div class="grid gap-[16px] min-[480px]:gap-6 min-[480px]:grid-cols-3 min-[480px]:gap-x-8 min-[480px]:items-center min-[480px]:w-full">
             <div class="order-2 text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-[var(--color-gray-01)] min-[480px]:order-1 min-[480px]:pr-[clamp(0.25rem,6vw-0.5rem,5rem)]">
                 <p><span class="text-[#212121]">Mit über fünf Jahren Design-Erfahrung,</span><br class="hidden lg:block"> <span class="text-[#757575]">helfe ich dir bei Print Design, Digitalem Design, Illustration, Animation, Bildbearbeitung &amp; Konzeption.</span></p>
             </div>
             <div class="relative order-1 min-[480px]:order-2 min-[480px]:col-span-2">
                 <!-- Mobile headline (≤425px) -->
-                <h1 class="heading-display headline-hero whitespace-nowrap min-[480px]:hidden">
-                    Hey, <img src="images/decor/smiley.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true"> ich bin Sofia <img src="images/decor/profilbild-01.png" alt="" class="inline-block relative top-[0.297em] -z-10 ml-[-1.4em] h-[2.97em] w-auto rounded-[0.1875rem] align-baseline" aria-hidden="true"><br>
-                    <span class="heading-serif">Senior Kommunikations-</span><br>
-                    designerin <img src="images/decor/blume.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true">
+                <h1 class="heading-display headline-hero relative whitespace-nowrap min-[480px]:hidden">
+                    Hey, <img src="images/decor/smiley.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true"><br>
+                    <span class="heading-serif">ich bin Sofia,</span><br>
+                    <img src="images/decor/blume.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true"> Senior<br>
+                    <img src="images/decor/profilbild-01.png" alt="" class="absolute right-0 top-[-0.51em] -z-10 h-[3.92em] w-auto rounded-[0.1875rem]" aria-hidden="true">
+                    Kommunikations-<br>
+                    designerin
                 </h1>
                 <!-- Desktop headline (≥426px) -->
                 <h1 class="heading-display headline-hero whitespace-nowrap hidden min-[480px]:block">
@@ -49,6 +53,7 @@
             </div>
         </div>
     </section>
+    </div>
 
     <!-- Floating Navigation -->
     <nav class="fixed bottom-[calc(32px+env(safe-area-inset-bottom))] min-[480px]:bottom-[calc(3.5rem+env(safe-area-inset-bottom))] left-1/2 z-50 -translate-x-1/2 flex h-[48px] min-[480px]:h-auto w-[calc(100%-32px)] justify-center items-center gap-[16px] min-[480px]:gap-6 rounded-full border border-white/20 bg-[rgba(232,230,230,0.5)] px-[16px] min-[480px]:px-6 py-[8px] min-[480px]:py-2.5 text-[1.46rem] min-[480px]:text-[0.9375rem] shadow-sm backdrop-blur-sm sm:w-fit sm:gap-8 sm:px-8" id="floating-nav">
@@ -68,22 +73,22 @@
 
     <main>
         <!-- Projekte -->
-        <section id="projekte" class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
+        <section id="projekte" class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] pt-[32px] pb-[32px] min-[480px]:pt-4 min-[480px]:pb-12 sm:px-16 md:px-9 lg:pt-6 lg:pb-16">
             <p class="label-section mb-[8px] min-[480px]:mb-2 text-[var(--color-dark)]">Projekte</p>
-            <p class="mb-[24px] min-[480px]:mb-8 text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-01)]">Eine Auswahl meiner Arbeiten aus den Bereichen Editorial, Branding und Illustration.</p>
+            <p class="headline-02 mb-[24px] min-[480px]:mb-8 text-[1.56rem] min-[480px]:text-[1.625rem] text-[var(--color-gray-01)]">Eine Auswahl meiner Arbeiten aus den Bereichen Editorial, Branding und Illustration.</p>
 
             <div class="mt-[40px] min-[480px]:mt-14 space-y-[24px] min-[480px]:space-y-10 lg:space-y-16">
                 <!-- Row 1: wide + narrow -->
                 <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid lg:col-span-2">
-                        <img src="images/projects/magazin-things-we-write.jpg" alt="Magazin THINGS WE WRITE" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0">
+                        <div class="project-media overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]"><img src="images/projects/magazin-things-we-write.jpg" alt="Magazin THINGS WE WRITE" class="w-full object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0"></div>
                         <div class="mt-4 sm:mt-0">
                             <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-[var(--color-dark)]">Magazin „THINGS WE WRITE"</h3>
                             <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-02)]">Konzeption und Gestaltung eines Lifestyle-Magazins.</p>
                         </div>
                     </article>
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid">
-                        <img src="images/projects/tshirt-print.jpg" alt="T-Shirt Print" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover sm:h-full sm:min-h-0">
+                        <div class="project-media overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]"><img src="images/projects/tshirt-print.jpg" alt="T-Shirt Print" class="w-full object-cover sm:h-full sm:min-h-0"></div>
                         <div class="mt-4 sm:mt-0">
                             <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-[var(--color-dark)]">T-Shirt Print</h3>
                             <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-02)]">Entwicklung eines markengerechten Illustrationsstils.</p>
@@ -94,14 +99,14 @@
                 <!-- Row 2: narrow + wide -->
                 <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid">
-                        <img src="images/projects/buch-erstes-lebensjahr.jpg" alt="Buch Dein erstes Lebensjahr" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover sm:h-full sm:min-h-0">
+                        <div class="project-media overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]"><img src="images/projects/buch-erstes-lebensjahr.jpg" alt="Buch Dein erstes Lebensjahr" class="w-full object-cover sm:h-full sm:min-h-0"></div>
                         <div class="mt-4 sm:mt-0">
                             <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-[var(--color-dark)]">Buch „Dein erstes Lebensjahr"</h3>
                             <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-02)]">Gestaltung und Illustration eines Ausfüllbuchs.</p>
                         </div>
                     </article>
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid lg:col-span-2">
-                        <video src="images/projects/adventskalender.mp4" autoplay loop muted playsinline class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0"></video>
+                        <div class="project-media overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]"><video src="images/projects/adventskalender.mp4" autoplay loop muted playsinline class="w-full object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0"></video></div>
                         <div class="mt-4 sm:mt-0">
                             <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-[var(--color-dark)]">Adventskalender für Creatorin Carmushka</h3>
                             <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-02)]">Entwicklung eines Packaging Designs, sowie Gestaltung ausgewählter Produktinhalte.</p>
@@ -112,14 +117,14 @@
                 <!-- Row 3: wide + narrow -->
                 <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid lg:col-span-2">
-                        <img src="images/projects/jahreskalender-carmushka.jpg" alt="Jahreskalender für Creatorin Carmushka" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0">
+                        <div class="project-media overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]"><img src="images/projects/jahreskalender-carmushka.jpg" alt="Jahreskalender für Creatorin Carmushka" class="w-full object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0"></div>
                         <div class="mt-4 sm:mt-0">
                             <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-[var(--color-dark)]">Jahreskalender für Creatorin Carmushka</h3>
                             <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-02)]">Gestaltung eines Kalenders mit Künstlerkooperation.</p>
                         </div>
                     </article>
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid">
-                        <img src="images/projects/schlafentzug-ausstellung.jpg" alt="Ausstellungsobjekt zum Thema Schlafentzug" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover sm:h-full sm:min-h-0">
+                        <div class="project-media overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]"><img src="images/projects/schlafentzug-ausstellung.jpg" alt="Ausstellungsobjekt zum Thema Schlafentzug" class="w-full object-cover sm:h-full sm:min-h-0"></div>
                         <div class="mt-4 sm:mt-0">
                             <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-[var(--color-dark)]">Ausstellungsobjekt zum Thema Schlafentzug</h3>
                             <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-02)]">Konzeption und Gestaltung von Animationen und dazugehöriger Wandgestaltung.</p>
@@ -130,14 +135,14 @@
                 <!-- Row 4: narrow + wide -->
                 <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid">
-                        <img src="images/projects/tischkalender-kollektion.jpg" alt="Tischkalender Kollektion" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover sm:h-full sm:min-h-0">
+                        <div class="project-media overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]"><img src="images/projects/tischkalender-kollektion.jpg" alt="Tischkalender Kollektion" class="w-full object-cover sm:h-full sm:min-h-0"></div>
                         <div class="mt-4 sm:mt-0">
                             <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-[var(--color-dark)]">Tischkalender Kollektion</h3>
                             <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-02)]">Entwicklung einer markengerechten Papeterie Kollektion.</p>
                         </div>
                     </article>
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid lg:col-span-2">
-                        <img src="images/projects/kaffee-packaging.jpg" alt="Kaffee-Packaging" class="w-full rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0">
+                        <div class="project-media overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]"><img src="images/projects/kaffee-packaging.jpg" alt="Kaffee-Packaging" class="w-full object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0"></div>
                         <div class="mt-4 sm:mt-0">
                             <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-[var(--color-dark)]">Kaffee-Packaging</h3>
                             <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-gray-02)]">Entwicklung eigenständiger Designlösungen für eine Kaffee-Produktlinie.</p>
@@ -198,7 +203,7 @@
         <!-- Werdegang (Career Accordion) -->
         <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section grid gap-8 lg:grid-cols-[200px_1fr]">
-                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)]">Werdegang</p>
+                <p class="fliesstext-medium text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)]">Werdegang</p>
                 <div class="divide-y divide-[var(--color-gray-border)]">
                     <div class="accordion-item" data-open="false">
                         <button class="flex w-full items-center justify-between py-4 lg:pt-0 text-left" aria-expanded="false">
@@ -282,9 +287,9 @@
 
         <!-- Kompetenzen & Werkzeuge -->
         <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
-            <div class="fade-in-section grid gap-8 xl:grid-cols-[200px_1fr] xl:items-start">
-                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)]">Kompetenzen &amp; Werkzeuge</p>
-                <div class="space-y-[16px] min-[480px]:space-y-5 xl:-mt-2">
+            <div class="fade-in-section grid gap-8 xl:grid-cols-[200px_1fr] xl:items-baseline">
+                <p class="fliesstext-medium text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)]">Kompetenzen &amp; Werkzeuge</p>
+                <div class="space-y-[16px] min-[480px]:space-y-5">
                     <div class="flex flex-wrap items-center gap-x-[8px] gap-y-[16px] min-[480px]:gap-2">
                         <p class="mr-4 w-full text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)] sm:w-auto">Digital Design</p>
                         <span class="rounded-full bg-[var(--color-tag-purple)] px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem]">Figma</span>
@@ -323,11 +328,11 @@
         <!-- Kundenbewertungen -->
         <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section">
-                <p class="mb-[24px] min-[480px]:mb-8 text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)]">Das sagen Kunden</p>
-                <div class="overflow-hidden pb-4" style="container-type: inline-size;">
-                  <div class="marquee-track flex gap-[8px] min-[480px]:gap-2">
+                <p class="fliesstext-medium mb-[24px] min-[480px]:mb-8 text-[1.56rem] min-[480px]:text-[1rem] text-[var(--color-dark)]">Das sagen Kunden</p>
+                <div id="testimonial-scroll" class="overflow-x-auto scrollbar-hide pb-4" style="container-type: inline-size;">
+                  <div id="testimonial-track" class="flex gap-[8px] min-[480px]:gap-2">
                     <!-- Karte 1 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:min-w-[18rem] min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
@@ -338,7 +343,7 @@
                         <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-[var(--color-dark)]">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
                     </article>
                     <!-- Karte 2 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:min-w-[18rem] min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
@@ -349,7 +354,7 @@
                         <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-[var(--color-dark)]">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
                     </article>
                     <!-- Karte 3 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:min-w-[18rem] min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
@@ -360,7 +365,7 @@
                         <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-[var(--color-dark)]">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla.</p>
                     </article>
                     <!-- Karte 4 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:min-w-[18rem] min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
@@ -371,7 +376,7 @@
                         <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-[var(--color-dark)]">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur.</p>
                     </article>
                     <!-- Karte 5 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:min-w-[18rem] min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
@@ -382,7 +387,7 @@
                         <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-relaxed text-[var(--color-dark)]">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
                     </article>
                     <!-- Karte 6 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:min-w-[18rem] min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
@@ -419,10 +424,9 @@
                         <a href="#" class="rounded-full border border-white px-[12px] min-[480px]:px-4 py-[12px] min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Behance</a>
                     </div>
                 </div>
-                <div class="flex flex-col justify-end gap-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-neutral-400 min-[480px]:items-end min-[480px]:text-right">
-                    <p>Design und Entwicklung: Sofia Cavelius &amp; Philipp Riedel</p>
-                    <p>&copy; 2025 all rights reserved</p>
-                    <a href="imprint.html" class="text-white transition-opacity hover:opacity-70">Impressum</a>
+                <div class="flex flex-col justify-end gap-0.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-neutral-400 min-[480px]:items-end min-[480px]:text-right">
+                    <p>Design und Entwicklung: Sofia Cavelius<br>&copy; 2025 all rights reserved</p>
+                    <a href="imprint.html" class="mt-3 text-white transition-opacity hover:opacity-70">Impressum</a>
                 </div>
             </div>
         </div>
