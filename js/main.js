@@ -127,7 +127,7 @@ if (testimonialScroll && testimonialTrack) {
     });
 }
 
-// Autoplay videos (iOS fallback — play when visible)
+// Autoplay videos: hide until playing (avoids iOS play button overlay)
 const videoObserver = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
@@ -142,9 +142,20 @@ const videoObserver = new IntersectionObserver(
     { threshold: 0.25 }
 );
 document.querySelectorAll("video[autoplay]").forEach((video) => {
+    video.addEventListener("playing", () => {
+        video.classList.add("is-playing");
+    });
     video.play().catch(() => {});
     videoObserver.observe(video);
 });
+// Also try playing on first user interaction (iOS sometimes needs this)
+function playAllVideos() {
+    document.querySelectorAll("video[autoplay]").forEach((v) => {
+        v.play().catch(() => {});
+    });
+}
+document.addEventListener("touchstart", playAllVideos, { once: true });
+document.addEventListener("scroll", playAllVideos, { once: true });
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((link) => {

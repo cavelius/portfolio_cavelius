@@ -87,13 +87,13 @@ body {
     }
 }
 
-/* Hide native video play button on iOS/Safari */
-video::-webkit-media-controls-panel,
-video::-webkit-media-controls-play-button,
-video::-webkit-media-controls-start-playback-button,
-video::-webkit-media-controls {
-    display: none !important;
-    -webkit-appearance: none;
+/* Hide video until actually playing (avoids iOS play button) */
+video[autoplay] {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+video[autoplay].is-playing {
+    opacity: 1;
 }
 
 /* Project image hover zoom (lg+) */
