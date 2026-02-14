@@ -631,8 +631,8 @@
   .pb-\[96px\] {
     padding-bottom: 96px;
   }
-  .pb-\[calc\(112px\+env\(safe-area-inset-bottom\)\)\] {
-    padding-bottom: calc(112px + env(safe-area-inset-bottom));
+  .pb-\[calc\(5vh\+112px\+env\(safe-area-inset-bottom\)\)\] {
+    padding-bottom: calc(5vh + 112px + env(safe-area-inset-bottom));
   }
   .text-center {
     text-align: center;
