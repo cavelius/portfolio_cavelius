@@ -441,6 +441,9 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -628,8 +631,8 @@
   .pb-\[96px\] {
     padding-bottom: 96px;
   }
-  .pb-\[calc\(96px\+env\(safe-area-inset-bottom\)\)\] {
-    padding-bottom: calc(96px + env(safe-area-inset-bottom));
+  .pb-\[calc\(112px\+env\(safe-area-inset-bottom\)\)\] {
+    padding-bottom: calc(112px + env(safe-area-inset-bottom));
   }
   .text-center {
     text-align: center;
