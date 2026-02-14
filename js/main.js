@@ -127,6 +127,11 @@ if (testimonialScroll && testimonialTrack) {
     });
 }
 
+// Autoplay videos (iOS fallback)
+document.querySelectorAll("video[autoplay]").forEach((video) => {
+    video.play().catch(() => {});
+});
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (e) => {
