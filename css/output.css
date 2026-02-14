@@ -1410,6 +1410,10 @@ body {
     font-size: 0.875rem;
   }
 }
+video::-webkit-media-controls-panel, video::-webkit-media-controls-play-button, video::-webkit-media-controls-start-playback-button, video::-webkit-media-controls {
+  display: none !important;
+  -webkit-appearance: none;
+}
 @media (min-width: 1024px) {
   .project-media img, .project-media video {
     transition: transform 0.4s ease;

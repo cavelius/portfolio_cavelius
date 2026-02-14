@@ -127,9 +127,23 @@ if (testimonialScroll && testimonialTrack) {
     });
 }
 
-// Autoplay videos (iOS fallback)
+// Autoplay videos (iOS fallback — play when visible)
+const videoObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+                video.play().catch(() => {});
+            } else {
+                video.pause();
+            }
+        });
+    },
+    { threshold: 0.25 }
+);
 document.querySelectorAll("video[autoplay]").forEach((video) => {
     video.play().catch(() => {});
+    videoObserver.observe(video);
 });
 
 // Smooth scroll for anchor links

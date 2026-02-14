@@ -60,16 +60,18 @@ body {
     font-style: italic;
 }
 
-.headline-02 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.625rem;
-}
+@layer components {
+    .headline-02 {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.625rem;
+    }
 
-.fliesstext-medium {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
+    .fliesstext-medium {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+    }
 }
 
 .label-section {
@@ -83,6 +85,15 @@ body {
     .label-section {
         font-size: 0.875rem;
     }
+}
+
+/* Hide native video play button on iOS/Safari */
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-start-playback-button,
+video::-webkit-media-controls {
+    display: none !important;
+    -webkit-appearance: none;
 }
 
 /* Project image hover zoom (lg+) */
