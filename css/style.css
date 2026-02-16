@@ -1,7 +1,8 @@
 @import "tailwindcss";
+@source "../projects/**/*.html";
 
-/* Color tokens */
-:root {
+/* Design tokens (registered as Tailwind theme values) */
+@theme {
     --color-page-bg: #f5f5f5;
     --color-dark: #212121;
     --color-gray-01: #757575;
@@ -13,80 +14,6 @@
     --color-lime-accent: #d1ff47;
 }
 
-/* Fluid root font-size: scales from 10px (375px viewport) to 16px (1672px viewport) */
-html {
-    font-size: clamp(10px, 8.3px + 0.46vw, 16px);
-}
-
-/* Prevent font swap layout shift */
-.fonts-loading {
-    visibility: hidden;
-}
-
-/* Typography */
-body {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 0.9375rem;
-    background-color: var(--color-page-bg);
-    color: var(--color-dark);
-    padding-bottom: env(safe-area-inset-bottom);
-}
-
-.heading-display {
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-/* Hero headline: scales more aggressively so nowrap text always fits */
-.headline-hero {
-    font-size: clamp(20px, 4vw, 60px);
-    line-height: 1.1;
-}
-
-/* Mobile: headline fills full width */
-@media (max-width: 479px) {
-    .headline-hero {
-        font-size: calc((100vw - 32px) / 7.13);
-    }
-    .headline-about {
-        font-size: calc((100vw - 32px) / 11.5);
-    }
-}
-.heading-serif {
-    font-family: ivypresto-display, serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-@layer components {
-    .headline-02 {
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 400;
-        font-size: 1.625rem;
-    }
-
-    .fliesstext-medium {
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-    }
-}
-
-.label-section {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.365rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-@media (min-width: 480px) {
-    .label-section {
-        font-size: 0.875rem;
-    }
-}
-
 /* Hide video until actually playing (avoids iOS play button) */
 video[autoplay] {
     opacity: 0;
@@ -96,19 +23,7 @@ video[autoplay].is-playing {
     opacity: 1;
 }
 
-/* Project image hover zoom (lg+) */
-@media (min-width: 1024px) {
-    .project-media img,
-    .project-media video {
-        transition: transform 0.4s ease;
-    }
-    .project-media:hover img,
-    .project-media:hover video {
-        transform: scale(1.03);
-    }
-}
-
-/* Fade-in animations */
+/* Fade-in animations (JS-driven state) */
 .fade-in-section {
     opacity: 0;
     transform: translateY(30px);
@@ -140,35 +55,7 @@ video[autoplay].is-playing {
 .fade-in-stagger:nth-child(7) { transition-delay: 1.0s; }
 .fade-in-stagger:nth-child(8) { transition-delay: 1.15s; }
 
-/* Accordion */
-.accordion-item button {
-    cursor: pointer;
-}
-
-.accordion-arrow {
-    transition: transform 0.3s ease, opacity 0.2s ease;
-}
-
-.accordion-item button:hover .accordion-arrow {
-    opacity: 0.6;
-}
-
-.accordion-item[data-open="true"] .accordion-arrow {
-    transform: rotate(180deg);
-}
-
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease;
-}
-
-.accordion-item[data-open="true"] .accordion-content {
-    max-height: 600px;
-}
-
-
-/* Scrollbar hiding for horizontal scroll */
+/* Scrollbar hiding (cross-browser, requires vendor pseudo-elements) */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
@@ -178,14 +65,14 @@ video[autoplay].is-playing {
     scrollbar-width: none;
 }
 
-/* Fallback for browsers without container query unit support */
+/* Container query unit fallback */
 @supports not (width: 1cqi) {
     .marquee-track article {
         width: 30rem;
     }
 }
 
-/* Testimonial marquee */
+/* Testimonial marquee (keyframes + CSS variable duration) */
 @keyframes marquee-scroll {
     from { transform: translateX(0); }
     to { transform: translateX(var(--scroll-distance, -50%)); }
@@ -200,10 +87,10 @@ video[autoplay].is-playing {
     animation-play-state: paused;
 }
 
-/* Über mich text collapse (mobile only) */
+/* Uber mich text collapse (mobile only, pseudo-element gradient) */
 @media (max-width: 479px) {
     .ueber-mich-text-collapse {
-        max-height: 224px; /* 8×28 */
+        max-height: 224px;
         overflow: hidden;
         position: relative;
         transition: max-height 0.4s ease;
@@ -214,7 +101,7 @@ video[autoplay].is-playing {
         bottom: 0;
         left: 0;
         right: 0;
-        height: 80px; /* 8×10 */
+        height: 80px;
         background: linear-gradient(to bottom, transparent, black);
         pointer-events: none;
         transition: opacity 0.3s ease;
@@ -227,7 +114,58 @@ video[autoplay].is-playing {
     }
 }
 
-/* Floating nav active indicator */
+/* Floating nav active indicator (JS-driven state) */
 .nav-dot.active {
     opacity: 1;
+}
+
+/* ── Project overlay ── */
+
+/* Scroll lock when overlay is open (iOS-safe, JS-driven) */
+body.overlay-open {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: calc(var(--scroll-y, 0) * -1);
+    overflow: hidden;
+}
+
+.project-overlay {
+    position: fixed;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: var(--color-page-bg);
+    border-radius: 0.75rem 0.75rem 0 0;
+    overflow: hidden;
+    box-shadow: 0 -0.5rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.32, 0.72, 0, 1);
+    visibility: hidden;
+}
+
+.project-overlay.is-open {
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Hide floating nav when overlay is open */
+body.overlay-open #floating-nav {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Project detail section fade-in (JS-driven state) */
+.project-detail-section {
+    opacity: 0;
+    transform: translateY(1.875rem);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.project-detail-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
