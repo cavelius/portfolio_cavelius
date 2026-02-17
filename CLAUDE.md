@@ -58,6 +58,7 @@ Base font on `<body>`: `font-['DM_Sans',sans-serif] text-[0.9375rem]`
 | **Section headline (h2)** | `font-[neue-haas-grotesk-display,sans-serif] font-light text-[3.375rem]` or `text-[4.875rem] leading-[1.2]` |
 | **Headline serif** | `font-[ivypresto-display,serif] font-light italic`                     |
 | **Headline Mono** | `font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em]` |
+| **Subheadline Mono** | `font-['IBM_Plex_Sans',sans-serif] text-[0.875rem] tracking-[0.03em]` |
 | **Fließtext Gross** | `text-[26px] min-[480px]:text-[1.625rem]`                              |
 | **Fließtext medium** | `font-medium text-[1.56rem] min-[480px]:text-[1rem]` (section titles: Werdegang, Kompetenzen, Das sagen Kunden) |
 | **Fließtext regular** | `text-[1.56rem] min-[480px]:text-[1rem]` + `leading-normal min-[480px]:leading-relaxed` for paragraphs |
