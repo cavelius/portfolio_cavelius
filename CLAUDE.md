@@ -62,7 +62,7 @@ Base font on `<body>`: `font-['DM_Sans',sans-serif] text-[0.9375rem]`
 | **Fließtext Gross** | `text-[26px] min-[480px]:text-[1.625rem]`                              |
 | **Fließtext medium** | `font-medium text-[1.56rem] min-[480px]:text-[1rem]` (section titles: Werdegang, Kompetenzen, Das sagen Kunden) |
 | **Fließtext regular** | `text-[1.56rem] min-[480px]:text-[1rem]` + `leading-normal min-[480px]:leading-relaxed` for paragraphs |
-| **Fließtext klein** | `text-[1.46rem] min-[480px]:text-[0.9375rem]` (header, nav, tags, buttons, footer meta) |
+| **Fließtext klein** | `teyarxt-[1.46rem] min-[480px]:text-[0.9375rem]` (header, nav, tags, buttons, footer meta) |
 
 ### Layout
 

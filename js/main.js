@@ -177,7 +177,6 @@ const projectOverlay = document.getElementById("project-overlay");
 const projectOverlayContent = document.getElementById("project-overlay-content");
 const projectOverlayScroll = projectOverlay ? projectOverlay.querySelector(".project-overlay__scroll") : null;
 const projectCache = {};
-
 function openProject(slug, pushHistory) {
     if (!projectOverlay || !projectOverlayContent) return;
 
@@ -282,6 +281,7 @@ function initOverlayContent() {
         video.play().catch(() => {});
         videoObserver.observe(video);
     });
+
 }
 
 // Event delegation: click on project cards in #projekte
