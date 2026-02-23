@@ -79,13 +79,18 @@ const sections = document.querySelectorAll("#projekte, #ueber-mich, #kontakt");
 
 function updateActiveNav() {
     let current = "";
-    const atBottom = (window.innerHeight + window.scrollY) >= (document.body.scrollHeight - 50);
+    // Use clientHeight (stable layout height) instead of innerHeight to avoid
+    // iOS Safari dynamic viewport issues where the address bar resizing can
+    // incorrectly trigger the atBottom condition.
+    const scrollHeight = document.documentElement.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight;
+    const atBottom = (clientHeight + window.scrollY) >= (scrollHeight - 50);
     if (atBottom) {
         current = "kontakt";
     } else {
         sections.forEach((section) => {
             const top = section.getBoundingClientRect().top;
-            if (top <= window.innerHeight / 2) {
+            if (top <= clientHeight / 2) {
                 current = section.id;
             }
         });
@@ -103,10 +108,16 @@ function updateActiveNav() {
 window.addEventListener("scroll", updateActiveNav);
 window.addEventListener("load", updateActiveNav);
 
-// Also update immediately on nav link click (smooth scroll may not fire scroll events reliably on iOS)
+// On mobile (iOS), smooth scroll doesn't reliably fire scroll events.
+// Set the active dot immediately on click instead of waiting for scroll position.
 document.querySelectorAll("#floating-nav a").forEach((link) => {
     link.addEventListener("click", () => {
-        setTimeout(updateActiveNav, 50);
+        navLinks.forEach((l) => {
+            const d = l.querySelector(".nav-dot");
+            if (d) d.classList.remove("active");
+        });
+        const dot = link.querySelector(".nav-dot");
+        if (dot) dot.classList.add("active");
     });
 });
 
