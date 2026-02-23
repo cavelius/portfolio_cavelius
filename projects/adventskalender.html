@@ -4,7 +4,7 @@
 
     <!-- Sticky close button (h-0 so it doesn't affect layout) -->
     <div class="sticky top-[16px] sm:top-16 md:top-9 z-10 pointer-events-none h-0 overflow-visible flex justify-end">
-        <button data-close-overlay class="group pointer-events-auto flex size-[2.75rem] items-center justify-center rounded-full bg-white/80 backdrop-blur-xl transition hover:scale-110 hover:bg-white/60 cursor-pointer" aria-label="Schließen">
+        <button data-close-overlay class="group pointer-events-auto flex size-[2.75rem] items-center justify-center rounded-full bg-white/80 backdrop-blur-xl transition hover:scale-110 hover:bg-white/60 cursor-pointer focus:outline-none" aria-label="Schließen">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:scale-75">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -259,7 +259,7 @@
     </section>
 
     <!-- Behance CTA (full-width breakout) -->
-    <section class="project-detail-section relative text-center bg-[#121212] mt-10 sm:mt-16 -mx-[16px] sm:-mx-16 md:-mx-9 px-[16px] sm:px-16 md:px-9 aspect-[21/7.29] flex flex-col items-center justify-center overflow-hidden">
+    <section id="behance-cta" class="project-detail-section relative text-center bg-[#121212] mt-10 sm:mt-16 -mx-[16px] sm:-mx-16 md:-mx-9 px-[16px] sm:px-16 md:px-9 aspect-[21/7.29] flex flex-col items-center justify-center overflow-hidden">
 
         <!-- Decorative elements — left side -->
         <img src="images/decor/blume.svg" alt="" class="absolute top-[15%] left-[10%] h-[4.25rem] w-[4.3rem] max-sm:h-[2.835rem] max-sm:w-[2.835rem]" aria-hidden="true">
@@ -279,7 +279,7 @@
     </section>
 
     <!-- Weitere Projekte -->
-    <section class="project-detail-section py-10 sm:py-16">
+    <section class="project-detail-section pt-10 sm:pt-16 pb-16 sm:pb-24 lg:pb-32">
         <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-8 sm:mb-10">Weitere Projekte</h2>
         <div class="overflow-x-auto scrollbar-hide -mx-[16px] sm:-mx-16 md:-mx-9 px-[16px] sm:px-16 md:px-9">
             <div class="flex gap-[0.5rem]">

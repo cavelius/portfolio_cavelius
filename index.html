@@ -58,15 +58,15 @@
     <!-- Floating Navigation -->
     <nav class="fixed bottom-[calc(32px+env(safe-area-inset-bottom))] min-[480px]:bottom-[calc(3.5rem+env(safe-area-inset-bottom))] left-1/2 z-50 -translate-x-1/2 flex h-[48px] min-[480px]:h-auto w-[calc(100%-32px)] justify-center items-center gap-[16px] min-[480px]:gap-6 rounded-full border border-white/20 bg-[rgba(232,230,230,0.5)] px-[16px] min-[480px]:px-6 py-[8px] min-[480px]:py-2.5 text-[1.46rem] min-[480px]:text-[0.9375rem] shadow-sm backdrop-blur-sm sm:w-fit sm:gap-8 sm:px-8" id="floating-nav">
         <a href="#projekte" class="flex items-center gap-2 text-dark transition-opacity hover:opacity-60">
-            <span class="nav-dot h-2 w-2 rounded-full bg-dark opacity-0 transition-opacity"></span>
+            <span class="nav-dot bg-dark opacity-0 transition-opacity"></span>
             Projekte
         </a>
         <a href="#ueber-mich" class="flex items-center gap-2 text-dark transition-opacity hover:opacity-60">
-            <span class="nav-dot h-2 w-2 rounded-full bg-dark opacity-0 transition-opacity"></span>
+            <span class="nav-dot bg-dark opacity-0 transition-opacity"></span>
             Über mich
         </a>
         <a href="#kontakt" class="flex items-center gap-2 text-dark transition-opacity hover:opacity-60">
-            <span class="nav-dot h-2 w-2 rounded-full bg-dark opacity-0 transition-opacity"></span>
+            <span class="nav-dot bg-dark opacity-0 transition-opacity"></span>
             Kontakt
         </a>
     </nav>
@@ -416,7 +416,7 @@
         <!-- CTA -->
         <section class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] sm:px-16 md:px-9 pb-[32px] min-[480px]:pb-[3.4rem] lg:pb-[4.9rem]">
             <h2 class="font-[neue-haas-grotesk-display,sans-serif] font-light text-[4.875rem] leading-[1.2]">
-                Lass uns <span class="font-[ivypresto-display,serif] font-light italic">zusammen</span> arbeiten <img src="images/decor/smiley.svg" alt="" class="inline-block h-[0.935em] w-[0.935em] align-[-.15em]" aria-hidden="true">
+                Lass uns <span class="font-[ivypresto-display,serif] font-light italic mr-[0.04em]">zusammen</span> arbeiten <img src="images/decor/smiley.svg" alt="" class="inline-block h-[0.935em] w-[0.935em] align-[-.15em]" aria-hidden="true">
             </h2>
         </section>
     </main>
@@ -448,6 +448,11 @@
         <div class="project-overlay__scroll h-full overflow-y-auto overscroll-contain [-webkit-overflow-scrolling:touch]">
             <div id="project-overlay-content" class="min-h-full"></div>
         </div>
+        <button id="overlay-scroll-top" class="group absolute bottom-[16px] right-[16px] sm:bottom-16 sm:right-16 md:bottom-9 md:right-9 z-10 flex size-[2.75rem] items-center justify-center rounded-full bg-white/80 backdrop-blur-xl transition hover:scale-110 hover:bg-white/60 cursor-pointer focus:outline-none opacity-0 pointer-events-none" aria-label="Nach oben scrollen">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:scale-75">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </button>
     </div>
 
 </body>

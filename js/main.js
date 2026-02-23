@@ -103,6 +103,13 @@ function updateActiveNav() {
 window.addEventListener("scroll", updateActiveNav);
 window.addEventListener("load", updateActiveNav);
 
+// Also update immediately on nav link click (smooth scroll may not fire scroll events reliably on iOS)
+document.querySelectorAll("#floating-nav a").forEach((link) => {
+    link.addEventListener("click", () => {
+        setTimeout(updateActiveNav, 50);
+    });
+});
+
 
 // Infinite loop scroll for testimonials
 const testimonialScroll = document.getElementById("testimonial-scroll");
@@ -189,6 +196,9 @@ function openProject(slug, pushHistory) {
     projectOverlay.classList.add("is-open");
     projectOverlay.setAttribute("aria-hidden", "false");
     projectOverlayScroll.scrollTop = 0;
+    if (overlayScrollTopBtn) {
+        overlayScrollTopBtn.classList.add("opacity-0", "pointer-events-none");
+    }
 
     // Update URL
     if (pushHistory !== false) {
@@ -293,6 +303,27 @@ if (projekteSection) {
             e.preventDefault();
             openProject(article.getAttribute("data-project"));
         }
+    });
+}
+
+// Scroll to top button inside overlay
+const overlayScrollTopBtn = document.getElementById("overlay-scroll-top");
+if (overlayScrollTopBtn && projectOverlayScroll) {
+    overlayScrollTopBtn.addEventListener("click", () => {
+        projectOverlayScroll.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    projectOverlayScroll.addEventListener("scroll", () => {
+        const behanceCta = projectOverlayContent.querySelector("#behance-cta");
+        let visible;
+        if (behanceCta) {
+            const ctaRect = behanceCta.getBoundingClientRect();
+            const containerRect = projectOverlayScroll.getBoundingClientRect();
+            visible = ctaRect.top <= containerRect.bottom;
+        } else {
+            visible = projectOverlayScroll.scrollTop > projectOverlayScroll.scrollHeight / 2;
+        }
+        overlayScrollTopBtn.classList.toggle("opacity-0", !visible);
+        overlayScrollTopBtn.classList.toggle("pointer-events-none", !visible);
     });
 }
 

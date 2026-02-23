@@ -114,7 +114,15 @@ video[autoplay].is-playing {
     }
 }
 
-/* Floating nav active indicator (JS-driven state) */
+/* Floating nav dot */
+.nav-dot {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
 .nav-dot.active {
     opacity: 1;
 }
