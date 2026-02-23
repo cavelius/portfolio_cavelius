@@ -367,6 +367,12 @@
   .mr-\[0\.04em\] {
     margin-right: 0.04em;
   }
+  .mr-\[0\.08em\] {
+    margin-right: 0.08em;
+  }
+  .mr-\[0\.15em\] {
+    margin-right: 0.15em;
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -426,6 +432,9 @@
   }
   .aspect-\[21\/7\.29\] {
     aspect-ratio: 21/7.29;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
   }
   .size-\[2\.75rem\] {
     width: 2.75rem;
@@ -487,6 +496,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
@@ -798,6 +810,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
   .py-\[6px\] {
     padding-block: 6px;
@@ -1700,6 +1715,11 @@
   .sm\:px-16 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 16);
+    }
+  }
+  .sm\:py-16 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 16);
     }
   }
   .sm\:pt-16 {
