@@ -74,60 +74,62 @@ document.querySelectorAll(".accordion-item").forEach((item) => {
 });
 
 // Floating nav: highlight active section.
-// Uses IntersectionObserver for manual scrolling + a timed lock on nav clicks.
-// The lock prevents stale iOS IntersectionObserver exit callbacks (which fire
-// with a delay during programmatic scrollIntoView) from overwriting the correct dot.
+// Uses getBoundingClientRect (not IntersectionObserver) so iOS scroll quirks don't apply.
 const navLinks = document.querySelectorAll("#floating-nav a");
-const sections = document.querySelectorAll("#projekte, #ueber-mich, #kontakt");
-const visibleSections = new Set();
-let scrollLockTimer = null;
-let lockedActiveId = null;
+const navSections = [...document.querySelectorAll("#projekte, #ueber-mich, #kontakt")];
 
-function updateNavDots() {
-    const activeId = lockedActiveId || (() => {
-        let id = "";
-        sections.forEach((s) => { if (!id && visibleSections.has(s.id)) id = s.id; });
-        return id;
-    })();
+function getActiveSectionId() {
+    const mid = window.innerHeight / 2;
+    let activeId = navSections.length ? navSections[0].id : "";
+    navSections.forEach((s) => {
+        if (s.getBoundingClientRect().top <= mid) activeId = s.id;
+    });
+    return activeId;
+}
+
+function setNavDots(activeId) {
     navLinks.forEach((link) => {
         const dot = link.querySelector(".nav-dot");
-        if (dot) dot.classList.toggle("active", link.getAttribute("href") === "#" + activeId);
+        if (!dot) return;
+        if (link.getAttribute("href") === "#" + activeId) {
+            dot.classList.add("active");
+        } else {
+            dot.classList.remove("active");
+        }
     });
 }
 
-const navObserver = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                visibleSections.add(entry.target.id);
-            } else {
-                visibleSections.delete(entry.target.id);
-            }
-        });
-        // While locked after a click, don't let IO callbacks override the dot
-        if (!lockedActiveId) updateNavDots();
-    },
-    { rootMargin: "0px 0px -50% 0px", threshold: 0 }
-);
+let navLocked = false;
+let navLockTimer = null;
+let navScrollTimer = null;
 
-sections.forEach((s) => navObserver.observe(s));
+window.addEventListener("scroll", () => {
+    if (navLocked) return;
+    clearTimeout(navScrollTimer);
+    navScrollTimer = setTimeout(() => setNavDots(getActiveSectionId()), 50);
+}, { passive: true });
 
-// On click: immediately set the correct dot and lock IO callbacks for 800ms
-// (covers the full iOS smooth scroll animation duration)
+// iOS: fire extra checks after touch ends (scroll animation may still be running)
+document.addEventListener("touchend", () => {
+    setTimeout(() => { if (!navLocked) setNavDots(getActiveSectionId()); }, 300);
+    setTimeout(() => { if (!navLocked) setNavDots(getActiveSectionId()); }, 900);
+}, { passive: true });
+
 navLinks.forEach((link) => {
     link.addEventListener("click", () => {
         const targetId = link.getAttribute("href").slice(1);
-        lockedActiveId = targetId;
-        visibleSections.clear();
-        visibleSections.add(targetId);
-        updateNavDots();
-        clearTimeout(scrollLockTimer);
-        scrollLockTimer = setTimeout(() => {
-            lockedActiveId = null;
-            updateNavDots();
-        }, 800);
+        setNavDots(targetId);
+        navLocked = true;
+        clearTimeout(navLockTimer);
+        // Lock long enough to cover the full iOS smooth-scroll animation
+        navLockTimer = setTimeout(() => {
+            navLocked = false;
+            setNavDots(getActiveSectionId());
+        }, 1200);
     });
 });
+
+setNavDots(getActiveSectionId());
 
 
 // Infinite loop scroll for testimonials
