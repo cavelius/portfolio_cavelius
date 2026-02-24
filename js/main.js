@@ -73,37 +73,46 @@ document.querySelectorAll(".accordion-item").forEach((item) => {
     }
 });
 
-// Floating nav: highlight active section
+// Floating nav: highlight active section via IntersectionObserver.
+// More reliable than scroll events on real iOS devices (Safari & Chrome),
+// where scroll events don't fire reliably during programmatic scrollIntoView.
 const navLinks = document.querySelectorAll("#floating-nav a");
 const sections = document.querySelectorAll("#projekte, #ueber-mich, #kontakt");
+const visibleSections = new Set();
 
-function updateActiveNav() {
-    let current = "";
-    const scrollHeight = document.documentElement.scrollHeight;
-    const clientHeight = document.documentElement.clientHeight;
-    const atBottom = (clientHeight + window.scrollY) >= (scrollHeight - 50);
-    if (atBottom) {
-        current = "kontakt";
-    } else {
-        sections.forEach((section) => {
-            const top = section.getBoundingClientRect().top;
-            if (top <= clientHeight / 2) {
-                current = section.id;
-            }
-        });
-    }
+function updateNavDots() {
+    // Always activate only the first visible section in DOM order
+    let activeId = "";
+    sections.forEach((section) => {
+        if (!activeId && visibleSections.has(section.id)) {
+            activeId = section.id;
+        }
+    });
     navLinks.forEach((link) => {
         const dot = link.querySelector(".nav-dot");
-        if (link.getAttribute("href") === "#" + current) {
-            if (dot) dot.classList.add("active");
-        } else {
-            if (dot) dot.classList.remove("active");
-        }
+        if (dot) dot.classList.toggle("active", link.getAttribute("href") === "#" + activeId);
     });
 }
 
-window.addEventListener("scroll", updateActiveNav);
-window.addEventListener("load", updateActiveNav);
+const navObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                visibleSections.add(entry.target.id);
+            } else {
+                visibleSections.delete(entry.target.id);
+            }
+        });
+        updateNavDots();
+    },
+    {
+        // Section is considered active when it enters the top 50% of the viewport
+        rootMargin: "0px 0px -50% 0px",
+        threshold: 0,
+    }
+);
+
+sections.forEach((section) => navObserver.observe(section));
 
 
 // Infinite loop scroll for testimonials
