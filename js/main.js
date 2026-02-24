@@ -73,21 +73,22 @@ document.querySelectorAll(".accordion-item").forEach((item) => {
     }
 });
 
-// Floating nav: highlight active section via IntersectionObserver.
-// More reliable than scroll events on real iOS devices (Safari & Chrome),
-// where scroll events don't fire reliably during programmatic scrollIntoView.
+// Floating nav: highlight active section.
+// Uses IntersectionObserver for manual scrolling + a timed lock on nav clicks.
+// The lock prevents stale iOS IntersectionObserver exit callbacks (which fire
+// with a delay during programmatic scrollIntoView) from overwriting the correct dot.
 const navLinks = document.querySelectorAll("#floating-nav a");
 const sections = document.querySelectorAll("#projekte, #ueber-mich, #kontakt");
 const visibleSections = new Set();
+let scrollLockTimer = null;
+let lockedActiveId = null;
 
 function updateNavDots() {
-    // Always activate only the first visible section in DOM order
-    let activeId = "";
-    sections.forEach((section) => {
-        if (!activeId && visibleSections.has(section.id)) {
-            activeId = section.id;
-        }
-    });
+    const activeId = lockedActiveId || (() => {
+        let id = "";
+        sections.forEach((s) => { if (!id && visibleSections.has(s.id)) id = s.id; });
+        return id;
+    })();
     navLinks.forEach((link) => {
         const dot = link.querySelector(".nav-dot");
         if (dot) dot.classList.toggle("active", link.getAttribute("href") === "#" + activeId);
@@ -103,26 +104,28 @@ const navObserver = new IntersectionObserver(
                 visibleSections.delete(entry.target.id);
             }
         });
-        updateNavDots();
+        // While locked after a click, don't let IO callbacks override the dot
+        if (!lockedActiveId) updateNavDots();
     },
-    {
-        // Section is considered active when it enters the top 50% of the viewport
-        rootMargin: "0px 0px -50% 0px",
-        threshold: 0,
-    }
+    { rootMargin: "0px 0px -50% 0px", threshold: 0 }
 );
 
-sections.forEach((section) => navObserver.observe(section));
+sections.forEach((s) => navObserver.observe(s));
 
-// On nav link click: immediately clear all sections and set only the target.
-// This fixes an iOS Safari bug where IntersectionObserver exit events don't
-// fire during programmatic scrollIntoView, causing dots to accumulate.
+// On click: immediately set the correct dot and lock IO callbacks for 800ms
+// (covers the full iOS smooth scroll animation duration)
 navLinks.forEach((link) => {
     link.addEventListener("click", () => {
         const targetId = link.getAttribute("href").slice(1);
+        lockedActiveId = targetId;
         visibleSections.clear();
         visibleSections.add(targetId);
         updateNavDots();
+        clearTimeout(scrollLockTimer);
+        scrollLockTimer = setTimeout(() => {
+            lockedActiveId = null;
+            updateNavDots();
+        }, 800);
     });
 });
 
