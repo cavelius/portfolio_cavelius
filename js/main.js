@@ -77,7 +77,12 @@ document.querySelectorAll(".accordion-item").forEach((item) => {
 const navLinks = document.querySelectorAll("#floating-nav a");
 const sections = document.querySelectorAll("#projekte, #ueber-mich, #kontakt");
 
+// Lock flag: prevents scroll events from overriding the dot during smooth scroll
+let navClickLock = false;
+let navClickLockTimer = null;
+
 function updateActiveNav() {
+    if (navClickLock) return;
     let current = "";
     // Use clientHeight (stable layout height) instead of innerHeight to avoid
     // iOS Safari dynamic viewport issues where the address bar resizing can
@@ -108,8 +113,9 @@ function updateActiveNav() {
 window.addEventListener("scroll", updateActiveNav);
 window.addEventListener("load", updateActiveNav);
 
-// On mobile (iOS), smooth scroll doesn't reliably fire scroll events.
-// Set the active dot immediately on click instead of waiting for scroll position.
+// On nav link click: set dot immediately, then lock updateActiveNav for 800ms
+// so that scroll events fired during smooth scroll don't override the dot.
+// After the lock expires, sync with the actual scroll position.
 document.querySelectorAll("#floating-nav a").forEach((link) => {
     link.addEventListener("click", () => {
         navLinks.forEach((l) => {
@@ -118,6 +124,13 @@ document.querySelectorAll("#floating-nav a").forEach((link) => {
         });
         const dot = link.querySelector(".nav-dot");
         if (dot) dot.classList.add("active");
+
+        navClickLock = true;
+        clearTimeout(navClickLockTimer);
+        navClickLockTimer = setTimeout(() => {
+            navClickLock = false;
+            updateActiveNav();
+        }, 800);
     });
 });
 
