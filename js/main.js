@@ -114,6 +114,18 @@ const navObserver = new IntersectionObserver(
 
 sections.forEach((section) => navObserver.observe(section));
 
+// On nav link click: immediately clear all sections and set only the target.
+// This fixes an iOS Safari bug where IntersectionObserver exit events don't
+// fire during programmatic scrollIntoView, causing dots to accumulate.
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        const targetId = link.getAttribute("href").slice(1);
+        visibleSections.clear();
+        visibleSections.add(targetId);
+        updateNavDots();
+    });
+});
+
 
 // Infinite loop scroll for testimonials
 const testimonialScroll = document.getElementById("testimonial-scroll");
