@@ -430,9 +430,9 @@
   .aspect-\[21\/14\.58\] {
     aspect-ratio: 21/14.58;
   }
-  .size-\[2\.75rem\] {
-    width: 2.75rem;
-    height: 2.75rem;
+  .size-\[3\.5rem\] {
+    width: 3.5rem;
+    height: 3.5rem;
   }
   .h-0 {
     height: calc(var(--spacing) * 0);
@@ -562,6 +562,10 @@
   }
   .-translate-y-full {
     --tw-translate-y: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-px {
+    --tw-translate-y: -1px;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-1\/2 {
@@ -1061,16 +1065,6 @@
   .\[-webkit-overflow-scrolling\:touch\] {
     -webkit-overflow-scrolling: touch;
   }
-  .group-hover\:scale-75 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        --tw-scale-x: 75%;
-        --tw-scale-y: 75%;
-        --tw-scale-z: 75%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
   .group-hover\/btn\:opacity-60 {
     &:is(:where(.group\/btn):hover *) {
       @media (hover: hover) {
@@ -1369,6 +1363,12 @@
   .min-\[480px\]\:aspect-\[21\/7\.29\] {
     @media (width >= 480px) {
       aspect-ratio: 21/7.29;
+    }
+  }
+  .min-\[480px\]\:size-\[2\.75rem\] {
+    @media (width >= 480px) {
+      width: 2.75rem;
+      height: 2.75rem;
     }
   }
   .min-\[480px\]\:h-\[calc\(100svh-2\.5rem\)\] {
