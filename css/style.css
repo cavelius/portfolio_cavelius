@@ -14,6 +14,16 @@
     --color-lime-accent: #d1ff47;
 }
 
+/* On small mobile screens (< 480px), scale the root font more steeply so
+   rem-based text is noticeably smaller at 320px than at 425px.
+   Formula: 9px at 320px → 10.5px at ~406px → seamlessly matches the global
+   clamp(10px, 8.3px + 0.46vw, 16px) which gives 10.508px at 480px. */
+@media (max-width: 479px) {
+    html {
+        font-size: clamp(9px, 3.6px + 1.7vw, 10.5px);
+    }
+}
+
 /* Hide video until actually playing (avoids iOS play button) */
 video[autoplay] {
     opacity: 0;

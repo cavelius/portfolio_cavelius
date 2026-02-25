@@ -1934,6 +1934,11 @@
     }
   }
 }
+@media (max-width: 479px) {
+  html {
+    font-size: clamp(9px, 3.6px + 1.7vw, 10.5px);
+  }
+}
 video[autoplay] {
   opacity: 0;
   transition: opacity 0.4s ease;
