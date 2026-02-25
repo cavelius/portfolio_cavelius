@@ -834,6 +834,9 @@
   .pt-\[32px\] {
     padding-top: 32px;
   }
+  .pr-\[16px\] {
+    padding-right: 16px;
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
@@ -1770,6 +1773,11 @@
       padding-top: calc(var(--spacing) * 16);
     }
   }
+  .sm\:pr-16 {
+    @media (width >= 40rem) {
+      padding-right: calc(var(--spacing) * 16);
+    }
+  }
   .sm\:pb-6 {
     @media (width >= 40rem) {
       padding-bottom: calc(var(--spacing) * 6);
@@ -1840,6 +1848,11 @@
   .md\:px-9 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 9);
+    }
+  }
+  .md\:pr-9 {
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 9);
     }
   }
   .lg\:col-span-2 {
