@@ -205,6 +205,17 @@ const projectOverlay = document.getElementById("project-overlay");
 const projectOverlayContent = document.getElementById("project-overlay-content");
 const projectOverlayScroll = projectOverlay ? projectOverlay.querySelector(".project-overlay__scroll") : null;
 const projectCache = {};
+
+// Dedicated observer that uses the overlay scroll container as root,
+// so intersection is calculated correctly against the clipped scroll area.
+const overlayObserver = projectOverlayScroll ? new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("is-visible");
+        });
+    },
+    { root: projectOverlayScroll, threshold: 0.05, rootMargin: "0px 0px -20px 0px" }
+) : null;
 function openProject(slug, pushHistory) {
     if (!projectOverlay || !projectOverlayContent) return;
 
@@ -257,6 +268,9 @@ function openProject(slug, pushHistory) {
 function closeProject(pushHistory) {
     if (!projectOverlay) return;
 
+    // Unobserve all overlay sections so the observer is clean for next open
+    if (overlayObserver) overlayObserver.disconnect();
+
     projectOverlay.classList.remove("is-open");
     projectOverlay.setAttribute("aria-hidden", "true");
 
@@ -272,19 +286,10 @@ function closeProject(pushHistory) {
 }
 
 function initOverlayContent() {
-    // Apply fade-in animations to new content
+    // Observe each section with the overlay-specific observer
     projectOverlayContent.querySelectorAll(".project-detail-section").forEach((el) => {
-        observer.observe(el);
+        if (overlayObserver) overlayObserver.observe(el);
     });
-    // Trigger visibility check for elements already in view
-    setTimeout(() => {
-        projectOverlayContent.querySelectorAll(".project-detail-section").forEach((el) => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight * 1.5) {
-                el.classList.add("is-visible");
-            }
-        });
-    }, 50);
 
     // Wire up close buttons inside the overlay
     projectOverlayContent.querySelectorAll("[data-close-overlay]").forEach((btn) => {
