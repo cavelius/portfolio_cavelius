@@ -430,9 +430,9 @@
   .aspect-\[21\/14\.58\] {
     aspect-ratio: 21/14.58;
   }
-  .size-\[3\.5rem\] {
-    width: 3.5rem;
-    height: 3.5rem;
+  .size-\[4rem\] {
+    width: 4rem;
+    height: 4rem;
   }
   .h-0 {
     height: calc(var(--spacing) * 0);
