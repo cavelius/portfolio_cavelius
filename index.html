@@ -22,20 +22,20 @@
 
     <div class="flex min-h-screen flex-col">
     <!-- Header -->
-    <header class="mx-auto flex w-full max-w-[104.5rem] shrink-0 items-center justify-between px-[16px] pb-[16px] sm:pb-6 pt-[24px] min-[480px]:pt-10 sm:px-16 md:px-9">
-        <a href="#top" class="text-[1.46rem] min-[480px]:text-[0.9375rem] text-gray-01">Sofia Cavelius</a>
-        <span class="text-[1.46rem] min-[480px]:text-[0.9375rem] text-gray-01">Portfolio</span>
+    <header class="mx-auto flex w-full max-w-[104.5rem] shrink-0 items-center justify-between px-[16px] pb-[16px] sm:pb-6 pt-[24px] md:pt-10 sm:px-16 md:px-9">
+        <a href="#top" class="text-[1.46rem] md:text-[0.9375rem] text-gray-01">Sofia Cavelius</a>
+        <span class="text-[1.46rem] md:text-[0.9375rem] text-gray-01">Portfolio</span>
     </header>
 
     <!-- Hero -->
-    <section id="top" class="mx-auto w-full max-w-[104.5rem] px-[16px] pb-[calc(5vh+112px+env(safe-area-inset-bottom))] min-[480px]:pb-6 flex-1 flex items-end min-[480px]:items-center sm:px-16 md:px-9 lg:pb-10">
-        <div class="grid w-full gap-[32px] min-[480px]:gap-6 min-[480px]:grid-cols-3 min-[480px]:gap-x-8 min-[480px]:items-center">
-            <div class="order-2 text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-gray-01 min-[480px]:order-1 min-[480px]:pr-[clamp(0.25rem,6vw-0.5rem,5rem)]">
+    <section id="top" class="mx-auto w-full max-w-[104.5rem] px-[16px] pb-[calc(5vh+112px+env(safe-area-inset-bottom))] min-[630px]:pb-6 flex-1 flex items-end min-[630px]:items-center sm:px-16 md:px-9 lg:pb-10">
+        <div class="grid w-full gap-[32px] min-[630px]:gap-6 min-[630px]:grid-cols-3 min-[630px]:gap-x-8 min-[630px]:items-center">
+            <div class="order-2 text-[1.56rem] min-[630px]:text-[1rem] leading-normal min-[630px]:leading-relaxed text-gray-01 min-[630px]:order-1 min-[630px]:pr-[clamp(0.25rem,6vw-0.5rem,5rem)]">
                 <p><span class="text-[#212121]">Mit über acht Jahren Design-Erfahrung,</span><br class="hidden lg:block"> <span class="text-[#757575]">helfe ich dir bei Print Design, Digitalem Design, Illustration, Animation, Bildbearbeitung &amp; Konzeption.</span></p>
             </div>
-            <div class="relative order-1 min-[480px]:order-2 min-[480px]:col-span-2 hero-slide-up [animation-delay:0.1s]">
-                <!-- Mobile headline (≤425px) -->
-                <h1 class="font-[neue-haas-grotesk-display,sans-serif] font-light [font-size:clamp(20px,4vw,60px)] leading-[1.1] max-[479px]:[font-size:calc((100vw_-_32px)_/_7.13)] relative whitespace-nowrap min-[480px]:hidden">
+            <div class="relative order-1 min-[630px]:order-2 min-[630px]:col-span-2 hero-slide-up [animation-delay:0.1s]">
+                <!-- Mobile headline (< 630px) -->
+                <h1 class="font-[neue-haas-grotesk-display,sans-serif] font-light [font-size:clamp(20px,4vw,60px)] leading-[1.1] max-[629px]:[font-size:calc((100vw_-_32px)_/_7.13)] relative whitespace-nowrap min-[630px]:hidden">
                     Hey, <img src="images/decor/smiley.svg" alt="" class="inline-block h-[1.1em] w-[1.1em] align-middle" aria-hidden="true"><br>
                     <span class="font-[ivypresto-display,serif] font-light italic">ich bin Sofia,</span><br>
                     <img src="images/decor/blume.svg" alt="" class="inline-block h-[1.1em] w-[1.1em] align-middle" aria-hidden="true"> Senior<br>
@@ -43,8 +43,8 @@
                     Kommunikations-<br>
                     designerin
                 </h1>
-                <!-- Desktop headline (≥426px) -->
-                <h1 class="font-[neue-haas-grotesk-display,sans-serif] font-light [font-size:clamp(20px,4vw,60px)] leading-[1.1] whitespace-nowrap hidden min-[480px]:block">
+                <!-- Desktop headline (≥ 630px) -->
+                <h1 class="font-[neue-haas-grotesk-display,sans-serif] font-light [font-size:clamp(20px,4vw,60px)] leading-[1.1] whitespace-nowrap hidden min-[630px]:block">
                     Hey, <img src="images/decor/smiley.svg" alt="" class="inline-block h-[1.2em] w-[1.2em] align-middle" aria-hidden="true"> <span class="font-[ivypresto-display,serif] font-light italic">ich bin Sofia,</span> <img src="images/decor/profilbild-01.png" alt="" class="inline-block relative top-[-0.64em] -z-10 ml-[-0.71em] mt-[-0.94em] mb-[-0.94em] h-[2.97em] w-auto rounded-[0.1875rem] align-baseline" aria-hidden="true"><br>
                     Senior Kommunikationsdesignerin<br>
                     mit einer <span class="font-[ivypresto-display,serif] font-light italic">Leidenschaft</span>&hairsp;&hairsp;&hairsp; für Illustration &amp;<br>
@@ -56,7 +56,7 @@
     </div>
 
     <!-- Floating Navigation -->
-    <nav class="fixed bottom-[calc(32px+env(safe-area-inset-bottom))] min-[480px]:bottom-[calc(3.5rem+env(safe-area-inset-bottom))] left-1/2 z-50 -translate-x-1/2 flex h-[48px] min-[480px]:h-auto w-[calc(100%-32px)] justify-center items-center gap-[16px] min-[480px]:gap-6 rounded-full border border-white/20 bg-[rgba(232,230,230,0.5)] px-[16px] min-[480px]:px-6 py-[8px] min-[480px]:py-2.5 text-[1.46rem] min-[480px]:text-[0.9375rem] shadow-sm backdrop-blur-sm sm:w-fit sm:gap-8 sm:px-8" id="floating-nav">
+    <nav class="fixed bottom-[calc(32px+env(safe-area-inset-bottom))] md:bottom-[calc(3.5rem+env(safe-area-inset-bottom))] left-1/2 z-50 -translate-x-1/2 flex h-[48px] md:h-auto w-[calc(100%-32px)] justify-center items-center gap-[16px] md:gap-6 rounded-full border border-white/20 bg-[rgba(232,230,230,0.5)] px-[16px] md:px-6 py-[8px] md:py-2.5 text-[1.46rem] md:text-[0.9375rem] shadow-sm backdrop-blur-sm sm:w-fit sm:gap-8 sm:px-8" id="floating-nav">
         <a href="#projekte" class="flex items-center gap-2 text-dark transition-opacity hover:opacity-60">
             <span class="nav-dot bg-dark"></span>
             Projekte
@@ -73,95 +73,143 @@
 
     <main>
         <!-- Projekte -->
-        <section id="projekte" class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] pt-[32px] pb-[32px] min-[480px]:pt-4 min-[480px]:pb-12 sm:px-16 md:px-9 lg:pt-6 lg:pb-16">
-            <p class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] mb-[8px] min-[480px]:mb-2 text-dark">Projekte</p>
-            <p class="mb-[24px] min-[480px]:mb-8 text-[1.625rem] text-gray-01">Eine Auswahl meiner Arbeiten aus den Bereichen Editorial, Branding und Illustration.</p>
+        <section id="projekte" class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] pt-[32px] pb-[32px] md:pt-4 md:pb-12 sm:px-16 md:px-9 lg:pt-6 lg:pb-16">
+            <p class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] md:text-[0.875rem] uppercase tracking-[0.05em] mb-[8px] md:mb-2 text-dark">Projekte</p>
+            <p class="mb-[24px] md:mb-8 text-[1.625rem] text-gray-01">Eine Auswahl meiner Arbeiten aus den Bereichen Editorial, Branding und Illustration.</p>
 
-            <div class="mt-[40px] min-[480px]:mt-14 space-y-[24px] min-[480px]:space-y-10 lg:space-y-16">
+            <div class="mt-[40px] md:mt-14 space-y-[24px] md:space-y-10 lg:space-y-16">
                 <!-- Row 1: wide + narrow -->
-                <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
+                <div class="grid gap-x-[8px] md:gap-x-2 gap-y-[24px] md:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid lg:col-span-2 cursor-pointer" data-project="magazin-things-we-write">
-                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]">
+                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem] relative">
                             <img src="images/projects/magazin-things-we-write.jpg" alt="Magazin THINGS WE WRITE" class="w-full object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0 transform transition-transform duration-300 lg:group-hover:scale-[1.02]">
+                            <div class="flex flex-wrap justify-end gap-[0.5rem] md:gap-2 absolute top-[12px] left-[12px] right-[12px] md:top-4 md:left-4 md:right-4 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300">
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Art Direktion</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Brand Design</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Editorial</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Inhouse</span>
+                            </div>
                         </div>
-                        <div class="mt-4 sm:mt-0 space-y-[2px] min-[480px]:space-y-0">
-                            <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-dark">Magazin „THINGS WE WRITE"</h3>
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Konzeption und Gestaltung eines Lifestyle-Magazins.</p>
+                        <div class="mt-4 sm:mt-0 space-y-[2px] md:space-y-0">
+                            <h3 class="text-[1.56rem] md:text-[1rem] font-normal text-dark">Magazin „THINGS WE WRITE"</h3>
+                            <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Konzeption und Gestaltung eines Lifestyle-Magazins.</p>
                         </div>
                     </article>
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid cursor-pointer" data-project="tshirt-print">
-                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]">
+                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem] relative">
                             <img src="images/projects/tshirt-print.jpg" alt="T-Shirt Print" class="w-full object-cover sm:h-full sm:min-h-0 transform transition-transform duration-300 lg:group-hover:scale-[1.02]">
+                            <div class="flex flex-wrap justify-end gap-[0.5rem] md:gap-2 absolute top-[12px] left-[12px] right-[12px] md:top-4 md:left-4 md:right-4 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300">
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Art Direktion</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Brand Design</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Illustration</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Freelance</span>
+                            </div>
                         </div>
-                        <div class="mt-4 sm:mt-0 space-y-[2px] min-[480px]:space-y-0">
-                            <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-dark">T-Shirt Print</h3>
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung eines markengerechten Illustrationsstils.</p>
+                        <div class="mt-4 sm:mt-0 space-y-[2px] md:space-y-0">
+                            <h3 class="text-[1.56rem] md:text-[1rem] font-normal text-dark">T-Shirt Print</h3>
+                            <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Entwicklung eines markengerechten Illustrationsstils.</p>
                         </div>
                     </article>
                 </div>
 
                 <!-- Row 2: narrow + wide -->
-                <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
+                <div class="grid gap-x-[8px] md:gap-x-2 gap-y-[24px] md:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid cursor-pointer" data-project="buch-erstes-lebensjahr">
-                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]">
+                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem] relative">
                             <img src="images/projects/buch-erstes-lebensjahr.jpg" alt="Buch Dein erstes Lebensjahr" class="w-full object-cover sm:h-full sm:min-h-0 transform transition-transform duration-300 lg:group-hover:scale-[1.02]">
+                            <div class="flex flex-wrap justify-end gap-[0.5rem] md:gap-2 absolute top-[12px] left-[12px] right-[12px] md:top-4 md:left-4 md:right-4 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300">
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Art Direktion</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Brand Design</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Editorial</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Illustration</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Inhouse</span>
+                            </div>
                         </div>
-                        <div class="mt-4 sm:mt-0 space-y-[2px] min-[480px]:space-y-0">
-                            <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-dark">Buch „Dein erstes Lebensjahr"</h3>
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Gestaltung und Illustration eines Ausfüllbuchs.</p>
+                        <div class="mt-4 sm:mt-0 space-y-[2px] md:space-y-0">
+                            <h3 class="text-[1.56rem] md:text-[1rem] font-normal text-dark">Buch „Dein erstes Lebensjahr"</h3>
+                            <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Gestaltung und Illustration eines Ausfüllbuchs.</p>
                         </div>
                     </article>
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid lg:col-span-2 cursor-pointer" data-project="adventskalender">
-                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]">
+                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem] relative">
                             <video src="images/projects/adventskalender.mp4" autoplay loop muted playsinline webkit-playsinline preload="auto" disablepictureinpicture class="w-full object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0 transform transition-transform duration-300 lg:group-hover:scale-[1.02]"></video>
+                            <div class="flex flex-wrap justify-end gap-[0.5rem] md:gap-2 absolute top-[12px] left-[12px] right-[12px] md:top-4 md:left-4 md:right-4 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300">
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Art Direktion</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Brand Design</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Packaging</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Inhouse</span>
+                            </div>
                         </div>
-                        <div class="mt-4 sm:mt-0 space-y-[2px] min-[480px]:space-y-0">
-                            <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-dark">Adventskalender für Creatorin Carmushka</h3>
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung eines Packaging Designs, sowie Gestaltung ausgewählter Produktinhalte.</p>
+                        <div class="mt-4 sm:mt-0 space-y-[2px] md:space-y-0">
+                            <h3 class="text-[1.56rem] md:text-[1rem] font-normal text-dark">Adventskalender für Creatorin Carmushka</h3>
+                            <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Entwicklung eines Packaging Designs, sowie Gestaltung ausgewählter Produktinhalte.</p>
                         </div>
                     </article>
                 </div>
 
                 <!-- Row 3: wide + narrow -->
-                <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
+                <div class="grid gap-x-[8px] md:gap-x-2 gap-y-[24px] md:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid lg:col-span-2 cursor-pointer" data-project="jahreskalender-carmushka">
-                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]">
+                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem] relative">
                             <img src="images/projects/jahreskalender-carmushka.jpg" alt="Jahreskalender für Creatorin Carmushka" class="w-full object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0 transform transition-transform duration-300 lg:group-hover:scale-[1.02]">
+                            <div class="flex flex-wrap justify-end gap-[0.5rem] md:gap-2 absolute top-[12px] left-[12px] right-[12px] md:top-4 md:left-4 md:right-4 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300">
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Art Direktion</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Brand Design</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Inhouse</span>
+                            </div>
                         </div>
-                        <div class="mt-4 sm:mt-0 space-y-[2px] min-[480px]:space-y-0">
-                            <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-dark">Jahreskalender für Creatorin Carmushka</h3>
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Gestaltung eines Kalenders mit Künstlerkooperation.</p>
+                        <div class="mt-4 sm:mt-0 space-y-[2px] md:space-y-0">
+                            <h3 class="text-[1.56rem] md:text-[1rem] font-normal text-dark">Jahreskalender für Creatorin Carmushka</h3>
+                            <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Gestaltung eines Kalenders mit Künstlerkooperation.</p>
                         </div>
                     </article>
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid cursor-pointer" data-project="schlafentzug-ausstellung">
-                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]">
+                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem] relative">
                             <img src="images/projects/schlafentzug-ausstellung.jpg" alt="Ausstellungsobjekt zum Thema Schlafentzug" class="w-full object-cover sm:h-full sm:min-h-0 transform transition-transform duration-300 lg:group-hover:scale-[1.02]">
+                            <div class="flex flex-wrap justify-end gap-[0.5rem] md:gap-2 absolute top-[12px] left-[12px] right-[12px] md:top-4 md:left-4 md:right-4 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300">
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Design &amp; Konzept</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Animation</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Illustration</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Freelance</span>
+                            </div>
                         </div>
-                        <div class="mt-4 sm:mt-0 space-y-[2px] min-[480px]:space-y-0">
-                            <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-dark">Ausstellungsobjekt zum Thema Schlafentzug</h3>
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Konzeption und Gestaltung von Animationen und dazugehöriger Wandgestaltung.</p>
+                        <div class="mt-4 sm:mt-0 space-y-[2px] md:space-y-0">
+                            <h3 class="text-[1.56rem] md:text-[1rem] font-normal text-dark">Ausstellungsobjekt zum Thema Schlafentzug</h3>
+                            <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Konzeption und Gestaltung von Animationen und dazugehöriger Wandgestaltung.</p>
                         </div>
                     </article>
                 </div>
 
                 <!-- Row 4: narrow + wide -->
-                <div class="grid gap-x-[8px] min-[480px]:gap-x-2 gap-y-[24px] min-[480px]:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
+                <div class="grid gap-x-[8px] md:gap-x-2 gap-y-[24px] md:gap-y-10 sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-[1fr_auto] sm:gap-y-4">
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid cursor-pointer" data-project="tischkalender-kollektion">
-                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]">
+                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem] relative">
                             <img src="images/projects/tischkalender-kollektion.jpg" alt="Tischkalender Kollektion" class="w-full object-cover sm:h-full sm:min-h-0 transform transition-transform duration-300 lg:group-hover:scale-[1.02]">
+                            <div class="flex flex-wrap justify-end gap-[0.5rem] md:gap-2 absolute top-[12px] left-[12px] right-[12px] md:top-4 md:left-4 md:right-4 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300">
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Art Direktion</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Brand Design</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Editorial</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Freelance</span>
+                            </div>
                         </div>
-                        <div class="mt-4 sm:mt-0 space-y-[2px] min-[480px]:space-y-0">
-                            <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-dark">Tischkalender Kollektion</h3>
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung einer markengerechten Papeterie Kollektion.</p>
+                        <div class="mt-4 sm:mt-0 space-y-[2px] md:space-y-0">
+                            <h3 class="text-[1.56rem] md:text-[1rem] font-normal text-dark">Tischkalender Kollektion</h3>
+                            <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Entwicklung einer markengerechten Papeterie Kollektion.</p>
                         </div>
                     </article>
                     <article class="fade-in-stagger flex flex-col sm:row-span-2 sm:grid sm:grid-rows-subgrid lg:col-span-2 cursor-pointer" data-project="kaffee-packaging">
-                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem]">
+                        <div class="group overflow-hidden rounded-[0.375rem] sm:rounded-[0.1875rem] relative">
                             <img src="images/projects/kaffee-packaging.jpg" alt="Kaffee-Packaging" class="w-full object-cover max-sm:aspect-[4/5] sm:h-full sm:min-h-0 transform transition-transform duration-300 lg:group-hover:scale-[1.02]">
+                            <div class="flex flex-wrap justify-end gap-[0.5rem] md:gap-2 absolute top-[12px] left-[12px] right-[12px] md:top-4 md:left-4 md:right-4 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity lg:duration-300">
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Art Direktion</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Brand Design</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Packaging</span>
+                                <span class="rounded-full bg-white/80 px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Freelance</span>
+                            </div>
                         </div>
-                        <div class="mt-4 sm:mt-0 space-y-[2px] min-[480px]:space-y-0">
-                            <h3 class="text-[1.56rem] min-[480px]:text-[1rem] font-normal text-dark">Kaffee-Packaging</h3>
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung eigenständiger Designlösungen für eine Kaffee-Produktlinie.</p>
+                        <div class="mt-4 sm:mt-0 space-y-[2px] md:space-y-0">
+                            <h3 class="text-[1.56rem] md:text-[1rem] font-normal text-dark">Kaffee-Packaging</h3>
+                            <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Entwicklung eigenständiger Designlösungen für eine Kaffee-Produktlinie.</p>
                         </div>
                     </article>
                 </div>
@@ -169,29 +217,29 @@
         </section>
 
         <!-- Über mich (Dark Section) -->
-        <section id="ueber-mich" class="fade-in-section relative overflow-hidden bg-[#121212] px-[16px] pt-[24px] min-[480px]:pt-[2.1875rem] pb-[32px] min-[480px]:pb-12 text-white sm:px-16 md:px-9 lg:pb-16">
+        <section id="ueber-mich" class="fade-in-section relative overflow-hidden bg-[#121212] px-[16px] pt-[24px] md:pt-[2.1875rem] pb-[32px] md:pb-12 text-white sm:px-16 md:px-9 lg:pb-16">
             <div class="mx-auto max-w-[104.5rem]">
-                <p class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] mb-[24px] min-[480px]:mb-[1rem] text-neutral-400">Über mich</p>
-                <div class="flex flex-col gap-[24px] min-[480px]:gap-8 min-[480px]:grid min-[480px]:grid-cols-[1fr_2fr] min-[480px]:items-start min-[480px]:gap-x-10 min-[480px]:gap-y-[2rem] lg:gap-x-2">
+                <p class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] md:text-[0.875rem] uppercase tracking-[0.05em] mb-[24px] md:mb-[1rem] text-neutral-400">Über mich</p>
+                <div class="flex flex-col gap-[24px] md:gap-8 md:grid md:grid-cols-[1fr_2fr] md:items-start md:gap-x-10 md:gap-y-[2rem] lg:gap-x-2">
                     <!-- Headline: right column, row 1 -->
-                    <div class="max-sm:relative max-sm:z-10 max-sm:order-1 min-[480px]:col-start-2">
-                        <h2 class="font-[neue-haas-grotesk-display,sans-serif] font-light max-[479px]:[font-size:calc((100vw_-_32px)_/_11.5)] whitespace-nowrap leading-[1.2] text-[3.375rem] min-[480px]:whitespace-normal min-[480px]:ml-[calc(-10.8%-1.62rem)]">
-                            Ich liebe die Herausforderung,<br>Informationen <span class="font-[ivypresto-display,serif] font-light italic">in eine klare<br class="min-[480px]:hidden"> visuelle Sprache<br class="hidden xl:inline"> zu bringen.</span>
+                    <div class="max-sm:relative max-sm:z-10 max-sm:order-1 md:col-start-2">
+                        <h2 class="font-[neue-haas-grotesk-display,sans-serif] font-light max-[479px]:[font-size:calc((100vw_-_32px)_/_11.5)] whitespace-nowrap leading-[1.2] text-[3.375rem] md:whitespace-normal md:ml-[calc(-10.8%-1.62rem)]">
+                            Ich liebe die Herausforderung,<br>Informationen <span class="font-[ivypresto-display,serif] font-light italic">in eine klare<br class="md:hidden"> visuelle Sprache<br class="hidden xl:inline"> zu bringen.</span>
                         </h2>
                     </div>
                     <!-- Portrait + flowers: left column, row 2 -->
-                    <div class="relative flex flex-col gap-6 max-sm:order-2 max-sm:mt-0 min-[480px]:col-start-1 min-[480px]:row-start-2">
+                    <div class="relative flex flex-col gap-6 max-sm:order-2 max-sm:mt-0 md:col-start-1 md:row-start-2">
                         <img src="images/decor/blume.svg" alt="" class="absolute max-sm:hidden h-[4.25rem] w-[4.3rem] -translate-y-full -mt-6" aria-hidden="true">
-                        <img src="images/portrait-sofia.jpg" alt="Sofia Cavelius" class="h-[17.0625rem] w-[13.625rem] rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover min-[480px]:ml-auto min-[480px]:mr-[calc(21.6%-0.88rem)]">
-                        <img src="images/decor/blume.svg" alt="" class="absolute -right-[3.5rem] top-[97%] -translate-y-1/2 h-[4.25rem] w-[4.3rem] min-[480px]:hidden" aria-hidden="true">
-                        <img src="images/decor/blume.svg" alt="" class="absolute right-[9rem] top-[15%] h-[4.25rem] w-[4.3rem] min-[480px]:hidden" aria-hidden="true">
+                        <img src="images/portrait-sofia.jpg" alt="Sofia Cavelius" class="h-[17.0625rem] w-[13.625rem] rounded-[0.375rem] sm:rounded-[0.1875rem] object-cover md:ml-auto md:mr-[calc(21.6%-0.88rem)]">
+                        <img src="images/decor/blume.svg" alt="" class="absolute -right-[3.5rem] top-[97%] -translate-y-1/2 h-[4.25rem] w-[4.3rem] md:hidden" aria-hidden="true">
+                        <img src="images/decor/blume.svg" alt="" class="absolute right-[9rem] top-[15%] h-[4.25rem] w-[4.3rem] md:hidden" aria-hidden="true">
                         <img src="images/decor/blume.svg" alt="" class="max-sm:hidden h-[4.25rem] w-[4.3rem] translate-x-[140%] translate-y-[140%]" aria-hidden="true">
                     </div>
                     <!-- Body text: right column, row 2 -->
-                    <div class="relative max-sm:order-3 min-[480px]:col-start-2 min-[480px]:row-start-2">
+                    <div class="relative max-sm:order-3 md:col-start-2 md:row-start-2">
                         <img src="images/decor/blume.svg" alt="" class="absolute max-sm:hidden h-[4.25rem] w-[4.3rem] right-0 top-[53%]" aria-hidden="true">
                         <div id="ueber-mich-text" class="ueber-mich-text-collapse">
-                            <div class="max-w-[41.5rem] space-y-[12px] min-[480px]:space-y-4 text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-neutral-300">
+                            <div class="max-w-[41.5rem] space-y-[12px] md:space-y-4 text-[1.56rem] md:text-[1rem] leading-normal md:leading-relaxed text-neutral-300">
                                 <p>Das Erschaffen visueller Welten, in denen die Elemente wie Zahnräder ineinandergreifen, sich gegenseitig stützen und langfristig funktionieren. Wenn ein Design nicht nur schön ist, sondern trägt, skaliert und Orientierung gibt.</p>
                                 <p>Mein Herz schlägt besonders für Typografie. Schriften haben für mich Persönlichkeit – sie können leise oder laut, verspielt oder präzise, zurückhaltend oder selbstbewusst sein. Ich experimentiere gern mit Kombinationen und finde Freude daran, für jedes Projekt die passende Stimme zu finden.</p>
                                 <p>Illustration ist ebenfalls ein wichtiger Teil meiner Arbeit. Ich probiere unterschiedliche Stile aus, um Projekten eine eigene Handschrift zu verleihen – auch in meiner Freizeit. <a href="https://www.instagram.com/_sofiasart/" target="_blank" rel="noopener noreferrer" class="text-white underline underline-offset-4 transition-opacity hover:opacity-70 whitespace-nowrap">Meine Illustrationen</a></p>
@@ -199,7 +247,7 @@
                                 <p>An meiner Arbeit ist es mir wichtig, nicht nur zu gestalten, sondern auch zu begleiten: Marken zu stärken, Entscheidungen zu erleichtern und Prozesse verständlich zu machen.</p>
                             </div>
                         </div>
-                        <button id="ueber-mich-expand" class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10 min-[480px]:hidden" aria-expanded="false">
+                        <button id="ueber-mich-expand" class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2.5 text-[1.46rem] md:text-[0.9375rem] text-white transition-colors hover:bg-white/10 md:hidden" aria-expanded="false">
                             <span>Weiterlesen</span>
                             <svg class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
@@ -208,87 +256,87 @@
                     </div>
                 </div>
             </div>
-            <img src="images/decor/blume.svg" alt="" class="absolute bottom-[1%] left-[75%] -translate-x-1/2 translate-y-1/2 h-[4.25rem] w-[4.3rem] min-[480px]:hidden" aria-hidden="true">
+            <img src="images/decor/blume.svg" alt="" class="absolute bottom-[1%] left-[75%] -translate-x-1/2 translate-y-1/2 h-[4.25rem] w-[4.3rem] md:hidden" aria-hidden="true">
         </section>
 
         <!-- Werdegang (Career Accordion) -->
-        <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
+        <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] md:py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section grid gap-8 lg:grid-cols-3 lg:gap-x-2">
-                <p class="font-medium text-[1.56rem] min-[480px]:text-[1rem] text-dark">Werdegang</p>
+                <p class="font-medium text-[1.56rem] md:text-[1rem] text-dark">Werdegang</p>
                 <div class="divide-y divide-gray-border lg:col-span-2">
                     <div class="accordion-item group/accordion" data-open="false">
                         <button class="group/btn flex w-full items-center justify-between py-4 lg:pt-0 text-left cursor-pointer" aria-expanded="false">
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Selbständige Senior Kommunikationsdesignerin</p>
+                            <p class="text-[1.56rem] md:text-[1rem] text-dark">Selbständige Senior Kommunikationsdesignerin</p>
                             <div class="flex shrink-0 items-center gap-4">
-                                <span class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">2023</span>
+                                <span class="text-[1.56rem] md:text-[1rem] text-dark">2023</span>
                                 <svg class="h-6 w-6 text-dark transition duration-300 group-hover/btn:opacity-60 group-data-[open=true]/accordion:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
                                 </svg>
                             </div>
                         </button>
                         <div class="accordion-content max-h-0 overflow-hidden transition-[max-height] duration-350 ease-in-out group-data-[open=true]/accordion:max-h-[200rem]">
-                            <p class="pb-4 text-[1.56rem] min-[480px]:text-[1rem] text-gray-01">2023 habe ich meinen Mut zusammengenommen und den Schritt in die Selbstständigkeit gewagt. Seitdem arbeite ich als Senior Kommunikationsdesignerin mit einem Fokus auf Editorial Design, Packaging und digitales Design.</p>
-                            <p class="pb-4 text-[1.56rem] min-[480px]:text-[1rem] text-gray-01">An meiner selbstständigen Arbeit schätze ich besonders den engen Austausch mit meinen Kund:innen – gemeinsam komplexe Inhalte zu strukturieren, in eine klare visuelle Sprache zu übersetzen und Ideen zum Leben zu bringen. Dabei ist es mir wichtig, nicht nur zu gestalten, sondern auch zu begleiten: Marken zu stärken, Entscheidungen zu erleichtern und Prozesse verständlich zu machen.</p>
+                            <p class="pb-4 text-[1.56rem] md:text-[1rem] text-gray-01">2023 habe ich meinen Mut zusammengenommen und den Schritt in die Selbstständigkeit gewagt. Seitdem arbeite ich als Senior Kommunikationsdesignerin mit einem Fokus auf Editorial Design, Packaging und digitales Design.</p>
+                            <p class="pb-4 text-[1.56rem] md:text-[1rem] text-gray-01">An meiner selbstständigen Arbeit schätze ich besonders den engen Austausch mit meinen Kund:innen – gemeinsam komplexe Inhalte zu strukturieren, in eine klare visuelle Sprache zu übersetzen und Ideen zum Leben zu bringen. Dabei ist es mir wichtig, nicht nur zu gestalten, sondern auch zu begleiten: Marken zu stärken, Entscheidungen zu erleichtern und Prozesse verständlich zu machen.</p>
                         </div>
                     </div>
                     <div class="accordion-item group/accordion" data-open="false">
                         <button class="group/btn flex w-full items-center justify-between py-4 text-left cursor-pointer" aria-expanded="false">
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Senior Kommunikations-<br class="min-[480px]:hidden"> und Kollektionsdesignerin</p>
+                            <p class="text-[1.56rem] md:text-[1rem] text-dark">Senior Kommunikations-<br class="md:hidden"> und Kollektionsdesignerin</p>
                             <div class="flex shrink-0 items-center gap-4">
-                                <span class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">2021–2023</span>
+                                <span class="text-[1.56rem] md:text-[1rem] text-dark">2021–2023</span>
                                 <svg class="h-6 w-6 text-dark transition duration-300 group-hover/btn:opacity-60 group-data-[open=true]/accordion:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
                                 </svg>
                             </div>
                         </button>
                         <div class="accordion-content max-h-0 overflow-hidden transition-[max-height] duration-350 ease-in-out group-data-[open=true]/accordion:max-h-[200rem]">
-                            <p class="pb-4 text-[1.56rem] min-[480px]:text-[1rem] text-gray-01">Im Rahmen meiner Festanstellung bei Heinen Lovebrands übernahm ich im hauseigenen Lifestyle-Magazin „Things We Write" die Rolle des Design Leads und durfte ein kleines Kreativteam führen. In dieser Position war ich verantwortlich für die visuelle Konzeption und gestalterische Weiterentwicklung des Magazins – von der Heftstruktur und Typografie bis hin zu Illustrationen und Bildwelten.</p>
-                            <p class="pb-4 text-[1.56rem] min-[480px]:text-[1rem] text-gray-01">Durch diese Aufgabe konnte ich meine Fähigkeiten im Art Direction, Team-Management und Markenaufbau vertiefen und erhielt schließlich die Beförderung zur Senior Kommunikations- und Kollektionsdesignerin.</p>
-                            <p class="pb-4 text-[1.56rem] min-[480px]:text-[1rem] text-gray-01">Neben der Leitung des Magazins war ich weiterhin in die Entwicklung neuer Papeteriekollektionen und Packaging-Konzepte eingebunden.</p>
+                            <p class="pb-4 text-[1.56rem] md:text-[1rem] text-gray-01">Im Rahmen meiner Festanstellung bei Heinen Lovebrands übernahm ich im hauseigenen Lifestyle-Magazin „Things We Write" die Rolle des Design Leads und durfte ein kleines Kreativteam führen. In dieser Position war ich verantwortlich für die visuelle Konzeption und gestalterische Weiterentwicklung des Magazins – von der Heftstruktur und Typografie bis hin zu Illustrationen und Bildwelten.</p>
+                            <p class="pb-4 text-[1.56rem] md:text-[1rem] text-gray-01">Durch diese Aufgabe konnte ich meine Fähigkeiten im Art Direction, Team-Management und Markenaufbau vertiefen und erhielt schließlich die Beförderung zur Senior Kommunikations- und Kollektionsdesignerin.</p>
+                            <p class="pb-4 text-[1.56rem] md:text-[1rem] text-gray-01">Neben der Leitung des Magazins war ich weiterhin in die Entwicklung neuer Papeteriekollektionen und Packaging-Konzepte eingebunden.</p>
                         </div>
                     </div>
                     <div class="accordion-item group/accordion" data-open="false">
                         <button class="group/btn flex w-full items-center justify-between py-4 text-left cursor-pointer" aria-expanded="false">
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Kommunikations-<br class="min-[480px]:hidden"> und Kollektionsdesignerin</p>
+                            <p class="text-[1.56rem] md:text-[1rem] text-dark">Kommunikations-<br class="md:hidden"> und Kollektionsdesignerin</p>
                             <div class="flex shrink-0 items-center gap-4">
-                                <span class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">2019–2020</span>
+                                <span class="text-[1.56rem] md:text-[1rem] text-dark">2019–2020</span>
                                 <svg class="h-6 w-6 text-dark transition duration-300 group-hover/btn:opacity-60 group-data-[open=true]/accordion:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
                                 </svg>
                             </div>
                         </button>
                         <div class="accordion-content max-h-0 overflow-hidden transition-[max-height] duration-350 ease-in-out group-data-[open=true]/accordion:max-h-[200rem]">
-                            <p class="pb-4 text-[1.56rem] min-[480px]:text-[1rem] text-gray-01">Nach meinem Bachelorstudium habe ich mich entschieden, bei Heinen Lovebrands als Kommunikations- und Kollektionsdesignerin zu arbeiten. Heinen Lovebrands ist ein Verlag, der zwei Papeterie-Marken unter seinem Dach vereint: Odernichtoderdoch und Jo & Judy. Besonders bekannt sind die Marken für ihre jährlichen Kalender und liebevoll gestalteten Papeterieprodukte.</p>
-                            <p class="pb-4 text-[1.56rem] min-[480px]:text-[1rem] text-gray-01">In meiner Festanstellung gehörte es zu meinen Aufgaben, neue Gestaltungssysteme für Kalender und komplette Papeteriekollektionen zu entwickeln – von der ersten Idee bis zum finalen Produkt. Darüber hinaus war ich auch im Packaging-Design und Magazindesign tätig und konnte so mein Gespür für Materialität, Typografie und Markenästhetik weiter vertiefen.</p>
-                            <p class="pb-4 text-[1.56rem] min-[480px]:text-[1rem] text-gray-01">Ein besonderes Highlight war die Zusammenarbeit mit bekannten Influencer:innen, für die ich individuelle Produktlinien und limitierte Editionen gestalten durfte. Diese Arbeit hat mir gezeigt, wie wichtig es ist, Design mit einer starken Markenidentität und emotionaler Wirkung zu verbinden.</p>
+                            <p class="pb-4 text-[1.56rem] md:text-[1rem] text-gray-01">Nach meinem Bachelorstudium habe ich mich entschieden, bei Heinen Lovebrands als Kommunikations- und Kollektionsdesignerin zu arbeiten. Heinen Lovebrands ist ein Verlag, der zwei Papeterie-Marken unter seinem Dach vereint: Odernichtoderdoch und Jo & Judy. Besonders bekannt sind die Marken für ihre jährlichen Kalender und liebevoll gestalteten Papeterieprodukte.</p>
+                            <p class="pb-4 text-[1.56rem] md:text-[1rem] text-gray-01">In meiner Festanstellung gehörte es zu meinen Aufgaben, neue Gestaltungssysteme für Kalender und komplette Papeteriekollektionen zu entwickeln – von der ersten Idee bis zum finalen Produkt. Darüber hinaus war ich auch im Packaging-Design und Magazindesign tätig und konnte so mein Gespür für Materialität, Typografie und Markenästhetik weiter vertiefen.</p>
+                            <p class="pb-4 text-[1.56rem] md:text-[1rem] text-gray-01">Ein besonderes Highlight war die Zusammenarbeit mit bekannten Influencer:innen, für die ich individuelle Produktlinien und limitierte Editionen gestalten durfte. Diese Arbeit hat mir gezeigt, wie wichtig es ist, Design mit einer starken Markenidentität und emotionaler Wirkung zu verbinden.</p>
                         </div>
                     </div>
                     <div class="accordion-item group/accordion" data-open="false">
                         <button class="group/btn flex w-full items-center justify-between py-4 text-left cursor-pointer" aria-expanded="false">
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Bachelor Kommunikations-<br class="min-[480px]:hidden"> und Mediendesign</p>
+                            <p class="text-[1.56rem] md:text-[1rem] text-dark">Bachelor Kommunikations-<br class="md:hidden"> und Mediendesign</p>
                             <div class="flex shrink-0 items-center gap-4">
-                                <span class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">2015–2019</span>
+                                <span class="text-[1.56rem] md:text-[1rem] text-dark">2015–2019</span>
                                 <svg class="h-6 w-6 text-dark transition duration-300 group-hover/btn:opacity-60 group-data-[open=true]/accordion:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
                                 </svg>
                             </div>
                         </button>
                         <div class="accordion-content max-h-0 overflow-hidden transition-[max-height] duration-350 ease-in-out group-data-[open=true]/accordion:max-h-[200rem]">
-                            <p class="pb-4 text-[1.56rem] min-[480px]:text-[1rem] text-gray-01">Nach meiner Ausbildung zur Mediengestalterin wollte ich mein gestalterisches Wissen weiter vertiefen und meinen Blick für konzeptionelles Design schärfen. Deshalb habe ich mich entschieden, Kommunikations- und Mediendesign an der Münster School of Design (MSD) zu studieren. Im Studium konnte ich meine gestalterischen und technischen Kenntnisse erweitern – insbesondere in den Bereichen visuelle Kommunikation, Typografie, Branding und interaktive Medien.</p>
+                            <p class="pb-4 text-[1.56rem] md:text-[1rem] text-gray-01">Nach meiner Ausbildung zur Mediengestalterin wollte ich mein gestalterisches Wissen weiter vertiefen und meinen Blick für konzeptionelles Design schärfen. Deshalb habe ich mich entschieden, Kommunikations- und Mediendesign an der Münster School of Design (MSD) zu studieren. Im Studium konnte ich meine gestalterischen und technischen Kenntnisse erweitern – insbesondere in den Bereichen visuelle Kommunikation, Typografie, Branding und interaktive Medien.</p>
                         </div>
                     </div>
                     <div class="accordion-item group/accordion" data-open="false">
                         <button class="group/btn flex w-full items-center justify-between py-4 text-left cursor-pointer" aria-expanded="false">
-                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Mediengestalterin Digital<br class="min-[480px]:hidden"> und Print</p>
+                            <p class="text-[1.56rem] md:text-[1rem] text-dark">Mediengestalterin Digital<br class="md:hidden"> und Print</p>
                             <div class="flex shrink-0 items-center gap-4">
-                                <span class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">2011–2014</span>
+                                <span class="text-[1.56rem] md:text-[1rem] text-dark">2011–2014</span>
                                 <svg class="h-6 w-6 text-dark transition duration-300 group-hover/btn:opacity-60 group-data-[open=true]/accordion:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
                                 </svg>
                             </div>
                         </button>
                         <div class="accordion-content max-h-0 overflow-hidden transition-[max-height] duration-350 ease-in-out group-data-[open=true]/accordion:max-h-[200rem]">
-                            <p class="pb-4 text-[1.56rem] min-[480px]:text-[1rem] text-gray-01">Ich habe meine dreijährige Ausbildung zur Mediengestalterin Digital und Print bei der Werbeagentur Mock and More in Münster absolviert. Während dieser Zeit konnte ich erste Erfahrungen in der Zusammenarbeit mit großen Marken wie Jacobs Krönung und Milka sammeln. Neben der Arbeit an verschiedenen Kundenprojekten lag mein Schwerpunkt insbesondere auf Bildretusche und Druckvorstufe, wodurch ich ein fundiertes technisches Verständnis für Produktionsprozesse entwickeln konnte.</p>
+                            <p class="pb-4 text-[1.56rem] md:text-[1rem] text-gray-01">Ich habe meine dreijährige Ausbildung zur Mediengestalterin Digital und Print bei der Werbeagentur Mock and More in Münster absolviert. Während dieser Zeit konnte ich erste Erfahrungen in der Zusammenarbeit mit großen Marken wie Jacobs Krönung und Milka sammeln. Neben der Arbeit an verschiedenen Kundenprojekten lag mein Schwerpunkt insbesondere auf Bildretusche und Druckvorstufe, wodurch ich ein fundiertes technisches Verständnis für Produktionsprozesse entwickeln konnte.</p>
                         </div>
                     </div>
                     <div></div>
@@ -297,116 +345,116 @@
         </section>
 
         <!-- Kompetenzen & Werkzeuge -->
-        <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
+        <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] md:py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section grid gap-8 lg:grid-cols-3 lg:gap-x-2 lg:items-baseline">
-                <p class="font-medium text-[1.56rem] min-[480px]:text-[1rem] text-dark">Kompetenzen &amp; Werkzeuge</p>
-                <div class="space-y-[3rem] min-[480px]:space-y-[2rem] lg:col-span-2">
-                    <div class="flex flex-wrap items-center gap-[0.5rem] min-[480px]:gap-2">
-                        <p class="w-full text-[1.56rem] min-[480px]:text-[1rem] text-dark">Digital Design</p>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Figma</span>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe XD</span>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Prototyping</span>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">UX/UI</span>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">HTML, CSS, JavaScript</span>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Layout &amp; Interface Design</span>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Wordpress mit Elementor</span>
+                <p class="font-medium text-[1.56rem] md:text-[1rem] text-dark">Kompetenzen &amp; Werkzeuge</p>
+                <div class="space-y-[3rem] md:space-y-[2rem] lg:col-span-2">
+                    <div class="flex flex-wrap items-center gap-[0.5rem] md:gap-2">
+                        <p class="w-full text-[1.56rem] md:text-[1rem] text-dark">Digital Design</p>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Figma</span>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Adobe XD</span>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Prototyping</span>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">UX/UI</span>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">HTML, CSS, JavaScript</span>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Layout &amp; Interface Design</span>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Wordpress mit Elementor</span>
                     </div>
-                    <div class="flex flex-wrap items-center gap-[0.5rem] min-[480px]:gap-2">
-                        <p class="w-full text-[1.56rem] min-[480px]:text-[1rem] text-dark">Print Design</p>
-                        <span class="rounded-full bg-tag-green px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe InDesign</span>
-                        <span class="rounded-full bg-tag-green px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Layout &amp; Editorial Design</span>
-                        <span class="rounded-full bg-tag-green px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Packaging Design</span>
-                        <span class="rounded-full bg-tag-green px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Reinzeichnung &amp; Druckvorstufe</span>
+                    <div class="flex flex-wrap items-center gap-[0.5rem] md:gap-2">
+                        <p class="w-full text-[1.56rem] md:text-[1rem] text-dark">Print Design</p>
+                        <span class="rounded-full bg-tag-green px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Adobe InDesign</span>
+                        <span class="rounded-full bg-tag-green px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Layout &amp; Editorial Design</span>
+                        <span class="rounded-full bg-tag-green px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Packaging Design</span>
+                        <span class="rounded-full bg-tag-green px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Reinzeichnung &amp; Druckvorstufe</span>
                     </div>
-                    <div class="flex flex-wrap items-center gap-[0.5rem] min-[480px]:gap-2">
-                        <p class="w-full text-[1.56rem] min-[480px]:text-[1rem] text-dark">Illustration, Animation &amp; Bildbearbeitung</p>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe Illustrator</span>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe Photoshop</span>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Adobe After Effects</span>
-                        <span class="rounded-full bg-tag-purple px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Procreate</span>
+                    <div class="flex flex-wrap items-center gap-[0.5rem] md:gap-2">
+                        <p class="w-full text-[1.56rem] md:text-[1rem] text-dark">Illustration, Animation &amp; Bildbearbeitung</p>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Adobe Illustrator</span>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Adobe Photoshop</span>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Adobe After Effects</span>
+                        <span class="rounded-full bg-tag-purple px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Procreate</span>
                     </div>
-                    <div class="flex flex-wrap items-center gap-[0.5rem] min-[480px]:gap-2">
-                        <p class="w-full text-[1.56rem] min-[480px]:text-[1rem] text-dark">Visuelle Systeme &amp; Konzeption</p>
-                        <span class="rounded-full bg-tag-green px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Designsysteme</span>
-                        <span class="rounded-full bg-tag-green px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Typografie</span>
-                        <span class="rounded-full bg-tag-green px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Moodboards</span>
-                        <span class="rounded-full bg-tag-green px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem]">Markenentwicklung</span>
+                    <div class="flex flex-wrap items-center gap-[0.5rem] md:gap-2">
+                        <p class="w-full text-[1.56rem] md:text-[1rem] text-dark">Visuelle Systeme &amp; Konzeption</p>
+                        <span class="rounded-full bg-tag-green px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Designsysteme</span>
+                        <span class="rounded-full bg-tag-green px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Typografie</span>
+                        <span class="rounded-full bg-tag-green px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Moodboards</span>
+                        <span class="rounded-full bg-tag-green px-[12px] md:px-4 py-[6px] md:py-1.5 text-[1.46rem] md:text-[0.9375rem]">Markenentwicklung</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Kundenbewertungen -->
-        <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] min-[480px]:py-12 sm:px-16 md:px-9 lg:py-16">
+        <section class="mx-auto max-w-[104.5rem] px-[16px] py-[32px] md:py-12 sm:px-16 md:px-9 lg:py-16">
             <div class="fade-in-section">
-                <p class="font-medium mb-[24px] min-[480px]:mb-8 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Das sagen Kunden</p>
+                <p class="font-medium mb-[24px] md:mb-8 text-[1.56rem] md:text-[1rem] text-dark">Das sagen Kunden</p>
                 <div id="testimonial-scroll" class="overflow-x-auto scrollbar-hide pb-4" style="container-type: inline-size;">
-                  <div id="testimonial-track" class="flex gap-[8px] min-[480px]:gap-2">
+                  <div id="testimonial-track" class="flex gap-[8px] md:gap-2">
                     <!-- Karte 1 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] md:w-[calc((100cqi-1.5rem)/3.2)] md:min-w-0 md:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] md:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] md:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Philipp Riedel</p>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-dark">Philipp Riedel</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
                             </div>
                         </div>
-                        <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
+                        <p class="text-[1.56rem] md:text-[1rem] leading-normal md:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
                     </article>
                     <!-- Karte 2 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] md:w-[calc((100cqi-1.5rem)/3.2)] md:min-w-0 md:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] md:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] md:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Philipp Riedel</p>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-dark">Philipp Riedel</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
                             </div>
                         </div>
-                        <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
+                        <p class="text-[1.56rem] md:text-[1rem] leading-normal md:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
                     </article>
                     <!-- Karte 3 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] md:w-[calc((100cqi-1.5rem)/3.2)] md:min-w-0 md:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] md:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] md:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Philipp Riedel</p>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-dark">Philipp Riedel</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
                             </div>
                         </div>
-                        <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla.</p>
+                        <p class="text-[1.56rem] md:text-[1rem] leading-normal md:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla.</p>
                     </article>
                     <!-- Karte 4 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] md:w-[calc((100cqi-1.5rem)/3.2)] md:min-w-0 md:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] md:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] md:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Philipp Riedel</p>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-dark">Philipp Riedel</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
                             </div>
                         </div>
-                        <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur.</p>
+                        <p class="text-[1.56rem] md:text-[1rem] leading-normal md:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur.</p>
                     </article>
                     <!-- Karte 5 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] md:w-[calc((100cqi-1.5rem)/3.2)] md:min-w-0 md:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] md:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] md:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Philipp Riedel</p>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-dark">Philipp Riedel</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
                             </div>
                         </div>
-                        <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
+                        <p class="text-[1.56rem] md:text-[1rem] leading-normal md:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</p>
                     </article>
                     <!-- Karte 6 -->
-                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] min-[480px]:w-[calc((100cqi-1.5rem)/3.2)] min-[480px]:min-w-0 min-[480px]:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] min-[480px]:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] min-[480px]:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
+                    <article class="w-[calc((100cqi-1rem)/3)] min-w-[85vw] md:w-[calc((100cqi-1.5rem)/3.2)] md:min-w-0 md:aspect-[8/5] flex-shrink-0 rounded-[0.375rem] md:rounded-[0.1875rem] bg-[#FAFAFA] p-[24px] md:p-8 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:shadow-[0px_0px_12px_0px_rgba(0,0,0,0.10)]">
                         <div class="mb-4 flex items-center gap-4">
                             <img src="images/decor/kunde-philipp.jpg" alt="Philipp Riedel" class="h-14 w-14 rounded-full object-cover">
                             <div>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark">Philipp Riedel</p>
-                                <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-dark">Philipp Riedel</p>
+                                <p class="text-[1.56rem] md:text-[1rem] text-gray-02">Geschäftsführer Glazed</p>
                             </div>
                         </div>
-                        <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla.</p>
+                        <p class="text-[1.56rem] md:text-[1rem] leading-normal md:leading-relaxed text-dark">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla.</p>
                     </article>
                   </div>
                 </div>
@@ -414,7 +462,7 @@
         </section>
 
         <!-- CTA -->
-        <section class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] sm:px-16 md:px-9 pb-[32px] min-[480px]:pb-[3.4rem] lg:pb-[4.9rem]">
+        <section class="fade-in-section mx-auto max-w-[104.5rem] px-[16px] sm:px-16 md:px-9 pb-[32px] md:pb-[3.4rem] lg:pb-[4.9rem]">
             <h2 class="font-[neue-haas-grotesk-display,sans-serif] font-light text-[4.875rem] leading-[1.2]">
                 Lass uns <span class="font-[ivypresto-display,serif] font-light italic mr-[0.04em]">zusammen</span> arbeiten <img src="images/decor/smiley.svg" alt="" class="inline-block h-[0.935em] w-[0.935em] align-[-.15em]" aria-hidden="true">
             </h2>
@@ -422,20 +470,20 @@
     </main>
 
     <!-- Footer -->
-    <footer id="kontakt" class="bg-black text-white min-h-[256px] min-[480px]:min-h-[24.64rem] lg:min-h-[29.92rem]">
-        <div class="mx-auto max-w-[104.5rem] px-[16px] pt-[24px] min-[480px]:pt-[2.1875rem] pb-[96px] min-[480px]:pb-[4.3875rem] sm:px-16 md:px-9 lg:pb-[5.85rem]">
-            <p class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] mb-[48px] min-[480px]:mb-[8.75rem] text-neutral-400">Kontakt</p>
-            <div class="grid gap-[48px] min-[480px]:gap-10 min-[480px]:grid-cols-2">
+    <footer id="kontakt" class="bg-black text-white min-h-[256px] md:min-h-[24.64rem] lg:min-h-[29.92rem]">
+        <div class="mx-auto max-w-[104.5rem] px-[16px] pt-[24px] md:pt-[2.1875rem] pb-[96px] md:pb-[4.3875rem] sm:px-16 md:px-9 lg:pb-[5.85rem]">
+            <p class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] md:text-[0.875rem] uppercase tracking-[0.05em] mb-[48px] md:mb-[8.75rem] text-neutral-400">Kontakt</p>
+            <div class="grid gap-[48px] md:gap-10 md:grid-cols-2">
                 <div>
-                    <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-white">Ich freue mich auf deine Nachricht:</p>
-                    <a href="mailto:sofiacavelius@neuemailerstellen.de" class="mt-1 block text-[1.56rem] min-[480px]:text-[1rem] text-white underline underline-offset-4 transition-opacity hover:opacity-70">sofiacavelius@neuemailerstellen.de</a>
-                    <div class="mt-[40px] min-[480px]:mt-32 flex flex-wrap gap-[8px] min-[480px]:gap-3">
-                        <a href="#" class="rounded-full border border-white/30 px-5 min-[480px]:px-4 py-2.5 min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Instagram</a>
-                        <a href="#" class="rounded-full border border-white/30 px-5 min-[480px]:px-4 py-2.5 min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Linkedin</a>
-                        <a href="#" class="rounded-full border border-white/30 px-5 min-[480px]:px-4 py-2.5 min-[480px]:py-2 text-[1.46rem] min-[480px]:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Behance</a>
+                    <p class="text-[1.56rem] md:text-[1rem] leading-normal md:leading-relaxed text-white">Ich freue mich auf deine Nachricht:</p>
+                    <a href="mailto:sofiacavelius@neuemailerstellen.de" class="mt-1 block text-[1.56rem] md:text-[1rem] text-white underline underline-offset-4 transition-opacity hover:opacity-70">sofiacavelius@neuemailerstellen.de</a>
+                    <div class="mt-[40px] md:mt-32 flex flex-wrap gap-[8px] md:gap-3">
+                        <a href="#" class="rounded-full border border-white/30 px-5 md:px-4 py-2.5 md:py-2 text-[1.46rem] md:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Instagram</a>
+                        <a href="#" class="rounded-full border border-white/30 px-5 md:px-4 py-2.5 md:py-2 text-[1.46rem] md:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Linkedin</a>
+                        <a href="#" class="rounded-full border border-white/30 px-5 md:px-4 py-2.5 md:py-2 text-[1.46rem] md:text-[0.9375rem] text-white transition-colors hover:bg-white/10">Behance</a>
                     </div>
                 </div>
-                <div class="flex flex-col justify-end gap-0.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-neutral-400 min-[480px]:items-end min-[480px]:text-right">
+                <div class="flex flex-col justify-end gap-0.5 text-[1.46rem] md:text-[0.9375rem] text-neutral-400 md:items-end md:text-right">
                     <p>Design und Entwicklung: Sofia Cavelius<br>&copy; 2025 all rights reserved</p>
                     <a href="imprint.html" class="mt-3 text-white transition-opacity hover:opacity-70">Impressum</a>
                 </div>
@@ -448,7 +496,7 @@
         <div class="project-overlay__scroll h-full overflow-y-auto overscroll-contain [-webkit-overflow-scrolling:touch]">
             <div id="project-overlay-content" class="min-h-full"></div>
         </div>
-        <button id="overlay-scroll-top" class="group absolute bottom-[16px] right-[16px] sm:bottom-16 sm:right-16 md:bottom-9 md:right-9 z-10 flex size-[4rem] min-[480px]:size-[2.75rem] items-center justify-center rounded-full bg-white/80 backdrop-blur-xl transition hover:scale-110 hover:bg-white/60 cursor-pointer focus:outline-none opacity-0 pointer-events-none" aria-label="Nach oben scrollen">
+        <button id="overlay-scroll-top" class="group absolute bottom-[16px] right-[16px] sm:bottom-16 sm:right-16 md:bottom-9 md:right-9 z-10 flex size-[4rem] md:size-[2.75rem] items-center justify-center rounded-full bg-white/80 backdrop-blur-xl transition hover:scale-110 hover:bg-white/60 cursor-pointer focus:outline-none opacity-0 pointer-events-none" aria-label="Nach oben scrollen">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform -translate-y-px">
                 <polyline points="18 15 12 9 6 15"></polyline>
             </svg>
