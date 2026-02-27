@@ -205,36 +205,6 @@ const projectOverlay = document.getElementById("project-overlay");
 const projectOverlayContent = document.getElementById("project-overlay-content");
 const projectOverlayScroll = projectOverlay ? projectOverlay.querySelector(".project-overlay__scroll") : null;
 const projectCache = {};
-
-// RAF loop: runs while overlay is open, checks visibility each frame.
-// More reliable than scroll events on iOS/mobile Chrome (momentum scrolling).
-let overlayVisibilityRAF = null;
-
-function checkOverlayVisibility() {
-    if (!projectOverlayScroll || !projectOverlayContent) return;
-    const containerBottom = projectOverlayScroll.getBoundingClientRect().bottom;
-    projectOverlayContent.querySelectorAll(".project-detail-section:not(.is-visible)").forEach((el) => {
-        if (el.getBoundingClientRect().top < containerBottom - 20) {
-            el.classList.add("is-visible");
-        }
-    });
-}
-
-function loopCheckOverlayVisibility() {
-    if (!projectOverlay || !projectOverlay.classList.contains("is-open")) {
-        overlayVisibilityRAF = null;
-        return;
-    }
-    checkOverlayVisibility();
-    const remaining = projectOverlayContent
-        ? projectOverlayContent.querySelectorAll(".project-detail-section:not(.is-visible)").length
-        : 0;
-    if (remaining > 0) {
-        overlayVisibilityRAF = requestAnimationFrame(loopCheckOverlayVisibility);
-    } else {
-        overlayVisibilityRAF = null;
-    }
-}
 function openProject(slug, pushHistory) {
     if (!projectOverlay || !projectOverlayContent) return;
 
@@ -287,12 +257,6 @@ function openProject(slug, pushHistory) {
 function closeProject(pushHistory) {
     if (!projectOverlay) return;
 
-    // Stop the RAF loop
-    if (overlayVisibilityRAF) {
-        cancelAnimationFrame(overlayVisibilityRAF);
-        overlayVisibilityRAF = null;
-    }
-
     projectOverlay.classList.remove("is-open");
     projectOverlay.setAttribute("aria-hidden", "true");
 
@@ -308,9 +272,19 @@ function closeProject(pushHistory) {
 }
 
 function initOverlayContent() {
-    // Start RAF loop to check visibility as the user scrolls
-    if (overlayVisibilityRAF) cancelAnimationFrame(overlayVisibilityRAF);
-    overlayVisibilityRAF = requestAnimationFrame(loopCheckOverlayVisibility);
+    // Apply fade-in animations to new content
+    projectOverlayContent.querySelectorAll(".project-detail-section").forEach((el) => {
+        observer.observe(el);
+    });
+    // Trigger visibility check for elements already in view
+    setTimeout(() => {
+        projectOverlayContent.querySelectorAll(".project-detail-section").forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 1.5) {
+                el.classList.add("is-visible");
+            }
+        });
+    }, 50);
 
     // Wire up close buttons inside the overlay
     projectOverlayContent.querySelectorAll("[data-close-overlay]").forEach((btn) => {
