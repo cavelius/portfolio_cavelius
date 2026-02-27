@@ -140,14 +140,16 @@ video[autoplay].is-playing {
     }
 }
 
-/* Floating nav dot */
+/* Floating nav dot – use transform:scale instead of opacity to avoid
+   iOS Safari repaint bugs on fixed + backdrop-filter containers */
 .nav-dot {
     display: block;
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
     flex-shrink: 0;
-    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.2s ease;
 }
 
 /* ── Project overlay ── */

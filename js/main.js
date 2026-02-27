@@ -91,7 +91,8 @@ function setNavDots(activeId) {
     navLinks.forEach((link) => {
         const dot = link.querySelector(".nav-dot");
         if (!dot) return;
-        dot.style.opacity = link.getAttribute("href") === "#" + activeId ? "1" : "0";
+        const isActive = link.getAttribute("href") === "#" + activeId;
+        dot.style.transform = isActive ? "scale(1)" : "scale(0)";
     });
 }
 
