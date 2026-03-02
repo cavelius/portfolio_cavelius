@@ -734,11 +734,11 @@
   .overscroll-contain {
     overscroll-behavior: contain;
   }
-  .rounded-\[0\.5rem\] {
-    border-radius: 0.5rem;
-  }
   .rounded-\[0\.375rem\] {
     border-radius: 0.375rem;
+  }
+  .rounded-\[1rem\] {
+    border-radius: 1rem;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -1855,6 +1855,11 @@
   .md\:gap-y-\[2rem\] {
     @media (width >= 48rem) {
       row-gap: 2rem;
+    }
+  }
+  .md\:rounded-\[0\.5rem\] {
+    @media (width >= 48rem) {
+      border-radius: 0.5rem;
     }
   }
   .md\:p-8 {
