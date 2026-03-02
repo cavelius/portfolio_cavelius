@@ -324,6 +324,15 @@ if (projekteSection) {
     });
 }
 
+// Overlay links (e.g. Impressum, Datenschutz)
+document.addEventListener("click", (e) => {
+    const link = e.target.closest("[data-overlay]");
+    if (link) {
+        e.preventDefault();
+        openProject(link.getAttribute("data-overlay"));
+    }
+});
+
 // Scroll to top button inside overlay
 const overlayScrollTopBtn = document.getElementById("overlay-scroll-top");
 if (overlayScrollTopBtn && projectOverlayScroll) {
