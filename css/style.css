@@ -91,6 +91,23 @@ video[autoplay].is-playing {
     scrollbar-width: none;
 }
 
+/* Subgrid fallback for older Safari (< 17) */
+@supports not (grid-template-rows: subgrid) {
+    @media (min-width: 640px) {
+        #projekte .grid > article {
+            display: flex;
+            flex-direction: column;
+        }
+        #projekte .grid > article > div:first-child {
+            flex: 1;
+        }
+        #projekte .grid > article > div:first-child img,
+        #projekte .grid > article > div:first-child video {
+            height: 100%;
+        }
+    }
+}
+
 /* Container query unit fallback */
 @supports not (width: 1cqi) {
     .marquee-track article {

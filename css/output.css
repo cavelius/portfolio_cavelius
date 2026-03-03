@@ -2131,6 +2131,20 @@ video[autoplay].is-playing {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+@supports not (grid-template-rows: subgrid) {
+  @media (min-width: 640px) {
+    #projekte .grid > article {
+      display: flex;
+      flex-direction: column;
+    }
+    #projekte .grid > article > div:first-child {
+      flex: 1;
+    }
+    #projekte .grid > article > div:first-child img, #projekte .grid > article > div:first-child video {
+      height: 100%;
+    }
+  }
+}
 @supports not (width: 1cqi) {
   .marquee-track article {
     width: 30rem;
