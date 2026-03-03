@@ -1273,6 +1273,11 @@
       display: none;
     }
   }
+  .max-sm\:aspect-\[4\/5\] {
+    @media (width < 40rem) {
+      aspect-ratio: 4/5;
+    }
+  }
   .max-sm\:h-\[4\.25rem\] {
     @media (width < 40rem) {
       height: 4.25rem;
@@ -1524,6 +1529,16 @@
   .sm\:grid {
     @media (width >= 40rem) {
       display: grid;
+    }
+  }
+  .sm\:h-full {
+    @media (width >= 40rem) {
+      height: 100%;
+    }
+  }
+  .sm\:min-h-0 {
+    @media (width >= 40rem) {
+      min-height: calc(var(--spacing) * 0);
     }
   }
   .sm\:grid-cols-2 {
