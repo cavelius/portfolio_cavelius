@@ -66,7 +66,7 @@ Base font on `<body>`: `font-['DM_Sans',sans-serif] text-[0.9375rem]`
 
 ### Layout
 
-- **Container**: `mx-auto max-w-[104.5rem] px-[16px] sm:px-16 md:px-9`
+- **Container**: `mx-auto px-[16px] sm:px-16 md:px-9`
 - **Section vertical padding**: `py-[32px] min-[480px]:py-12 lg:py-16`
 - **Breakpoints**: default → `min-[480px]` → `sm` (640) → `md` (768) → `lg` (1024) → `xl` (1280)
 
