@@ -1,0 +1,323 @@
+<!-- T-Shirt-Print project partial — injected into #project-overlay-content -->
+
+<div class="mx-auto px-[16px] sm:px-16 md:px-9">
+
+    <!-- Sticky close button (h-0 so it doesn't affect layout) -->
+    <div class="sticky top-[16px] sm:top-16 md:top-9 z-10 pointer-events-none h-0 overflow-visible flex justify-end">
+        <button data-close-overlay class="group pointer-events-auto flex size-[4rem] min-[480px]:size-[2.75rem] items-center justify-center rounded-full bg-white/80 backdrop-blur-xl transition hover:scale-110 hover:bg-white/60 cursor-pointer focus:outline-none" aria-label="Schließen">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Hero: Image links, Headline + Projektübersicht rechts -->
+    <section class="min-[480px]:h-[calc(100svh-2.5rem)]">
+        <!-- Mobile: gestapelt, ab 480px: nebeneinander -->
+        <div class="flex flex-col min-[480px]:grid min-[480px]:grid-cols-2 min-[480px]:gap-8 h-full">
+            <!-- Bild: 50% Breite ab 480px -->
+            <div class="overflow-hidden rounded-br-none min-[480px]:rounded-br-lg -ml-10 -mr-[16px] min-[480px]:mr-0 min-h-0">
+                <img src="images/projects/detail/t-shirt-print/01-hero.png" alt="T-Shirt-Print – Übersicht" loading="lazy" class="w-full h-full object-cover">
+            </div>
+            <!-- Headline + Projektübersicht -->
+            <div class="mt-8 min-[480px]:mt-0 flex flex-col min-h-0">
+                <div class="min-[480px]:mt-auto min-[480px]:mb-auto">
+                    <h1 class="text-[1.625rem] text-dark">
+                        T-Shirt-Print
+                    </h1>
+                    <p class="text-[1.625rem] text-gray-01">
+                        Entwicklung eines markengerechten Illustrationsstils.
+                    </p>
+                </div>
+                <div class="mt-[5rem] min-[480px]:mt-0">
+                    <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-6 sm:mb-8">Projektübersicht</h2>
+                    <div class="flex flex-col">
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Rolle</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right">Selbständige Art Direktion</p>
+                        </div>
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Herausgeber</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right">Nordlicht · <span class="text-gray-02">Modemarke</span></p>
+                        </div>
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Zeitraum</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right">2025</p>
+                        </div>
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02 shrink-0">Team</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right ml-8">Zusammenarbeit mit Projektmanagement</p>
+                        </div>
+                        <div class="flex justify-between items-start py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02 shrink-0 mt-1.5 min-[480px]:mt-1">Disziplinen</p>
+                            <div class="flex flex-wrap justify-end gap-2 ml-8">
+                                <span class="rounded-full bg-tag-gray px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-dark">Branding</span>
+                                <span class="rounded-full bg-tag-gray px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-dark">Illustration</span>
+                                <span class="rounded-full bg-tag-gray px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-dark">Reinzeichnung</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Vertrieb</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right">Nordlicht Onlineshop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projektentwicklung -->
+    <section class="mt-[5rem]">
+
+        <!-- Hintergrund -->
+        <div class="project-detail-section md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-4">Hintergrund</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Nordlicht ist eine nachhaltige Modemarke mit Fokus auf zeitlose Basics und naturverbundene Gestaltung. Für die Marke entwickelte ich einen eigenen Illustrationsstil. Auf dieser Grundlage realisierte ich zwei Motive für die Frühjahr/Sommer- sowie die Herbst/Winter-Kollektion.
+            </p>
+        </div>
+
+        <!-- Ziel -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[44rem] md:mx-auto md:-translate-x-[6rem]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-4">Ziel</h2>
+            <p class="text-[1.625rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Entwicklung einer floralen, markengerechten Illustration für einen T-Shirt-Print, die Naturverbundenheit, Ruhe und Zeitlosigkeit im Sinne der Marke vermittelt.
+            </p>
+        </div>
+
+        <!-- Herausforderung -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-4">Herausforderung</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Eine Bildsprache zu gestalten, die die ruhige, reduzierte Markenästhetik von Nordlicht widerspiegelt und sich nahtlos in die Marke einfügt.
+            </p>
+        </div>
+
+        <!-- Konzept & Herangehensweise / Ausgangslage -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-2">Konzept &amp; Herangehensweise</h2>
+            <p class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Ausgangslage</p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Ausgangspunkt des Projekts war ein klar definiertes Briefing. Gewünscht war ein florales Motiv, das die Verbundenheit der Marke zur Natur widerspiegelt, mehrfarbig umgesetzt ist und bewusst ohne typografisches Statement auskommt.
+            </p>
+        </div>
+
+        <!-- Bild 1 -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/02-moodboard.png" alt="T-Shirt-Print – Moodboard" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Moodboard -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Moodboard</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Als ersten Schritt erstellte ich ein Moodboard, das als Grundlage für die Definition des Illustrationsstils dienen sollte. Inspiriert von gepressten Wildblumen, die die Naturverbundenheit widerspiegeln, sowie vom bewusst unperfekten Look des Linoldrucks, der Handarbeit und Liebe zum Detail sichtbar macht, entwickelte ich einen Stil, der durch organische Flächen, sichtbare Handarbeit und eine ruhige Farbwelt geprägt ist.
+            </p>
+        </div>
+
+        <!-- Erste Motivansätze image -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/03-erste-motivansätze.png" alt="T-Shirt-Print – Erste Motivansätze" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Erste Motivansätze -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Erste Motivansätze</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Nachdem das Moodboard freigegeben war, entwickelte ich drei unterschiedliche Illustrationen auf Grundlage des definierten Stils. Die Motive präsentierte ich zunächst bewusst ohne Farbgebung, um den Fokus vollständig auf Form und Komposition zu legen, ohne dass Farbe von der Gestaltung ablenkt.
+            </p>
+        </div>
+
+        <!-- Motivanpassung image -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/04-motivanpassung.png" alt="T-Shirt-Print – Motivanpassung" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Motivanpassung -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Motivanpassung &amp; Anwendung auf Textil mit integriertem Markenlogo</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Auf Grundlage des favorisierten mittleren Motivs entwickelte ich zwei Varianten mit einer klareren, stärker „kastigen" Bildanordnung. Anstelle der zuvor eingesetzten Blütenstempel kamen reduzierte Punktformen zum Einsatz, die insgesamt subtiler und ruhiger wirken.
+            </p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark mt-4">
+                Beide Varianten visualisierte ich zur besseren Vorstellung auf einem T-Shirt und integrierte das Markenlogo ruhig und zurückhaltend in das Motiv.
+            </p>
+        </div>
+
+        <!-- Farbgebung image -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/05-farbgebung.png" alt="T-Shirt-Print – Farbfindung" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Farbfindung -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Farbfindung</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Der Kunde entschied sich für die linke Illustration. Nach der finalen Ausarbeitung des Motivs begann die Farbfindung. Als Orientierung dienten die Farben der bestehenden Kollektion, an denen ich mich orientierte, ohne mich strikt daran zu binden. Hierfür erstellte ich mehrere Farbvarianten zur Auswahl.
+            </p>
+        </div>
+
+        <!-- Front- und Rückenprint image -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/06-front-ruecken.png" alt="T-Shirt-Print – Front- und Rückenprint" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Front- und Rückenprint -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Finaler Front- und Rückenprint</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Der Kunde entschied sich für den ersten Vorschlag. Ergänzend zum Motiv auf der Rückseite des Shirts sollte ein zusätzlicher, kleiner Print auf Brusthöhe umgesetzt werden. Als Motiv wählte ich eine Blüte aus der bestehenden Illustration, um eine gestalterische Einheit zu schaffen.
+            </p>
+        </div>
+
+        <!-- Ergebnis -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-4">Ergebnis</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Der Kunde war sehr zufrieden mit dem entwickelten Illustrationsstil, sodass ich auf dieser Grundlage ein weiteres Motiv im gleichen Stil realisieren durfte.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Finale Bilder -->
+    <section class="mt-10 sm:mt-16">
+        <h2 class="project-detail-section font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-6 sm:mb-8">Finale Ergebnisse</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[0.5rem]">
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/final-01.png" alt="T-Shirt-Print – Finale Ergebnisse 1" loading="lazy">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/final-02.png" alt="T-Shirt-Print – Finale Ergebnisse 2" loading="lazy">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/final-03.png" alt="T-Shirt-Print – Finale Ergebnisse 3" loading="lazy">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/final-04.png" alt="T-Shirt-Print – Finale Ergebnisse 4" loading="lazy">
+            </div>
+        </div>
+        <!-- Herbst/Winter-Kollektion -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Herbst/Winter-Kollektion</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Aufbauend auf dem entwickelten Illustrationskonzept entstand für die Herbst/Winter-Kollektion ein weiteres Motiv. Die bestehende Bildsprache wurde dabei weitergeführt und an die saisonale Farbwelt angepasst.
+            </p>
+        </div>
+    </section>
+
+    <!-- Herbst/Winter-Kollektion Bilder -->
+    <section class="mt-10 sm:mt-16">
+        <h2 class="project-detail-section font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-6 sm:mb-8">Herbst/Winter-Kollektion</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[0.5rem]">
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/final-05.png" alt="T-Shirt-Print – Herbst/Winter 5" loading="lazy">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/final-06.png" alt="T-Shirt-Print – Herbst/Winter 6" loading="lazy">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/final-07.png" alt="T-Shirt-Print – Herbst/Winter 7" loading="lazy">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/final-08.png" alt="T-Shirt-Print – Herbst/Winter 8" loading="lazy">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/final-09.png" alt="T-Shirt-Print – Herbst/Winter 9" loading="lazy">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/t-shirt-print/final-10.png" alt="T-Shirt-Print – Herbst/Winter 10" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Behance CTA (full-width breakout) -->
+    <section id="behance-cta" class="project-detail-section relative text-center bg-[#121212] mt-10 sm:mt-16 -mx-[16px] sm:-mx-16 md:-mx-9 px-[16px] sm:px-16 md:px-9 aspect-[21/14.58] min-[480px]:aspect-[21/7.29] flex flex-col items-center justify-center overflow-hidden">
+
+        <!-- Decorative elements — left side -->
+        <img src="images/decor/blume.svg" alt="" class="absolute top-[15%] left-[10%] max-sm:-left-[5%] h-[4.25rem] w-[4.3rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem]" aria-hidden="true">
+        <img src="images/decor/smiley-02.svg" alt="" class="absolute top-[55%] left-[17%] max-sm:top-[10%] max-sm:left-[17%] h-[3.5rem] w-[3.5rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem]" aria-hidden="true">
+        <img src="images/decor/blume.svg" alt="" class="absolute bottom-[12%] left-[4%] max-sm:left-[9%] max-sm:bottom-[10%] h-[4.25rem] w-[4.3rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem]" aria-hidden="true">
+
+        <!-- Decorative elements — right side -->
+        <img src="images/decor/blume.svg" alt="" class="absolute top-[10%] right-[12%] max-sm:right-[12%] h-[4.25rem] w-[4.3rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem]" aria-hidden="true">
+        <img src="images/decor/smiley-02.svg" alt="" class="absolute top-[38%] max-sm:top-[73%] right-[22%] max-sm:right-[22%] h-[3.5rem] w-[3.5rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem] scale-x-[-1]" aria-hidden="true">
+        <img src="images/decor/blume.svg" alt="" class="absolute bottom-[18%] right-[6%] max-sm:-right-[4%] h-[4.25rem] w-[4.3rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem]" aria-hidden="true">
+
+        <!-- Content -->
+        <p class="text-[1.56rem] min-[480px]:text-[1rem] text-white/70 mb-[2rem] relative z-[1] text-center">Gefällt dir das Projekt?<br>Dann lass doch ein Like auf Behance da!</p>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block rounded-full border border-white/30 px-5 py-2.5 text-[1.56rem] min-[480px]:text-[1rem] text-white transition-colors hover:bg-white/10 relative z-[1]">
+            Weiter zu Behance
+        </a>
+    </section>
+
+    <!-- Weitere Projekte -->
+    <section class="project-detail-section pt-10 sm:pt-16 pb-16 sm:pb-24 lg:pb-32 pr-[16px] sm:pr-16 md:pr-9 bg-[#EDEDED] -mx-[16px] sm:-mx-16 md:-mx-9 px-[16px] sm:px-16 md:px-9">
+        <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-8 sm:mb-10">Weitere Projekte</h2>
+        <div class="overflow-x-auto scrollbar-hide -mx-[16px] sm:-mx-16 md:-mx-9 px-[16px] sm:px-16 md:px-9">
+            <div class="flex gap-[0.5rem]">
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="adventskalender">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/adventskalender.png" alt="Adventskalender für Creatorin Carmushka" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Adventskalender für Creatorin Carmushka</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung eines Packaging-Designs sowie Gestaltung ausgewählter Produktinhalte.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="magazin-things-we-write">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/magazin-things-we-write.jpg" alt="Magazin THINGS WE WRITE" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Magazin „THINGS WE WRITE"</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Konzeption und Gestaltung eines Lifestyle-Magazins.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="buch-erstes-lebensjahr">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/buch-erstes-lebensjahr.jpg" alt="Buch Dein erstes Lebensjahr" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Buch „Dein erstes Lebensjahr"</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Gestaltung und Illustration eines Ausfüllbuchs.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="jahreskalender-carmushka">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/jahreskalender-carmushka.jpg" alt="Jahreskalender für Creatorin Carmushka" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Jahreskalender für Creatorin Carmushka</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Gestaltung eines Kalenders mit Künstlerkooperation.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="schlafentzug-ausstellung">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/schlafentzug-ausstellung.jpg" alt="Ausstellungsobjekt zum Thema Schlafentzug" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Ausstellungsobjekt zum Thema Schlafentzug</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Konzeption und Gestaltung von Animationen sowie einer begleitenden Wandgestaltung.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="tischkalender-kollektion">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/tischkalender-kollektion.jpg" alt="Tischkalender Kollektion" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Tischkalender Kollektion</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung einer markengerechten Papeterie-Kollektion.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="kaffee-packaging">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/kaffee-packaging.jpg" alt="Kaffee-Packaging" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Kaffee-Packaging</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung eigenständiger Designlösungen für eine Kaffee-Produktlinie.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+</div>
