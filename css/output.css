@@ -443,8 +443,17 @@
   .aspect-\[21\/14\.58\] {
     aspect-ratio: 21/14.58;
   }
+  .aspect-\[1080\/1920\] {
+    aspect-ratio: 1080/1920;
+  }
   .aspect-\[1200\/1498\] {
     aspect-ratio: 1200/1498;
+  }
+  .aspect-\[1780\/2224\] {
+    aspect-ratio: 1780/2224;
+  }
+  .aspect-\[1781\/2224\] {
+    aspect-ratio: 1781/2224;
   }
   .aspect-\[3584\/1940\] {
     aspect-ratio: 3584/1940;
@@ -823,6 +832,12 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .\[object-position\:50\%_60\%\] {
+    object-position: 50% 60%;
+  }
+  .\[object-position\:50\%_80\%\] {
+    object-position: 50% 80%;
   }
   .p-\[24px\] {
     padding: 24px;

@@ -1,0 +1,378 @@
+<!-- Jahreskalender Carmushka project partial — injected into #project-overlay-content -->
+
+<div class="mx-auto px-[16px] sm:px-16 md:px-9">
+
+    <!-- Sticky close button (h-0 so it doesn't affect layout) -->
+    <div class="sticky top-[16px] sm:top-16 md:top-9 z-10 pointer-events-none h-0 overflow-visible flex justify-end">
+        <button data-close-overlay class="group pointer-events-auto flex size-[4rem] min-[480px]:size-[2.75rem] items-center justify-center rounded-full bg-white/80 backdrop-blur-xl transition hover:scale-110 hover:bg-white/60 cursor-pointer focus:outline-none" aria-label="Schließen">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Hero: Image links, Headline + Projektübersicht rechts -->
+    <section class="min-[480px]:h-[calc(100svh-2.5rem)]">
+        <!-- Mobile: gestapelt, ab 480px: nebeneinander -->
+        <div class="flex flex-col min-[480px]:grid min-[480px]:grid-cols-2 min-[480px]:gap-8 h-full">
+            <!-- Bild: 50% Breite ab 480px -->
+            <div class="overflow-hidden rounded-br-none min-[480px]:rounded-br-lg -ml-10 -mr-[16px] min-[480px]:mr-0 min-h-0">
+                <img src="images/projects/detail/jahreskalender-carmushka/01-hero.png" alt="Jahreskalender für Creatorin Carmushka – Übersicht" loading="lazy" width="1400" height="1639" class="w-full h-full object-cover">
+            </div>
+            <!-- Headline + Projektübersicht -->
+            <div class="mt-8 min-[480px]:mt-0 flex flex-col min-h-0">
+                <div class="min-[480px]:mt-auto min-[480px]:mb-auto">
+                    <h1 class="text-[1.625rem] text-dark">
+                        Jahreskalender für Creatorin Carmushka
+                    </h1>
+                    <p class="text-[1.625rem] text-gray-01">
+                    Gestaltung eines Kalenders mit Künstlerkooperation.
+                    </p>
+                </div>
+                <div class="mt-[5rem] min-[480px]:mt-0">
+                    <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-6 sm:mb-8">Projektübersicht</h2>
+                    <div class="flex flex-col">
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Rolle</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right">Art Direktion</p>
+                        </div>
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Marke</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right">Jo &amp; Judy · <span class="text-gray-02">Papeteriemarke</span></p>
+                        </div>
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Zeitraum</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right">2022</p>
+                        </div>
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02 shrink-0">Team</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right ml-8">Zusammenarbeit mit Creatorin Carmushka, Künstlerin Fulya, Konzeption, Produktmanagement &amp; Reinzeichnung</p>
+                        </div>
+                        <div class="flex justify-between items-start py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02 shrink-0 mt-1.5 min-[480px]:mt-1">Disziplinen</p>
+                            <div class="flex flex-wrap justify-end gap-2 ml-8">
+                                <span class="rounded-full bg-tag-gray px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-dark">Gestalterische Konzeption</span>
+                                <span class="rounded-full bg-tag-gray px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-dark">Designsystem</span>
+                                <span class="rounded-full bg-tag-gray px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-dark">Layout &amp; Typografie</span>
+                                <span class="rounded-full bg-tag-gray px-[12px] min-[480px]:px-4 py-[6px] min-[480px]:py-1.5 text-[1.46rem] min-[480px]:text-[0.9375rem] text-dark">Illustration</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Auflage</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right">33.000 Exemplare</p>
+                        </div>
+                        <div class="flex justify-between items-baseline py-3 border-b border-gray-border">
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Vertrieb</p>
+                            <p class="text-[1.56rem] min-[480px]:text-[1rem] text-dark text-right">Jo &amp; Judy Onlineshop, ausgewählte Concept Stores sowie ausgewählte Thalia-Filialen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projektentwicklung -->
+    <section class="mt-[5rem]">
+
+        <!-- Hintergrund -->
+        <div class="project-detail-section md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-4">Hintergrund</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Carmushka zählt zu den bekanntesten Content Creatorinnen Deutschlands und veröffentlicht jährlich gemeinsam mit Jo & Judy einen Jahreskalender. Ich durfte das Design für drei aufeinanderfolgende Ausgaben verantworten.
+            </p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark mt-4">
+                Für die Ausgabe 2023 prägte die Künstlerin Fulya Celik mit ihrer abstrakten Bildwelt die visuelle Ausrichtung der Kollektion. Ich übernahm die vollständige gestalterische Entwicklung des Kalenders.
+            </p>
+        </div>
+
+        <!-- Ziel -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[44rem] md:mx-auto md:-translate-x-[6rem]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-4">Ziel</h2>
+            <p class="text-[1.625rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Einen Kalender zu entwickeln, der aktuelle Designtrends widerspiegelt und gleichzeitig die individuelle Markenästhetik von Carmushka mit der künstlerischen Handschrift von Fulya vereint.
+            </p>
+        </div>
+
+        <!-- Herausforderung -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-4">Herausforderung</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Die Bildwelt der Künstlerin Fulya mit der Ästhetik der Creatorin Carmushka in ein stimmiges, alltagstaugliches Kalenderformat zu überführen.
+            </p>
+        </div>
+
+        <!-- Konzept & Herangehensweise / Ausgangslage -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-2">Konzept & Herangehensweise</h2>
+            <p class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Ausgangslage</p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Die inhaltliche Ausrichtung des Kalenders stand bereits fest und fokussierte sich auf Themen wie innere Klarheit und Achtsamkeit. Vor diesem Hintergrund fiel die Wahl auf die Künstlerin Fulya, deren abstrakte Bildwelt diese Themen visuell widerspiegelt. Ziel war es, aus der Analyse der visuellen Handschriften von Carmushka und Fulya eine gemeinsame gestalterische Sprache zu entwickeln.
+            </p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark mt-4">
+                Als ersten Schritt analysierte ich die visuellen Merkmale der Markenästhetik von Carmushka sowie den künstlerischen Stil von Fulya, um daraus eine konsistente gestalterische Grundlage abzuleiten.
+            </p>
+        </div>
+
+        <!-- Gegenüberstellung image -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/02-gegenueberstellung.png" alt="Jahreskalender Carmushka – Visuelle Schnittstellen" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Visuelle Schnittstellen -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Visuelle Schnittstellen</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Zur Untersuchung der visuellen Gemeinsamkeiten stellte ich die Instagram-Feeds von Carmushka und Fulya Celik einander gegenüber. In beiden Bildwelten zeigt sich eine reduzierte, ruhige Farbigkeit mit einem Schwerpunkt auf Beigetönen. Licht und Schatten werden gezielt eingesetzt, um Tiefe zu erzeugen und Oberflächen hervorzuheben. Strukturen, Materialien und Kontraste prägen die Bildsprache, die insgesamt minimalistisch, ruhig und entschleunigt wirkt.
+            </p>
+        </div>
+
+        <!-- Moodboard image -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/03-moodboard.png" alt="Jahreskalender Carmushka – Moodboard" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Moodboard -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Moodboard</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Auf Basis dieser Analyse erstellte ich ein Moodboard, das die identifizierten visuellen Qualitäten in eine klare gestalterische Richtung übersetzt. Der Fokus lag auf haptischen Strukturen, ruhigen Flächen und einem sensiblen Zusammenspiel von Licht und Material. Eine beige Grundwelt bildet die Basis, ergänzt durch reduzierte schwarze Akzente. Das Moodboard diente als visuelle Leitlinie für eine ruhige, wertige und konsistente Gestaltung.
+            </p>
+        </div>
+
+        <!-- Typografie image -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/04-typografie-und-farbpalette.png" alt="Jahreskalender Carmushka – Typografie und Farbpalette" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Typografie und Farbpalette -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Typografie und Farbpalette</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Für die Typografie wählte ich als Headline-Schrift eine elegante Serifenschrift mit feinen Haarlinien und markanten Grundstrichen. Die leicht organischen Formen unterstützen eine edle, wertige und zugleich feminine Bildsprache. Durch den bewussten Wechsel zwischen Regular und Italic entstehen feine rhythmische Akzente, die dem Schriftbild eine subtile Bewegung und Spannung verleihen. Ergänzend kam eine klare Sans-Serif zum Einsatz, die Struktur und Lesbarkeit unterstützt.
+            </p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark mt-4">
+                Die Farbpalette ist bewusst minimal gehalten. Zur Unterstreichung der Hochwertigkeit wurde der Beigeton als Pantone-Sonderfarbe gedruckt.
+            </p>
+        </div>
+
+        <!-- Künstlercover image -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/05-kuenstlercover.png" alt="Jahreskalender Carmushka – Künstlercover" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Coverentwicklung: Künstlercover -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Coverentwicklung: Künstlercover</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Als Ausgangspunkt für das Künstlercover diente ein persönliches Kunstwerk, das Fulya zuvor für Carmushka geschaffen hatte. Aufgrund des hochformatigen Kalenderformats konnte das Motiv nicht vollständig und stimmig abgebildet werden, daher interpretierte ich es als Ausschnitt. Dieser Bildausschnitt wurde als Prägung umgesetzt, um die Wertigkeit des Covers zu betonen. Ergänzend wurde Fulyas Signatur geprägt, um den künstlerischen Charakter des Covers zu unterstreichen.
+            </p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark mt-4">
+                Für den Einband wählte ich einen offenen Leinenbezug, dessen natürliche Struktur und warme Farbigkeit an Leinwandoberflächen erinnern. In Kombination mit der Prägung entsteht ein Cover, das sich wie ein Kunstobjekt anfühlt.
+            </p>
+        </div>
+
+        <!-- Reguläres Cover image -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/06-regulaerecover.png" alt="Jahreskalender Carmushka – Reguläres Cover" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Coverentwicklung: Reguläres Cover -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Coverentwicklung: Reguläres Cover</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Das reguläre Cover sollte einen breiteren Markt ansprechen, daher entschied ich mich für eine typografische Lösung. Gleichzeitig sollte es als Weiterführung des Künstlercovers funktionieren und wie aus einem Guss wirken. Der Titel „One Chapter at a Time" fungiert als Jahresmotto für persönliches Wachstum.
+            </p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark mt-4">
+                Bei der Setzung des Titels spielte ich mit den Schriftschnitten Regular und Italic, um eine subtile Spannung zu erzeugen. Das Covermaterial sowie die Platzierung des Kalenderjahres wurden beibehalten, um beide Cover visuell zu verbinden und als gestalterische Einheit erlebbar zu machen.
+            </p>
+        </div>
+
+        <!-- Kalenderinhalt image -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/07-kalender-inhalt.png" alt="Jahreskalender Carmushka – Kalenderinhalt" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Kalenderinhalt -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Kalenderinhalt</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Inhaltlich arbeitete ich eng mit der Konzeption zusammen. Der Kalender sollte durch ein Jahr voller innerer Klarheit begleiten. Jeder Monat wurde als eigenes Kapitel gedacht, inspiriert von Fulyas Themen der Achtsamkeit und der Rückbesinnung auf sich selbst.
+            </p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark mt-4">
+                Jedes Monatskapitel besteht aus drei wiederkehrenden Layouts: einer Doppelseite mit Monatsübersicht sowie Zielen und Wünschen, einer Doppelseite mit Inspiration und Reflexionsaufgaben sowie den jeweiligen Wochenübersichten.
+            </p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark mt-4">
+                Ich setzte den Inhalt bewusst minimalistisch um, mit klaren Strukturen und großzügigem Weißraum. Die Künstlerin Fulya entwarf sechs Originalwerke, die jeweils einem Monatskapitel zugeordnet wurden. Die übrigen sechs Monate gestaltete ich mit inspirierenden Sprüchen, die das Jahresmotto aufgreifen und vertiefen.
+            </p>
+        </div>
+
+        <!-- Inspiration video -->
+        <div class="project-detail-section mt-[5rem]">
+            <div class="aspect-[3584/1940] rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover scale-[1.005]">
+                    <source src="images/projects/detail/jahreskalender-carmushka/08-inspiration-und -reflexionsaufgaben.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- Inspiration und Reflexionsaufgaben -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] tracking-[0.03em] text-gray-01 mb-4">Inspiration und Reflexionsaufgaben</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Jeder Monat verfügt über eine Doppelseite aus Kunst und Inspiration. Links wechseln sich Originalwerke von Fulya mit typografisch gestalteten Sprüchen ab, rechts führt eine Reflexionsfrage durch das jeweilige Monatsthema.
+            </p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark mt-4">
+                Ich entschied mich für ein ruhiges, reduziertes Layout mit klarer Typografie und feinen grafischen Akzenten, das Struktur gibt und bewusst einen Kontrast zu den organischen Kunstwerken setzt.
+            </p>
+        </div>
+
+        <!-- Ergebnis -->
+        <div class="project-detail-section mt-[5rem] md:max-w-[40rem] md:mx-auto md:-translate-x-[20%]">
+            <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-4">Ergebnis</h2>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark">
+                Neben dem Onlineshop von Jo &amp; Judy war der Kalender zudem in verschiedenen Concept Stores sowie in ausgewählten Thalia-Filialen erhältlich.
+            </p>
+            <p class="text-[1.56rem] min-[480px]:text-[1rem] leading-normal min-[480px]:leading-relaxed text-dark mt-4">
+                Sowohl Carmushka und Fulya als auch die Community reagierten sehr positiv auf das Ergebnis.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Finaler Adventskalender und Inhaltsprodukte -->
+    <section class="mt-10 sm:mt-16">
+        <h2 class="project-detail-section font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-6 sm:mb-8">Finale Ergebnisse</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[0.5rem]">
+            <!-- Row 1: final-01, final-02 -->
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/final-01.png" alt="Jahreskalender Carmushka 1" loading="lazy" width="1781" height="2224">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/final-02.png" alt="Jahreskalender Carmushka 2" loading="lazy" width="1781" height="2224">
+            </div>
+            <!-- Row 2: final-03 full width -->
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full md:col-span-2">
+                <img src="images/projects/detail/jahreskalender-carmushka/final-03.png" alt="Jahreskalender Carmushka 3" loading="lazy" width="3584" height="2224">
+            </div>
+            <!-- Row 3: final-04, final-05 (video) -->
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/final-04.png" alt="Jahreskalender Carmushka 4" loading="lazy" width="1781" height="2224">
+            </div>
+            <div class="project-detail-section aspect-[1781/2224] rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover [object-position:50%_80%]">
+                    <source src="images/projects/detail/jahreskalender-carmushka/final-05.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Row 4: final-06 full width -->
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full md:col-span-2">
+                <img src="images/projects/detail/jahreskalender-carmushka/final-06.png" alt="Jahreskalender Carmushka 6" loading="lazy" width="3584" height="2224">
+            </div>
+            <!-- Row 5: final-07, final-08 -->
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/final-07.png" alt="Jahreskalender Carmushka 7" loading="lazy" width="1781" height="2224">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/final-08.png" alt="Jahreskalender Carmushka 8" loading="lazy" width="1781" height="2224">
+            </div>
+            <!-- Row 6: final-09, final-10 -->
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/final-09.png" alt="Jahreskalender Carmushka 9" loading="lazy" width="1781" height="2224">
+            </div>
+            <div class="project-detail-section rounded-[1rem] md:rounded-[0.5rem] overflow-hidden [&_img]:w-full">
+                <img src="images/projects/detail/jahreskalender-carmushka/final-10.png" alt="Jahreskalender Carmushka 10" loading="lazy" width="1781" height="2224">
+            </div>
+        </div>
+    </section>
+
+    <!-- Behance CTA (full-width breakout) -->
+    <section id="behance-cta" class="project-detail-section relative text-center bg-[#121212] mt-10 sm:mt-16 -mx-[16px] sm:-mx-16 md:-mx-9 px-[16px] sm:px-16 md:px-9 aspect-[21/14.58] min-[480px]:aspect-[21/7.29] flex flex-col items-center justify-center overflow-hidden">
+
+        <!-- Decorative elements — left side -->
+        <img src="images/decor/blume.svg" alt="" class="absolute top-[15%] left-[10%] max-sm:-left-[5%] h-[4.25rem] w-[4.3rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem]" aria-hidden="true">
+        <img src="images/decor/smiley-02.svg" alt="" class="absolute top-[55%] left-[17%] max-sm:top-[10%] max-sm:left-[17%] h-[3.5rem] w-[3.5rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem]" aria-hidden="true">
+        <img src="images/decor/blume.svg" alt="" class="absolute bottom-[12%] left-[4%] max-sm:left-[9%] max-sm:bottom-[10%] h-[4.25rem] w-[4.3rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem]" aria-hidden="true">
+
+        <!-- Decorative elements — right side -->
+        <img src="images/decor/blume.svg" alt="" class="absolute top-[10%] right-[12%] max-sm:right-[12%] h-[4.25rem] w-[4.3rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem]" aria-hidden="true">
+        <img src="images/decor/smiley-02.svg" alt="" class="absolute top-[38%] max-sm:top-[73%] right-[22%] max-sm:right-[22%] h-[3.5rem] w-[3.5rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem] scale-x-[-1]" aria-hidden="true">
+        <img src="images/decor/blume.svg" alt="" class="absolute bottom-[18%] right-[6%] max-sm:-right-[4%] h-[4.25rem] w-[4.3rem] max-sm:h-[4.25rem] max-sm:w-[4.3rem]" aria-hidden="true">
+
+        <!-- Content -->
+        <p class="text-[1.56rem] min-[480px]:text-[1rem] text-white/70 mb-[2rem] relative z-[1] text-center">Gefällt dir das Projekt?<br>Dann lass doch ein Like auf Behance da!</p>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block rounded-full border border-white/30 px-5 py-2.5 text-[1.56rem] min-[480px]:text-[1rem] text-white transition-colors hover:bg-white/10 relative z-[1]">
+            Weiter zu Behance
+        </a>
+    </section>
+
+    <!-- Weitere Projekte -->
+    <section class="project-detail-section pt-10 sm:pt-16 pb-16 sm:pb-24 lg:pb-32 pr-[16px] sm:pr-16 md:pr-9 bg-[#EDEDED] -mx-[16px] sm:-mx-16 md:-mx-9 px-[16px] sm:px-16 md:px-9">
+        <h2 class="font-['IBM_Plex_Sans',sans-serif] text-[1.365rem] min-[480px]:text-[0.875rem] uppercase tracking-[0.05em] text-gray-01 mb-8 sm:mb-10">Weitere Projekte</h2>
+        <div class="overflow-x-auto scrollbar-hide -mx-[16px] sm:-mx-16 md:-mx-9 px-[16px] sm:px-16 md:px-9">
+            <div class="flex gap-[0.5rem]">
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="magazin-things-we-write">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/magazin-things-we-write.jpg" alt="Magazin THINGS WE WRITE" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Magazin „THINGS WE WRITE“</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Konzeption und Gestaltung eines Lifestyle-Magazins.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="tshirt-print">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/tshirt-print.jpg" alt="T-Shirt Print" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">T-Shirt-Print</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung eines markengerechten Illustrationsstils.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="buch-erstes-lebensjahr">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/buch-erstes-lebensjahr.jpg" alt="Buch Dein erstes Lebensjahr" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Buch „Dein erstes Lebensjahr“</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Gestaltung und Illustration eines Ausfüllbuchs.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="adventskalender">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/adventskalender.png" alt="Adventskalender für Creatorin Carmushka" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Adventskalender für Creatorin Carmushka</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung eines Packaging-Designs sowie Gestaltung ausgewählter Produktinhalte.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="schlafentzug-ausstellung">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/schlafentzug-ausstellung.jpg" alt="Ausstellungsobjekt zum Thema Schlafentzug" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Ausstellungsobjekt zum Thema Schlafentzug</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Konzeption und Gestaltung von Animationen sowie einer begleitenden Wandgestaltung.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="tischkalender-kollektion">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/tischkalender-kollektion.jpg" alt="Tischkalender Kollektion" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Tischkalender Kollektion</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung einer markengerechten Papeterie-Kollektion.</p>
+                </article>
+                <article class="group cursor-pointer flex-shrink-0 w-[67.5vw] min-[480px]:w-[36vw] lg:w-[25.2vw]" data-project="kaffee-packaging">
+                    <div class="rounded-[1rem] md:rounded-[0.5rem] overflow-hidden">
+                        <img src="images/projects/kaffee-packaging.jpg" alt="Kaffee-Packaging" class="w-full aspect-[4/5] object-cover transform transition-transform duration-300 lg:group-hover:scale-[1.02]" loading="lazy">
+                    </div>
+                    <h3 class="mt-3 text-[1.56rem] min-[480px]:text-[1rem] text-dark">Kaffee-Packaging</h3>
+                    <p class="text-[1.56rem] min-[480px]:text-[1rem] text-gray-02">Entwicklung eigenständiger Designlösungen für eine Kaffee-Produktlinie.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+</div>
