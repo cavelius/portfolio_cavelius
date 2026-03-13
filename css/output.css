@@ -416,6 +416,9 @@
   .ml-\[-0\.71em\] {
     margin-left: -0.71em;
   }
+  .ml-\[0\.5em\] {
+    margin-left: 0.5em;
+  }
   .block {
     display: block;
   }
