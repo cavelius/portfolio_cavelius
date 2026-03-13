@@ -374,9 +374,6 @@
   .mt-\[40px\] {
     margin-top: 40px;
   }
-  .-mr-\[16px\] {
-    margin-right: calc(16px * -1);
-  }
   .mr-\[0\.04em\] {
     margin-right: 0.04em;
   }
@@ -406,9 +403,6 @@
   }
   .mb-\[48px\] {
     margin-bottom: 48px;
-  }
-  .-ml-10 {
-    margin-left: calc(var(--spacing) * -10);
   }
   .ml-8 {
     margin-left: calc(var(--spacing) * 8);
@@ -1328,11 +1322,6 @@
       margin-top: auto;
     }
   }
-  .min-\[480px\]\:mr-0 {
-    @media (width >= 480px) {
-      margin-right: calc(var(--spacing) * 0);
-    }
-  }
   .min-\[480px\]\:mb-auto {
     @media (width >= 480px) {
       margin-bottom: auto;
@@ -1402,6 +1391,11 @@
   .min-\[480px\]\:py-12 {
     @media (width >= 480px) {
       padding-block: calc(var(--spacing) * 12);
+    }
+  }
+  .min-\[480px\]\:pl-0 {
+    @media (width >= 480px) {
+      padding-left: calc(var(--spacing) * 0);
     }
   }
   .min-\[480px\]\:text-\[0\.875rem\] {
@@ -1938,6 +1932,11 @@
   .md\:pr-9 {
     @media (width >= 48rem) {
       padding-right: calc(var(--spacing) * 9);
+    }
+  }
+  .md\:pr-\[max\(2\.25rem\,calc\(\(100vw-113\.5rem\)\/2\+2\.25rem\)\)\] {
+    @media (width >= 48rem) {
+      padding-right: max(2.25rem, calc((100vw - 113.5rem) / 2 + 2.25rem));
     }
   }
   .md\:pb-12 {
