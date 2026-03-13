@@ -368,6 +368,9 @@
   .mt-\[-0\.94em\] {
     margin-top: -0.94em;
   }
+  .mt-\[2rem\] {
+    margin-top: 2rem;
+  }
   .mt-\[5rem\] {
     margin-top: 5rem;
   }
@@ -715,8 +718,8 @@
   .gap-x-\[8px\] {
     column-gap: 8px;
   }
-  .gap-y-\[48px\] {
-    row-gap: 48px;
+  .gap-y-\[3rem\] {
+    row-gap: 3rem;
   }
   .divide-y {
     :where(& > :not(:last-child)) {
