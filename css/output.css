@@ -869,8 +869,8 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
-  .pt-\[2rem\] {
-    padding-top: 2rem;
+  .pt-\[4rem\] {
+    padding-top: 4rem;
   }
   .pt-\[24px\] {
     padding-top: 24px;
