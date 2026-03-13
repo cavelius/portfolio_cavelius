@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @source "../projects/**/*.html";
+@source "../index.html";
+@source "../imprint.html";
 
 /* Design tokens (registered as Tailwind theme values) */
 @theme {
