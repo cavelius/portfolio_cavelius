@@ -718,8 +718,8 @@
   .gap-x-\[8px\] {
     column-gap: 8px;
   }
-  .gap-y-\[3rem\] {
-    row-gap: 3rem;
+  .gap-y-\[4rem\] {
+    row-gap: 4rem;
   }
   .divide-y {
     :where(& > :not(:last-child)) {
