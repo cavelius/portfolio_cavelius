@@ -715,8 +715,8 @@
   .gap-x-\[8px\] {
     column-gap: 8px;
   }
-  .gap-y-\[24px\] {
-    row-gap: 24px;
+  .gap-y-\[48px\] {
+    row-gap: 48px;
   }
   .divide-y {
     :where(& > :not(:last-child)) {
