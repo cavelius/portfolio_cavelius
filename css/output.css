@@ -401,6 +401,9 @@
   .mb-\[2rem\] {
     margin-bottom: 2rem;
   }
+  .mb-\[5rem\] {
+    margin-bottom: 5rem;
+  }
   .mb-\[8px\] {
     margin-bottom: 8px;
   }
@@ -442,6 +445,9 @@
   }
   .aspect-\[21\/14\.58\] {
     aspect-ratio: 21/14.58;
+  }
+  .aspect-\[1080\/1920\] {
+    aspect-ratio: 1080/1920;
   }
   .aspect-\[1200\/1498\] {
     aspect-ratio: 1200/1498;
@@ -830,6 +836,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .\[object-position\:50\%_60\%\] {
+    object-position: 50% 60%;
+  }
   .\[object-position\:50\%_80\%\] {
     object-position: 50% 80%;
   }
@@ -868,6 +877,9 @@
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-\[0\.5rem\] {
+    padding-top: 0.5rem;
   }
   .pt-\[24px\] {
     padding-top: 24px;
