@@ -1,9 +1,9 @@
 <!-- Jahreskalender Carmushka project partial — injected into #project-overlay-content -->
 
-<div class="mx-auto px-[16px] sm:px-16 md:px-9">
+<div>
 
     <!-- Sticky close button (h-0 so it doesn't affect layout) -->
-    <div class="sticky top-[16px] sm:top-16 md:top-9 z-10 pointer-events-none h-0 overflow-visible flex justify-end">
+    <div class="sticky top-[16px] sm:top-16 md:top-9 z-10 pointer-events-none h-0 overflow-visible flex justify-end px-[16px] sm:px-16 md:px-9">
         <button data-close-overlay class="group pointer-events-auto flex size-[4rem] min-[480px]:size-[2.75rem] items-center justify-center rounded-full bg-white/80 backdrop-blur-xl transition hover:scale-110 hover:bg-white/60 cursor-pointer focus:outline-none" aria-label="Schließen">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -11,6 +11,8 @@
             </svg>
         </button>
     </div>
+
+    <div class="mx-auto max-w-[113.5rem] px-[16px] sm:px-16 md:px-9">
 
     <!-- Hero: Image links, Headline + Projektübersicht rechts -->
     <section class="min-[480px]:h-[calc(100svh-2.5rem)]">
@@ -374,5 +376,7 @@
             </div>
         </div>
     </section>
+
+    </div>
 
 </div>
