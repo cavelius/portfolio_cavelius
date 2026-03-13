@@ -869,6 +869,9 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
+  .pt-\[2rem\] {
+    padding-top: 2rem;
+  }
   .pt-\[24px\] {
     padding-top: 24px;
   }
@@ -883,6 +886,9 @@
   }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
+  }
+  .pb-\[2rem\] {
+    padding-bottom: 2rem;
   }
   .pb-\[4rem\] {
     padding-bottom: 4rem;
