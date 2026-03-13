@@ -1741,6 +1741,11 @@
       display: none;
     }
   }
+  .md\:inline-block {
+    @media (width >= 48rem) {
+      display: inline-block;
+    }
+  }
   .md\:aspect-\[8\/5\] {
     @media (width >= 48rem) {
       aspect-ratio: 8/5;
