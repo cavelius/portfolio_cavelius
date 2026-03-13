@@ -704,18 +704,18 @@
       margin-block-end: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-\[4rem\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(4rem * var(--tw-space-y-reverse));
+      margin-block-end: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-\[12px\] {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
       margin-block-start: calc(12px * var(--tw-space-y-reverse));
       margin-block-end: calc(12px * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
-  .space-y-\[24px\] {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(24px * var(--tw-space-y-reverse));
-      margin-block-end: calc(24px * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .gap-x-\[8px\] {
