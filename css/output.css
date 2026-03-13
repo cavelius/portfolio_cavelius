@@ -410,9 +410,6 @@
   .mb-\[24px\] {
     margin-bottom: 24px;
   }
-  .mb-\[48px\] {
-    margin-bottom: 48px;
-  }
   .ml-8 {
     margin-left: calc(var(--spacing) * 8);
   }
