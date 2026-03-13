@@ -338,9 +338,6 @@
       max-width: 96rem;
     }
   }
-  .-mx-\[16px\] {
-    margin-inline: calc(16px * -1);
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -1534,11 +1531,6 @@
       grid-row: span 2 / span 2;
     }
   }
-  .sm\:-mx-16 {
-    @media (width >= 40rem) {
-      margin-inline: calc(var(--spacing) * -16);
-    }
-  }
   .sm\:mt-0 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 0);
@@ -1662,11 +1654,6 @@
   .md\:row-start-2 {
     @media (width >= 48rem) {
       grid-row-start: 2;
-    }
-  }
-  .md\:-mx-9 {
-    @media (width >= 48rem) {
-      margin-inline: calc(var(--spacing) * -9);
     }
   }
   .md\:mx-auto {
