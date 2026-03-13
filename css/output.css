@@ -881,8 +881,8 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
-  .pt-\[2rem\] {
-    padding-top: 2rem;
+  .pt-\[2\.5rem\] {
+    padding-top: 2.5rem;
   }
   .pt-\[5rem\] {
     padding-top: 5rem;
@@ -901,6 +901,9 @@
   }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
+  }
+  .pb-\[2\.5rem\] {
+    padding-bottom: 2.5rem;
   }
   .pb-\[2rem\] {
     padding-bottom: 2rem;
