@@ -899,6 +899,9 @@
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
   }
+  .pl-\[16px\] {
+    padding-left: 16px;
+  }
   .text-center {
     text-align: center;
   }
@@ -1610,6 +1613,11 @@
       padding-bottom: calc(var(--spacing) * 24);
     }
   }
+  .sm\:pl-16 {
+    @media (width >= 40rem) {
+      padding-left: calc(var(--spacing) * 16);
+    }
+  }
   .md\:top-9 {
     @media (width >= 48rem) {
       top: calc(var(--spacing) * 9);
@@ -1952,6 +1960,11 @@
   .md\:pb-\[4\.3875rem\] {
     @media (width >= 48rem) {
       padding-bottom: 4.3875rem;
+    }
+  }
+  .md\:pl-\[max\(2\.25rem\,calc\(\(100vw-104\.5rem\)\/2\+2\.25rem\)\)\] {
+    @media (width >= 48rem) {
+      padding-left: max(2.25rem, calc((100vw - 104.5rem) / 2 + 2.25rem));
     }
   }
   .md\:text-right {
