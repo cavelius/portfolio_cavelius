@@ -884,6 +884,9 @@
   .pt-\[2\.5rem\] {
     padding-top: 2.5rem;
   }
+  .pt-\[3rem\] {
+    padding-top: 3rem;
+  }
   .pt-\[5rem\] {
     padding-top: 5rem;
   }
@@ -905,8 +908,8 @@
   .pb-\[2\.5rem\] {
     padding-bottom: 2.5rem;
   }
-  .pb-\[2rem\] {
-    padding-bottom: 2rem;
+  .pb-\[3rem\] {
+    padding-bottom: 3rem;
   }
   .pb-\[5rem\] {
     padding-bottom: 5rem;
