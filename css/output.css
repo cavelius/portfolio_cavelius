@@ -1905,9 +1905,9 @@
       column-gap: calc(var(--spacing) * 2);
     }
   }
-  .md\:gap-x-10 {
+  .md\:gap-x-\[2rem\] {
     @media (width >= 48rem) {
-      column-gap: calc(var(--spacing) * 10);
+      column-gap: 2rem;
     }
   }
   .md\:gap-y-10 {
