@@ -407,11 +407,17 @@
   .mb-\[3rem\] {
     margin-bottom: 3rem;
   }
+  .mb-\[4rem\] {
+    margin-bottom: 4rem;
+  }
   .mb-\[8px\] {
     margin-bottom: 8px;
   }
   .mb-\[24px\] {
     margin-bottom: 24px;
+  }
+  .mb-\[48px\] {
+    margin-bottom: 48px;
   }
   .ml-8 {
     margin-left: calc(var(--spacing) * 8);
@@ -884,6 +890,9 @@
   .pt-\[2\.5rem\] {
     padding-top: 2.5rem;
   }
+  .pt-\[3rem\] {
+    padding-top: 3rem;
+  }
   .pt-\[4rem\] {
     padding-top: 4rem;
   }
@@ -907,6 +916,12 @@
   }
   .pb-\[2\.5rem\] {
     padding-bottom: 2.5rem;
+  }
+  .pb-\[2rem\] {
+    padding-bottom: 2rem;
+  }
+  .pb-\[3rem\] {
+    padding-bottom: 3rem;
   }
   .pb-\[4rem\] {
     padding-bottom: 4rem;
