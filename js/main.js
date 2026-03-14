@@ -158,7 +158,7 @@ const videoObserver = new IntersectionObserver(
         entries.forEach((entry) => {
             const video = entry.target;
             if (entry.isIntersecting) {
-                video.play().catch(() => {});
+                if (!video._loopPausing) video.play().catch(() => {});
             } else {
                 video.pause();
             }
@@ -383,7 +383,9 @@ window.addEventListener("load", () => {
 document.querySelectorAll("video[data-loop-pause]").forEach((video) => {
     const delay = parseInt(video.getAttribute("data-loop-pause"), 10) || 5000;
     video.addEventListener("ended", () => {
+        video._loopPausing = true;
         setTimeout(() => {
+            video._loopPausing = false;
             video.currentTime = 0;
             video.play().catch(() => {});
         }, delay);
