@@ -378,3 +378,14 @@ window.addEventListener("load", () => {
         if (slug) openProject(slug, false);
     }
 });
+
+// Videos with data-loop-pause: restart after a pause instead of looping instantly
+document.querySelectorAll("video[data-loop-pause]").forEach((video) => {
+    const delay = parseInt(video.getAttribute("data-loop-pause"), 10) || 5000;
+    video.addEventListener("ended", () => {
+        setTimeout(() => {
+            video.currentTime = 0;
+            video.play().catch(() => {});
+        }, delay);
+    });
+});
