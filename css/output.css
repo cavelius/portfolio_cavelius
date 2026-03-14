@@ -407,17 +407,11 @@
   .mb-\[3rem\] {
     margin-bottom: 3rem;
   }
-  .mb-\[4rem\] {
-    margin-bottom: 4rem;
-  }
   .mb-\[8px\] {
     margin-bottom: 8px;
   }
   .mb-\[24px\] {
     margin-bottom: 24px;
-  }
-  .mb-\[48px\] {
-    margin-bottom: 48px;
   }
   .ml-8 {
     margin-left: calc(var(--spacing) * 8);
@@ -890,9 +884,6 @@
   .pt-\[2\.5rem\] {
     padding-top: 2.5rem;
   }
-  .pt-\[3rem\] {
-    padding-top: 3rem;
-  }
   .pt-\[4rem\] {
     padding-top: 4rem;
   }
@@ -916,12 +907,6 @@
   }
   .pb-\[2\.5rem\] {
     padding-bottom: 2.5rem;
-  }
-  .pb-\[2rem\] {
-    padding-bottom: 2rem;
-  }
-  .pb-\[3rem\] {
-    padding-bottom: 3rem;
   }
   .pb-\[4rem\] {
     padding-bottom: 4rem;
@@ -1721,9 +1706,9 @@
       margin-top: calc(var(--spacing) * 32);
     }
   }
-  .md\:mr-\[calc\(21\.6\%-0\.88rem\)\] {
+  .md\:mr-0 {
     @media (width >= 48rem) {
-      margin-right: calc(21.6% - 0.88rem);
+      margin-right: calc(var(--spacing) * 0);
     }
   }
   .md\:mb-0 {
